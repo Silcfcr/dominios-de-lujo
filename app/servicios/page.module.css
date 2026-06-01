@@ -1,0 +1,168 @@
+.page {
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 72px 64px 64px;
+  background: var(--w);
+  border-bottom: 1px solid var(--rule);
+}
+
+.headerSub {
+  margin-top: 16px;
+}
+
+.serviceSection {
+  border-bottom: 1px solid var(--rule);
+}
+
+.lightBg {
+  background: var(--w);
+}
+
+.darkBg {
+  background: var(--ink);
+}
+
+.serviceCols {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 64px;
+  align-items: flex-start;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.serviceColsReverse {
+  grid-template-columns: 120px 1fr;
+}
+
+.serviceIcon {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+
+.serviceIcon svg {
+  width: 56px;
+  height: 56px;
+  color: var(--gold);
+}
+
+.serviceIconDark svg {
+  color: var(--glt);
+}
+
+.serviceEye {
+  font-family: var(--fb);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.serviceEyeLight {
+  color: var(--glt);
+}
+
+.serviceTitle {
+  font-family: var(--fd);
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.serviceTitleLight {
+  color: var(--c);
+}
+
+.serviceBody {
+  font-family: var(--fb);
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--ink2);
+  margin-bottom: 16px;
+  max-width: 640px;
+}
+
+.serviceBodyLight {
+  color: rgba(250, 247, 242, 0.72);
+}
+
+.stats {
+  display: flex;
+  gap: 48px;
+  padding: 28px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statNum {
+  font-family: var(--fd);
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--fd);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink3);
+}
+
+.examplesRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.exTag {
+  font-family: var(--fd);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: rgba(250, 247, 242, 0.45);
+  background: rgba(250, 247, 242, 0.06);
+  border: 1px solid rgba(250, 247, 242, 0.12);
+  padding: 5px 12px;
+}
+
+.serviceContent {
+  padding-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 48px 24px 40px;
+  }
+
+  .serviceCols {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .serviceColsReverse {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    gap: 28px;
+  }
+}

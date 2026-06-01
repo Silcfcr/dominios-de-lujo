@@ -1,0 +1,131 @@
+.section {
+  background: var(--c2);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.title {
+  font-size: clamp(32px, 3.8vw, 52px);
+  margin-bottom: 20px;
+}
+
+.body {
+  font-family: var(--fb);
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--ink2);
+  max-width: 440px;
+}
+
+.player {
+  background: var(--w);
+  border: 1px solid var(--rule);
+  padding: 40px;
+}
+
+.playerInner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.playBtn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--w);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s, transform 0.15s;
+  cursor: pointer;
+  border: none;
+}
+
+.playBtn:hover {
+  background: var(--gold);
+  transform: scale(1.05);
+}
+
+.playing {
+  background: var(--gold);
+}
+
+.playBtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.playerRight {
+  flex: 1;
+  min-width: 0;
+}
+
+.playerLabel {
+  font-family: var(--fb);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.progressWrap {
+  position: relative;
+  height: 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.progressBg {
+  position: absolute;
+  inset: 0;
+  background: var(--rule);
+}
+
+.progressFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--gold);
+  transition: width 0.1s linear;
+}
+
+.time {
+  font-family: var(--fb);
+  font-size: 11px;
+  color: var(--ink3);
+  letter-spacing: 0.08em;
+}
+
+.comingSoon {
+  font-family: var(--fb);
+  font-size: 11px;
+  color: var(--ink3);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .player {
+    padding: 28px 20px;
+  }
+}

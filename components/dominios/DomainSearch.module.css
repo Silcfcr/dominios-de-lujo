@@ -1,0 +1,52 @@
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  color: var(--ink3);
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.input {
+  width: 100%;
+  font-family: var(--fb);
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--w);
+  border: 1px solid var(--rule);
+  padding: 13px 44px 13px 44px;
+  outline: none;
+  transition: border-color 0.2s;
+  -webkit-appearance: none;
+}
+
+.input:focus {
+  border-color: var(--gold);
+}
+
+.input::placeholder {
+  color: var(--ink3);
+}
+
+.clear {
+  position: absolute;
+  right: 16px;
+  font-size: 11px;
+  color: var(--ink3);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 4px;
+}
+
+.clear:hover {
+  color: var(--ink);
+}

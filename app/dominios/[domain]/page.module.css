@@ -1,0 +1,170 @@
+.page {
+  background: var(--c);
+  min-height: 100vh;
+  padding: 64px;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.back {
+  display: inline-block;
+  font-family: var(--fb);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 32px;
+  transition: color 0.2s;
+}
+
+.back:hover {
+  color: var(--gold);
+}
+
+.card {
+  background: var(--w);
+  border: 1px solid var(--rule);
+  padding: 48px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.headerLeft {
+  flex: 1;
+  min-width: 0;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.flagshipBadge {
+  font-family: var(--fb);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gdim);
+  padding: 3px 10px;
+}
+
+.affiliateBadge {
+  font-family: var(--fb);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  border: 1px solid var(--rule);
+  padding: 3px 10px;
+}
+
+.domainName {
+  font-family: var(--fd);
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 16px;
+  word-break: break-word;
+}
+
+.headerMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.metaTag {
+  font-family: var(--fb);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink3);
+}
+
+.metaSep {
+  color: var(--rule);
+}
+
+.rule {
+  height: 1px;
+  background: var(--rule);
+  margin-bottom: 40px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionTitle {
+  font-family: var(--fb);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.sectionText {
+  font-family: var(--fb);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--ink2);
+}
+
+.loading,
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  font-family: var(--fd);
+  font-size: 16px;
+  color: var(--ink3);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 32px 20px 64px;
+  }
+
+  .card {
+    padding: 28px 20px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+  }
+
+  .domainName {
+    font-size: clamp(24px, 6vw, 40px);
+  }
+}
