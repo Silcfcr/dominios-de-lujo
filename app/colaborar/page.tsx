@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useI18n } from '@/lib/i18n/context';
+import { assetPath } from '@/lib/assetPath';
 import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './page.module.css';
 
@@ -93,7 +94,7 @@ export default function ColaborarPage() {
       <RevealWrapper className={styles.values}>
         <div className={styles.valuesInner}>
           <Image
-            src="/images/lujototal-cert.png"
+            src={assetPath('/images/lujototal-cert.png')}
             alt="LujoTotal™"
             width={100}
             height={100}

@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useI18n } from '@/lib/i18n/context';
+import { assetPath } from '@/lib/assetPath';
 import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './LujoTotal.module.css';
 
@@ -13,7 +14,7 @@ export default function LujoTotal() {
       <RevealWrapper className={styles.inner}>
         <div className={styles.mark}>
           <Image
-            src="/images/lujototal-cert.png"
+            src={assetPath('/images/lujototal-cert.png')}
             alt="LujoTotal™ certification"
             width={120}
             height={120}

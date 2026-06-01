@@ -101,7 +101,7 @@
 
 .active .info {
   opacity: 1;
-  transition: opacity 0.45s ease 0.3s; /* delay until card finishes expanding */
+  transition: opacity 0.45s ease 0.3s;
 }
 
 .name {

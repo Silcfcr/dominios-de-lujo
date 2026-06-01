@@ -9,10 +9,10 @@
   },
   "hero": {
     "eyebrow": "Luxury editorial network",
-    "h1a": "Premium domains,",
-    "h1b": "global reach.",
-    "h1em": "Luxury in Spanish.",
-    "sub": "The world's largest collection of exact-match Spanish luxury domains. We connect premium brands with high-net-worth audiences across Spain and Latin America.",
+    "h1a": "The Spanish-language",
+    "h1b": "editorial universe of",
+    "h1em": "luxury domains.",
+    "sub": "3,000+ exact-match premium domains — fashion, real estate, travel, jewellery and beyond — connecting luxury brands with high-net-worth audiences across Spain and Latin America.",
     "cta1": "Explore domains",
     "cta2": "Our services",
     "badgeTxt": "luxury domains"
@@ -33,7 +33,8 @@
     "title": "Discover the",
     "titleEm": "best in life",
     "sub": "Select a category to explore the available domains",
-    "cta": "View all domains"
+    "cta": "View all domains",
+    "explore": "Explore"
   },
   "categories": {
     "Propiedades y Bienes Raíces de Lujo": "Luxury Real Estate",
@@ -63,7 +64,7 @@
     "s1Desc": "We connect premium brands with luxury audiences through our editorial network. Optimised content, qualified traffic and measurable results for affiliate partners.",
     "s1Cta": "Learn more",
     "s2Title": "PaginasDeLujo.com",
-    "s2Desc": "Premium one-pager builder for businesses and professionals in Spain and Latin America. Luxury digital presence without technical skills required.",
+    "s2Desc": "Your spa, hotel, or practice deserves a domain that signals quality before anyone reads a word.",
     "s2Cta": "Explore platform",
     "s3Title": "Rentals & Advertising",
     "s3Desc": "Premium domain rentals for product launches, events and exhibitions. High-visibility banner placements across our editorial network.",
@@ -79,7 +80,7 @@
     "eyebrow": "Featured product",
     "title": "Your business, on a",
     "titleEm": "luxury domain.",
-    "body": "PaginasDeLujo is the premium page builder for businesses and professionals in Spain and Latin America. Create your presence on domains like spadelujo.com/mi-spa or chefexclusivo.com/mario — elegant, mobile-ready and live in minutes.",
+    "body": "Establish a refined digital presence on an exclusive luxury domain, featuring elegant design, WhatsApp integration, QR code sharing, and multilingual support — allowing your business to be presented with the sophistication, credibility, and prestige discerning clients expect.",
     "cta": "Discover PaginasDeLujo"
   },
   "collaborateTeaser": {
@@ -156,10 +157,10 @@
     "stat2Label": "luxury categories",
     "stat3Label": "flagship domains",
     "affiliateCta": "Request information",
-    "paginasTitle": "PaginasDeLujo — One-Pager Builder",
+    "paginasTitle": "Your business, on a luxury domain.",
     "paginasEyebrow": "Premium SaaS",
-    "paginasBody1": "Premium page builder for businesses and professionals in Spain and Latin America. Your company on an exact luxury domain — from spadelujo.com/mi-spa to villadelujo.com/marbella.",
-    "paginasBody2": "Designed mobile-first and optimised for WhatsApp. No technical skills required. Luxury digital presence in minutes.",
+    "paginasBody1": "PaginasDeLujo.com lets small businesses and professionals in Spain and Latin America publish a beautiful single-page profile under a luxury domain we already own.",
+    "paginasBody2": "Establish a refined digital presence on an exclusive luxury domain, featuring elegant design, WhatsApp integration, QR code sharing, and multilingual support — allowing your business to be presented with the sophistication, credibility, and prestige discerning clients expect.",
     "paginasCta": "Go to PaginasDeLujo.com",
     "rentalsTitle": "Rentals & Advertising",
     "rentalsEyebrow": "Additional service",
@@ -182,5 +183,21 @@
     "influencersEyebrow": "Creative collaborations",
     "influencersBody": "Does your audience live luxury? Collaborate with our network to amplify your personal brand and create co-branded content on the most exclusive domains in the Hispanic market.",
     "influencersCta": "Propose a collaboration"
+  },
+  "partnerValue": {
+    "eyebrow": "For Brand Partners",
+    "title": "What your brand gets access to",
+    "subtitle": "Built for brands serious about the Spanish-language luxury consumer.",
+    "item1Title": "A consumer no generalist network reaches",
+    "item1Desc": "Our audience is the high-net-worth Spanish-speaking consumer — in Spain, Mexico, Argentina, Colombia, and across Latin America. They read in Spanish by choice, not necessity. They are not an afterthought in your existing campaigns. They are the entire point of ours.",
+    "item2Title": "Editorial placement, not advertising",
+    "item2Desc": "Your brand appears within genuine editorial content produced by specialist writers who live and understand luxury in their market. Not banner ads. Not paid listings. Contextual placement that earns trust from a reader who is already interested in what you sell.",
+    "item3Title": "3,000+ exact-match domains. One partnership.",
+    "item3Desc": "A single partnership with Dominios de Lujo gives your brand placement potential across the largest exact-match Spanish luxury domain portfolio in existence — across travel, jewelry, fashion, real estate, gastronomy, wellness, and more.",
+    "item4Title": "Brand safety guaranteed by editorial standard",
+    "item4Desc": "Every site in our network publishes under the LujoTotal™ editorial standard — a quality framework that governs tone, accuracy, and presentation. Your brand will not appear next to thin content, misleading claims, or anything that puts your reputation at risk.",
+    "item5Title": "Minimal lift on your side",
+    "item5Desc": "We handle integration, placement, and ongoing content. What we need from your team is an affiliate approval and brand assets. That is the full extent of the ask. Everything else is ours to manage.",
+    "cta": "Apply to Partner"
   }
 }

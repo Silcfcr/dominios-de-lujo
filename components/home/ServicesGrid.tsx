@@ -24,10 +24,10 @@ const icons = {
     </svg>
   ),
   rentals: (
-    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1" aria-hidden="true">
-      <rect x="3" y="10" width="26" height="16" rx="1" />
-      <path d="M8 10V7a8 8 0 0 1 16 0v3" />
-      <circle cx="16" cy="18" r="2" />
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="2" y="12" width="6" height="8" rx="0.5" />
+      <path d="M8 12 L26 4 L26 28 L8 20 Z" />
+      <path d="M29 11a6 6 0 0 1 0 10" />
     </svg>
   ),
 };

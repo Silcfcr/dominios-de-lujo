@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useI18n } from '@/lib/i18n/context';
+import { assetPath } from '@/lib/assetPath';
 import styles from './Footer.module.css';
 
 const CONTACT_EMAIL = 'mailto:contacto@dominiosdelujo.com?subject=Consulta%20%E2%80%94%20Dominios%20de%20Lujo';
@@ -17,7 +18,7 @@ export default function Footer() {
         {/* Col 1: Brand */}
         <div className={styles.brand}>
           <Image
-            src="/images/logo.png"
+            src={assetPath('/images/logo.png')}
             alt="Dominios de Lujo"
             width={140}
             height={48}

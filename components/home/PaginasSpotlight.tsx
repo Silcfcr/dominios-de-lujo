@@ -17,7 +17,7 @@ export default function PaginasSpotlight() {
           </h2>
           <p className={styles.body}>{t('paginasSpotlight.body')}</p>
           <div className={styles.examples}>
-            {['spadelujo.com/mi-spa', 'chefexclusivo.com/mario', 'villadelujo.com/marbella'].map((ex) => (
+            {['spadelujo.com/el-spa-de-nati', 'esteticadelujo.com/bella-by-sofia', 'bellezadelujo.com/luna-beauty'].map((ex) => (
               <span key={ex} className={styles.exampleTag}>{ex}</span>
             ))}
           </div>

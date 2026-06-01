@@ -1,20 +1,49 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 import { useI18n } from '@/lib/i18n/context';
-import RevealWrapper from '@/components/ui/RevealWrapper';
+import { assetPath } from '@/lib/assetPath';
 import styles from './Manifesto.module.css';
 
 export default function Manifesto() {
   const { t, lang } = useI18n();
-  const audioRef = useRef<HTMLAudioElement>(null);
-  const [playing, setPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [duration, setDuration] = useState(0);
+  const audioRef  = useRef<HTMLAudioElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+  const [playing, setPlaying]         = useState(false);
+  const [progress, setProgress]       = useState(0);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration]       = useState(0);
+  const [visible, setVisible]         = useState(false);
 
-  const audioSrc = `/audio/manifesto-${lang}.mp3`;
+  const audioSrc = assetPath(
+    `/audio/${encodeURIComponent(lang === 'en' ? 'Manifiesto English.m4a' : 'Manifiesto Español.m4a')}`
+  );
 
-  const toggle = () => {
+  // Reveal on scroll
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setVisible(true); obs.disconnect(); } },
+      { threshold: 0.15 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  // Reset when language switches
+  useEffect(() => {
+    const el = audioRef.current;
+    if (!el) return;
+    el.pause();
+    el.load();
+    setPlaying(false);
+    setProgress(0);
+    setCurrentTime(0);
+    setDuration(0);
+  }, [lang]);
+
+  const toggle = useCallback(() => {
     const el = audioRef.current;
     if (!el) return;
     if (playing) {
@@ -23,12 +52,13 @@ export default function Manifesto() {
     } else {
       el.play().then(() => setPlaying(true)).catch(() => {});
     }
-  };
+  }, [playing]);
 
   const onTimeUpdate = () => {
     const el = audioRef.current;
     if (!el || !el.duration) return;
     setProgress((el.currentTime / el.duration) * 100);
+    setCurrentTime(el.currentTime);
   };
 
   const onLoadedMetadata = () => {
@@ -36,77 +66,93 @@ export default function Manifesto() {
     if (el) setDuration(el.duration);
   };
 
-  const onEnded = () => setPlaying(false);
+  const onEnded = () => {
+    setPlaying(false);
+    setProgress(0);
+    setCurrentTime(0);
+  };
 
   const onProgressClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const el = audioRef.current;
     if (!el || !el.duration) return;
     const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    el.currentTime = (x / rect.width) * el.duration;
+    el.currentTime = ((e.clientX - rect.left) / rect.width) * el.duration;
   };
 
-  const fmt = (s: number) => {
-    const m = Math.floor(s / 60);
-    const sec = Math.floor(s % 60);
-    return `${m}:${sec.toString().padStart(2, '0')}`;
-  };
+  const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 
   return (
-    <section className={`sec ${styles.section}`}>
+    <section ref={sectionRef} className={`${styles.section} ${visible ? styles.visible : ''}`}>
+      <div className={styles.glow} />
+
       <div className={styles.inner}>
-        <RevealWrapper className={styles.text}>
-          <p className="s-eye lft">{t('manifesto.eyebrow')}</p>
-          <h2 className={`s-title ${styles.title}`}>
-            {t('manifesto.title')} <em>{t('manifesto.titleEm')}</em>
-          </h2>
-          <p className={styles.body}>{t('manifesto.body')}</p>
-        </RevealWrapper>
+        <span className={styles.ornament}>❝</span>
 
-        <RevealWrapper delay={1} className={styles.player}>
-          <div className={styles.playerInner}>
-            <button
-              className={`${styles.playBtn} ${playing ? styles.playing : ''}`}
-              onClick={toggle}
-              aria-label={t('manifesto.playLabel')}
-            >
-              {playing ? (
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <rect x="6" y="4" width="4" height="16" />
-                  <rect x="14" y="4" width="4" height="16" />
-                </svg>
-              ) : (
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <polygon points="5,3 19,12 5,21" />
-                </svg>
-              )}
-            </button>
+        <p className={`s-eye ${styles.eyebrow}`}>{t('manifesto.eyebrow')}</p>
 
-            <div className={styles.playerRight}>
-              <p className={styles.playerLabel}>{t('manifesto.playLabel')}</p>
-              <div className={styles.progressWrap} onClick={onProgressClick} role="progressbar" aria-valuenow={progress}>
-                <div className={styles.progressBg} />
-                <div className={styles.progressFill} style={{ width: `${progress}%` }} />
+        <h2 className={styles.title}>
+          {t('manifesto.title')}<br />
+          <em>{t('manifesto.titleEm')}</em>
+        </h2>
+
+        <div className={styles.rule} />
+
+        <p className={styles.body}>{t('manifesto.body')}</p>
+
+        {/* Player */}
+        <div className={styles.player}>
+          <button
+            className={`${styles.playBtn} ${playing ? styles.playActive : ''}`}
+            onClick={toggle}
+            aria-label={t('manifesto.playLabel')}
+          >
+            <span className={styles.ring} />
+            {playing ? (
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <rect x="6" y="4" width="4" height="16" />
+                <rect x="14" y="4" width="4" height="16" />
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <polygon points="6,3 20,12 6,21" />
+              </svg>
+            )}
+          </button>
+
+          <div className={styles.playerBody}>
+            <div className={styles.playerTop}>
+              <div className={`${styles.wave} ${playing ? styles.waveOn : ''}`}>
+                {[0,1,2,3,4].map(i => (
+                  <span key={i} className={styles.bar} style={{ '--i': i } as React.CSSProperties} />
+                ))}
               </div>
-              {duration > 0 && (
-                <p className={styles.time}>{fmt(audioRef.current?.currentTime ?? 0)} / {fmt(duration)}</p>
-              )}
-              {duration === 0 && (
-                <p className={styles.comingSoon}>{t('manifesto.comingSoon')}</p>
-              )}
+              <span className={styles.playerLabel}>{t('manifesto.playLabel')}</span>
             </div>
-          </div>
 
-          <audio
-            ref={audioRef}
-            src={audioSrc}
-            onTimeUpdate={onTimeUpdate}
-            onLoadedMetadata={onLoadedMetadata}
-            onEnded={onEnded}
-            preload="metadata"
-          />
-        </RevealWrapper>
+            <div className={styles.progressWrap} onClick={onProgressClick} role="progressbar" aria-valuenow={progress}>
+              <div className={styles.progressBg} />
+              <div className={styles.progressFill} style={{ width: `${progress}%` }}>
+                <span className={styles.dot} />
+              </div>
+            </div>
+
+            <p className={styles.time}>
+              {duration > 0
+                ? `${fmt(currentTime)} / ${fmt(duration)}`
+                : t('manifesto.comingSoon')}
+            </p>
+          </div>
+        </div>
       </div>
+
+      <audio
+        ref={audioRef}
+        src={audioSrc}
+        onTimeUpdate={onTimeUpdate}
+        onLoadedMetadata={onLoadedMetadata}
+        onEnded={onEnded}
+        preload="metadata"
+      />
     </section>
   );
 }

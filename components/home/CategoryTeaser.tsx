@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useI18n } from '@/lib/i18n/context';
+import { assetPath } from '@/lib/assetPath';
 import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './CategoryTeaser.module.css';
 
@@ -11,28 +12,28 @@ const ITEMS = [
   {
     key: 'Propiedades y Bienes Raíces de Lujo',
     nameEn: 'Luxury Properties & Real Estate',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format&fit=crop',
+    image: '/images/realEstate.jpg',
     phraseEn: 'Luxury is owning a space that defines you.',
     phraseEs: 'El lujo es poseer un espacio que te define.',
   },
   {
     key: 'Joyería, Relojería y Metales Preciosos',
     nameEn: 'Jewellery, Watches & Precious Metals',
-    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80&auto=format&fit=crop',
+    image: '/images/watches.jpg',
     phraseEn: 'Luxury is wearing something that survives generations.',
     phraseEs: 'El lujo es llevar algo que sobrevive generaciones.',
   },
   {
     key: 'Viajes, Turismo, Destinos y Alojamientos',
     nameEn: 'Travel, Tourism & Destinations',
-    image: 'https://images.unsplash.com/photo-1602002418082-dd75b15f3445?w=800&q=80&auto=format&fit=crop',
+    image: '/images/travel.jpg',
     phraseEn: 'Luxury is sleeping somewhere that changes your sense of time.',
     phraseEs: 'El lujo es dormir en un lugar que cambia tu sentido del tiempo.',
   },
   {
     key: 'Moda, Accesorios y Alta Costura',
     nameEn: 'Fashion, Accessories & Haute Couture',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&auto=format&fit=crop',
+    image: '/images/fashion.jpg',
     phraseEn: "Luxury is dressing for who you're becoming.",
     phraseEs: 'El lujo es vestirte para quien estás llegando a ser.',
   },
@@ -104,7 +105,7 @@ export default function CategoryTeaser() {
                 aria-hidden={pos !== 'active'}
               >
                 <Image
-                  src={item.image}
+                  src={assetPath(item.image)}
                   alt={name}
                   fill
                   sizes="(max-width: 768px) 100vw, 52vw"

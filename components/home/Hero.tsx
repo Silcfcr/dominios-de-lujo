@@ -1,12 +1,31 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useI18n } from '@/lib/i18n/context';
+import { assetPath } from '@/lib/assetPath';
 import styles from './Hero.module.css';
+
+const IMAGES = [
+  { src: '/images/realEstate.jpg', alt: 'Luxury real estate' },
+  { src: '/images/watches.jpg',    alt: 'Luxury watches' },
+  { src: '/images/travel.jpg',     alt: 'Luxury travel' },
+  { src: '/images/fashion.jpg',    alt: 'Luxury fashion' },
+];
+
+const INTERVAL = 4500;
 
 export default function Hero() {
   const { t } = useI18n();
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setActive(i => (i + 1) % IMAGES.length);
+    }, INTERVAL);
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <section className={styles.hero}>
@@ -26,14 +45,21 @@ export default function Hero() {
       </div>
 
       <div className={styles.right}>
-        <Image
-          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=85&auto=format&fit=crop"
-          alt="Luxury real estate"
-          fill
-          sizes="50vw"
-          className={styles.img}
-          priority
-        />
+        {IMAGES.map((img, i) => (
+          <div
+            key={img.src}
+            className={`${styles.slide} ${i === active ? styles.slideActive : ''}`}
+          >
+            <Image
+              src={assetPath(img.src)}
+              alt={img.alt}
+              fill
+              sizes="50vw"
+              className={styles.img}
+              priority={i === 0}
+            />
+          </div>
+        ))}
         <div className={styles.overlay} />
         <div className={styles.badge}>
           <span className={styles.badgeNum}>3.000+</span>

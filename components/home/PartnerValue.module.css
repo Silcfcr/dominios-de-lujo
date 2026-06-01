@@ -1,0 +1,174 @@
+.section {
+  background: var(--c2);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  overflow: hidden;
+}
+
+.header {
+  margin-bottom: 52px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: var(--ink3);
+}
+
+/* ── 6 + 6 grid ───────────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: stretch;
+}
+
+/* ── Left: image panel ────────────────────────────────── */
+.imgPanel {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  align-self: stretch;
+}
+
+.img {
+  object-fit: cover;
+}
+
+/* ── Right: accordion ─────────────────────────────────── */
+.accordion {
+  padding-left: 60px;
+}
+
+/* ── List ─────────────────────────────────────────────── */
+.list {
+  border-top: 1px solid var(--rule);
+  margin-bottom: 40px;
+}
+
+/* ── Item ─────────────────────────────────────────────── */
+.item {
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ── Trigger ──────────────────────────────────────────── */
+.trigger {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 28px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.trigger:hover .name,
+.itemOpen .name {
+  color: var(--gold);
+}
+
+.num {
+  font-family: var(--fd);
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  align-self: start;
+  padding-top: 5px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.name {
+  font-family: var(--fd);
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--ink2);
+  transition: color 0.25s;
+}
+
+.subtext {
+  font-family: var(--fb);
+  font-size: 12px;
+  color: var(--ink3);
+  letter-spacing: 0.02em;
+}
+
+/* ── Body (grid-template-rows trick) ──────────────────── */
+.body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bodyOpen {
+  grid-template-rows: 1fr;
+}
+
+.body > div {
+  overflow: hidden;
+}
+
+.desc {
+  font-family: var(--fb);
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--ink2);
+  padding: 0 0 28px 68px;
+  max-width: 520px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bodyOpen .desc {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.2s;
+}
+
+/* ── CTA ──────────────────────────────────────────────── */
+.ctaWrap {
+  padding-left: 68px;
+}
+
+/* ── Mobile ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .imgPanel {
+    height: 300px;
+    min-height: unset;
+    margin-bottom: 40px;
+  }
+
+  .accordion {
+    padding-left: 0;
+  }
+
+  .ctaWrap {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .trigger {
+    grid-template-columns: 1fr;
+  }
+
+  .num {
+    display: none;
+  }
+
+  .desc {
+    padding-left: 0;
+  }
+}

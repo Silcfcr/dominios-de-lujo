@@ -85,7 +85,7 @@ export default function ServiciosPage() {
             <p className={`${styles.serviceBody} ${styles.serviceBodyLight}`}>{t('servicios.paginasBody1')}</p>
             <p className={`${styles.serviceBody} ${styles.serviceBodyLight}`}>{t('servicios.paginasBody2')}</p>
             <div className={styles.examplesRow}>
-              {['spadelujo.com/mi-spa', 'chefexclusivo.com/mario', 'villadelujo.com/marbella'].map((ex) => (
+              {['spadelujo.com/el-spa-de-nati', 'esteticadelujo.com/bella-by-sofia', 'bellezadelujo.com/luna-beauty'].map((ex) => (
                 <span key={ex} className={styles.exTag}>{ex}</span>
               ))}
             </div>
