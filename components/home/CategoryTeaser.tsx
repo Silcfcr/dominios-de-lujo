@@ -44,7 +44,7 @@ const INTERVAL = 5000;
 export default function CategoryTeaser() {
   const { t, lang } = useI18n();
   const [active, setActive] = useState(0);
-  const timerRef = useRef<ReturnType<typeof setInterval>>();
+  const timerRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
 
   const advance = useCallback((dir: 1 | -1) => {
     setActive(i => (i + dir + N) % N);
