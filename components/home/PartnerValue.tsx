@@ -59,7 +59,7 @@ export default function PartnerValue() {
         {/* ── Left: static image (6 cols) ── */}
         <div className={styles.imgPanel}>
           <Image
-            src={assetPath('/images/partner.jpg')}
+            src={assetPath('/images/partner.webp')}
             alt="Partner with Dominios de Lujo"
             fill
             sizes="50vw"

@@ -41,7 +41,7 @@ export default function MissionVision() {
 
         <RevealWrapper delay={1} className={styles.imageWrap}>
           <Image
-            src={assetPath('/images/partner.jpg')}
+            src={assetPath('/images/partner.webp')}
             alt=""
             fill
             className={styles.image}

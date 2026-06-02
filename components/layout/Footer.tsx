@@ -18,7 +18,7 @@ export default function Footer() {
         {/* Col 1: Brand */}
         <div className={styles.brand}>
           <Image
-            src={assetPath('/images/logo.png')}
+            src={assetPath('/images/logo.webp')}
             alt="Dominios de Lujo"
             width={140}
             height={48}
