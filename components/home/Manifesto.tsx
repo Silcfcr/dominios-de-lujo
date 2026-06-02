@@ -5,21 +5,23 @@ import { useI18n } from '@/lib/i18n/context';
 import { assetPath } from '@/lib/assetPath';
 import styles from './Manifesto.module.css';
 
+const PARAS = ['p1', 'p2', 'p3', 'p4', 'p5'] as const;
+
 export default function Manifesto() {
   const { t, lang } = useI18n();
-  const audioRef  = useRef<HTMLAudioElement>(null);
+  const audioRef   = useRef<HTMLAudioElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const [playing, setPlaying]         = useState(false);
+  const [textVisible, setTextVisible] = useState(false);
   const [progress, setProgress]       = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration]       = useState(0);
   const [visible, setVisible]         = useState(false);
 
   const audioSrc = assetPath(
-    `/audio/${encodeURIComponent(lang === 'en' ? 'Manifiesto English.m4a' : 'Manifiesto Español.m4a')}`
+    `/audio/${encodeURIComponent(lang === 'en' ? 'AI voice.m4a' : 'Manifiesto Español.m4a')}`
   );
 
-  // Reveal on scroll
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
@@ -31,13 +33,13 @@ export default function Manifesto() {
     return () => obs.disconnect();
   }, []);
 
-  // Reset when language switches
   useEffect(() => {
     const el = audioRef.current;
     if (!el) return;
     el.pause();
     el.load();
     setPlaying(false);
+    setTextVisible(false);
     setProgress(0);
     setCurrentTime(0);
     setDuration(0);
@@ -50,7 +52,10 @@ export default function Manifesto() {
       el.pause();
       setPlaying(false);
     } else {
-      el.play().then(() => setPlaying(true)).catch(() => {});
+      el.play().then(() => {
+        setPlaying(true);
+        setTextVisible(true);
+      }).catch(() => {});
     }
   }, [playing]);
 
@@ -97,8 +102,6 @@ export default function Manifesto() {
 
         <div className={styles.rule} />
 
-        <p className={styles.body}>{t('manifesto.body')}</p>
-
         {/* Player */}
         <div className={styles.player}>
           <button
@@ -142,6 +145,19 @@ export default function Manifesto() {
                 : t('manifesto.comingSoon')}
             </p>
           </div>
+        </div>
+
+        {/* Manifesto text — fades in on play */}
+        <div className={`${styles.text} ${textVisible ? styles.textVisible : ''}`}>
+          {PARAS.map((key, i) => (
+            <p
+              key={key}
+              className={`${styles.para} ${key === 'p5' ? styles.paraCoda : ''}`}
+              style={{ '--i': i } as React.CSSProperties}
+            >
+              {t(`manifesto.${key}`)}
+            </p>
+          ))}
         </div>
       </div>
 

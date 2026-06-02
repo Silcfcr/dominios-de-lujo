@@ -5,7 +5,8 @@
     "dominios": "Dominios",
     "servicios": "Servicios",
     "colaborar": "Colaborar",
-    "contacto": "Contacto"
+    "contacto": "Contacto",
+    "about": "Quiénes somos"
   },
   "hero": {
     "eyebrow": "Red editorial de lujo",
@@ -52,9 +53,13 @@
     "eyebrow": "Nuestro manifiesto",
     "title": "El lujo tiene",
     "titleEm": "voz propia.",
-    "body": "Creemos que el lujo en español merece una plataforma editorial a la altura de su grandeza. Cada dominio que poseemos es un espacio para la excelencia, la historia y la aspiración.",
     "playLabel": "Escuchar el manifiesto",
-    "comingSoon": "Audio próximamente disponible"
+    "comingSoon": "Audio próximamente disponible",
+    "p1": "La mayoría de los universos del lujo están construidos para impresionar.\nEl nuestro está construido para resonar.",
+    "p2": "Creamos un espacio donde el lujo tiene propósito,\ndonde cada deseo tiene su lugar.",
+    "p3": "Porque para nosotros, el lujo no es exceso.\nEs claridad.\nEs intención.\nEs identidad.",
+    "p4": "Es el arte de elegir bien, no de elegir más.",
+    "p5": "Esto es Luxury With Purpose.\nEsto es DominiosDeLujo."
   },
   "services": {
     "eyebrow": "Lo que ofrecemos",
@@ -183,6 +188,13 @@
     "influencersEyebrow": "Colaboraciones creativas",
     "influencersBody": "¿Tu audiencia vive el lujo? Colabora con nuestra red para amplificar tu marca personal y crear contenido co-branded en los dominios más exclusivos del mercado hispano.",
     "influencersCta": "Proponer colaboración"
+  },
+  "nosotros": {
+    "eyebrow": "Lo que nos mueve",
+    "missionTitle": "Nuestra Misión",
+    "missionBody": "Conectar marcas de lujo y alta gama con audiencias hispanohablantes exigentes a través de una red selecta de plataformas digitales de alto impacto, ofreciendo confianza, exclusividad y rendimiento medible a escala.",
+    "visionTitle": "Nuestra Visión",
+    "visionBody": "Nuestro objetivo es redefinir la forma en que las marcas de lujo crecen en línea, creando la plataforma de membresía y promoción de marca más confiable y de mayor calidad en el mundo hispanohablante, transformando las colaboraciones de simples transacciones en experiencias digitales personalizadas y de alto valor."
   },
   "partnerValue": {
     "eyebrow": "Para marcas asociadas",

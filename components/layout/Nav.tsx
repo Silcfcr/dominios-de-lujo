@@ -31,6 +31,7 @@ export default function Nav() {
     { href: '/dominios', label: t('nav.dominios') },
     { href: '/servicios', label: t('nav.servicios') },
     { href: '/colaborar', label: t('nav.colaborar') },
+    { href: '/nosotros', label: t('nav.about') },
   ];
 
   return (

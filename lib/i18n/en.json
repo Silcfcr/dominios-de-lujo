@@ -5,7 +5,8 @@
     "dominios": "Domains",
     "servicios": "Services",
     "colaborar": "Collaborate",
-    "contacto": "Contact"
+    "contacto": "Contact",
+    "about": "About us"
   },
   "hero": {
     "eyebrow": "Luxury editorial network",
@@ -52,9 +53,13 @@
     "eyebrow": "Our manifesto",
     "title": "Luxury has",
     "titleEm": "its own voice.",
-    "body": "We believe that luxury in Spanish deserves an editorial platform equal to its grandeur. Every domain we own is a space for excellence, heritage, and aspiration.",
     "playLabel": "Listen to the manifesto",
-    "comingSoon": "Audio coming soon"
+    "comingSoon": "Audio coming soon",
+    "p1": "Most luxury worlds are built to impress.\nOurs is built to resonate.",
+    "p2": "We created a place where luxury has purpose,\nwhere every desire has its place.",
+    "p3": "Because to us, luxury isn't excess.\nIt's clarity.\nIt's intention.\nIt's identity.",
+    "p4": "It's the art of choosing well, not choosing more.",
+    "p5": "This is Luxury With Purpose.\nThis is DominiosDeLujo."
   },
   "services": {
     "eyebrow": "What we offer",
@@ -183,6 +188,13 @@
     "influencersEyebrow": "Creative collaborations",
     "influencersBody": "Does your audience live luxury? Collaborate with our network to amplify your personal brand and create co-branded content on the most exclusive domains in the Hispanic market.",
     "influencersCta": "Propose a collaboration"
+  },
+  "nosotros": {
+    "eyebrow": "What drives us",
+    "missionTitle": "Our Mission",
+    "missionBody": "Connect luxury and high-end brands with demanding Spanish-speaking audiences through a select network of high-impact digital platforms, offering trust, exclusivity and measurable performance at scale.",
+    "visionTitle": "Our Vision",
+    "visionBody": "Our goal is to redefine the way luxury brands grow online by creating the most trusted and highest-quality membership and brand promotion platform in the Spanish-speaking world, transforming collaborations from simple transactions into personalised, high-value digital experiences."
   },
   "partnerValue": {
     "eyebrow": "For Brand Partners",

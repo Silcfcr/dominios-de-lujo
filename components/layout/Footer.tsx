@@ -54,6 +54,7 @@ export default function Footer() {
         <div>
           <h4 className={styles.colHead}>{t('footer.colCompania')}</h4>
           <ul className={styles.colList}>
+            <li><Link href="/nosotros">{t('footer.about')}</Link></li>
             <li><Link href="/colaborar">{t('footer.collaborate')}</Link></li>
             <li><a href={CONTACT_EMAIL}>{t('footer.contact')}</a></li>
           </ul>
