@@ -94,7 +94,7 @@ export default function ColaborarPage() {
       <RevealWrapper className={styles.values}>
         <div className={styles.valuesInner}>
           <Image
-            src={assetPath('/images/lujototal-cert.png')}
+            src={assetPath('/images/lujototal-cert.webp')}
             alt="LujoTotal™"
             width={100}
             height={100}

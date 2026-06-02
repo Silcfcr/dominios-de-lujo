@@ -46,7 +46,7 @@ export default function Hero() {
 
       <div className={styles.right}>
         {IMAGES.map((img, i) => {
-          const mounted = i === active || i === (active + 1) % IMAGES.length;
+          const mounted = i === active || i === (active + 1) % IMAGES.length || i === (active - 1 + IMAGES.length) % IMAGES.length;
           return (
             <div
               key={img.src}
