@@ -128,10 +128,18 @@
 /* ── Manifesto text (play-triggered) ────────────────────── */
 .text {
   width: 100%;
-  margin-top: 56px;
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 32px;
+  transition: max-height 0.7s ease, margin-top 0.4s ease;
+}
+
+.textVisible {
+  margin-top: 56px;
+  max-height: 800px;
 }
 
 .para {
