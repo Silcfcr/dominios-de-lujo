@@ -45,21 +45,26 @@ export default function Hero() {
       </div>
 
       <div className={styles.right}>
-        {IMAGES.map((img, i) => (
-          <div
-            key={img.src}
-            className={`${styles.slide} ${i === active ? styles.slideActive : ''}`}
-          >
-            <Image
-              src={assetPath(img.src)}
-              alt={img.alt}
-              fill
-              sizes="50vw"
-              className={styles.img}
-              priority={i === 0}
-            />
-          </div>
-        ))}
+        {IMAGES.map((img, i) => {
+          const mounted = i === active || i === (active + 1) % IMAGES.length;
+          return (
+            <div
+              key={img.src}
+              className={`${styles.slide} ${i === active ? styles.slideActive : ''}`}
+            >
+              {mounted && (
+                <Image
+                  src={assetPath(img.src)}
+                  alt={img.alt}
+                  fill
+                  sizes="50vw"
+                  className={styles.img}
+                  priority={i === 0}
+                />
+              )}
+            </div>
+          );
+        })}
         <div className={styles.overlay} />
         <div className={styles.badge}>
           <span className={styles.badgeNum}>3.000+</span>
