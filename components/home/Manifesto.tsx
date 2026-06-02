@@ -91,73 +91,79 @@ export default function Manifesto() {
       <div className={styles.glow} />
 
       <div className={styles.inner}>
-        <span className={styles.ornament}>❝</span>
+        {/* Left column — identity */}
+        <div className={styles.left}>
+          <span className={styles.ornament}>❝</span>
 
-        <p className={`s-eye ${styles.eyebrow}`}>{t('manifesto.eyebrow')}</p>
+          <p className={`s-eye ${styles.eyebrow}`}>{t('manifesto.eyebrow')}</p>
 
-        <h2 className={styles.title}>
-          {t('manifesto.title')}<br />
-          <em>{t('manifesto.titleEm')}</em>
-        </h2>
+          <h2 className={styles.title}>
+            {t('manifesto.title')}<br />
+            <em>{t('manifesto.titleEm')}</em>
+          </h2>
 
-        <div className={styles.rule} />
-
-        {/* Player */}
-        <div className={styles.player}>
-          <button
-            className={`${styles.playBtn} ${playing ? styles.playActive : ''}`}
-            onClick={toggle}
-            aria-label={t('manifesto.playLabel')}
-          >
-            <span className={styles.ring} />
-            {playing ? (
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <rect x="6" y="4" width="4" height="16" />
-                <rect x="14" y="4" width="4" height="16" />
-              </svg>
-            ) : (
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <polygon points="6,3 20,12 6,21" />
-              </svg>
-            )}
-          </button>
-
-          <div className={styles.playerBody}>
-            <div className={styles.playerTop}>
-              <div className={`${styles.wave} ${playing ? styles.waveOn : ''}`}>
-                {[0,1,2,3,4].map(i => (
-                  <span key={i} className={styles.bar} style={{ '--i': i } as React.CSSProperties} />
-                ))}
-              </div>
-              <span className={styles.playerLabel}>{t('manifesto.playLabel')}</span>
-            </div>
-
-            <div className={styles.progressWrap} onClick={onProgressClick} role="progressbar" aria-valuenow={progress}>
-              <div className={styles.progressBg} />
-              <div className={styles.progressFill} style={{ width: `${progress}%` }}>
-                <span className={styles.dot} />
-              </div>
-            </div>
-
-            <p className={styles.time}>
-              {duration > 0
-                ? `${fmt(currentTime)} / ${fmt(duration)}`
-                : t('manifesto.comingSoon')}
-            </p>
-          </div>
+          <div className={styles.rule} />
         </div>
 
-        {/* Manifesto text — fades in on play */}
-        <div className={`${styles.text} ${textVisible ? styles.textVisible : ''}`}>
-          {PARAS.map((key, i) => (
-            <p
-              key={key}
-              className={`${styles.para} ${key === 'p5' ? styles.paraCoda : ''}`}
-              style={{ '--i': i } as React.CSSProperties}
+        {/* Right column — player + text */}
+        <div className={styles.right}>
+          {/* Player */}
+          <div className={styles.player}>
+            <button
+              className={`${styles.playBtn} ${playing ? styles.playActive : ''}`}
+              onClick={toggle}
+              aria-label={t('manifesto.playLabel')}
             >
-              {t(`manifesto.${key}`)}
-            </p>
-          ))}
+              <span className={styles.ring} />
+              {playing ? (
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <rect x="6" y="4" width="4" height="16" />
+                  <rect x="14" y="4" width="4" height="16" />
+                </svg>
+              ) : (
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <polygon points="6,3 20,12 6,21" />
+                </svg>
+              )}
+            </button>
+
+            <div className={styles.playerBody}>
+              <div className={styles.playerTop}>
+                <div className={`${styles.wave} ${playing ? styles.waveOn : ''}`}>
+                  {[0,1,2,3,4].map(i => (
+                    <span key={i} className={styles.bar} style={{ '--i': i } as React.CSSProperties} />
+                  ))}
+                </div>
+                <span className={styles.playerLabel}>{t('manifesto.playLabel')}</span>
+              </div>
+
+              <div className={styles.progressWrap} onClick={onProgressClick} role="progressbar" aria-valuenow={progress}>
+                <div className={styles.progressBg} />
+                <div className={styles.progressFill} style={{ width: `${progress}%` }}>
+                  <span className={styles.dot} />
+                </div>
+              </div>
+
+              <p className={styles.time}>
+                {duration > 0
+                  ? `${fmt(currentTime)} / ${fmt(duration)}`
+                  : t('manifesto.comingSoon')}
+              </p>
+            </div>
+          </div>
+
+          {/* Manifesto text — fades in on play */}
+          <div className={`${styles.text} ${textVisible ? styles.textVisible : ''}`}>
+            {PARAS.map((key, i) => (
+              <p
+                key={key}
+                className={`${styles.para} ${key === 'p5' ? styles.paraCoda : ''}`}
+                style={{ '--i': i } as React.CSSProperties}
+              >
+                {t(`manifesto.${key}`)}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
 
