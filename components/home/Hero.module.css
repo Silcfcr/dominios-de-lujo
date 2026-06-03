@@ -134,6 +134,8 @@
   .left {
     padding: 60px 24px 48px;
     order: 2;
+    align-items: center;
+    text-align: center;
   }
 
   .right {
@@ -144,6 +146,11 @@
   .badge {
     bottom: 24px;
     left: 24px;
+  }
+
+  .ctas {
+    justify-content: center;
+    width: 100%;
   }
 }
 

@@ -113,4 +113,24 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .content {
+    text-align: center;
+  }
+
+  .content :global(.s-eye) {
+    justify-content: center;
+  }
+
+  .content :global(.s-eye::before) {
+    display: block;
+  }
+
+  .body {
+    max-width: 100%;
+  }
+
+  .examples {
+    justify-content: center;
+  }
 }
