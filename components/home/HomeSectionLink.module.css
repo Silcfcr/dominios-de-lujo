@@ -1,6 +1,9 @@
 .wrap {
   padding: 40px 64px;
   background: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .link {
