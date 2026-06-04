@@ -8,6 +8,10 @@
     "contacto": "Contact",
     "about": "About us"
   },
+  "home": {
+    "manifestoLink": "Learn our Luxury Manifesto",
+    "lujototalLink": "About LujoTotal™ Certification"
+  },
   "hero": {
     "h1a": "The Spanish-language luxury editorial affiliate platform —",
     "h1b": "powered by 3,000+ premium exact-match domains",
