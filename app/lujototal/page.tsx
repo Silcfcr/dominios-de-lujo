@@ -1,5 +1,4 @@
 import LujoTotal from '@/components/home/LujoTotal';
-import AboutSubNav from '@/components/about/AboutSubNav';
 
 export const metadata = {
   title: 'Certificación LujoTotal™ | Dominios de Lujo',
@@ -7,10 +6,5 @@ export const metadata = {
 };
 
 export default function LujoTotalPage() {
-  return (
-    <>
-      <AboutSubNav />
-      <LujoTotal />
-    </>
-  );
+  return <LujoTotal />;
 }

@@ -1,5 +1,4 @@
 import MissionVision from '@/components/about/MissionVision';
-import AboutSubNav from '@/components/about/AboutSubNav';
 
 export const metadata = {
   title: 'Quiénes somos | Dominios de Lujo',
@@ -8,9 +7,8 @@ export const metadata = {
 
 export default function NosotrosPage() {
   return (
-    <>
-      <AboutSubNav />
+    <main>
       <MissionVision />
-    </>
+    </main>
   );
 }

@@ -1,5 +1,4 @@
 import Manifesto from '@/components/home/Manifesto';
-import AboutSubNav from '@/components/about/AboutSubNav';
 
 export const metadata = {
   title: 'Nuestro Manifiesto | Dominios de Lujo',
@@ -7,10 +6,5 @@ export const metadata = {
 };
 
 export default function ManifestoPage() {
-  return (
-    <>
-      <AboutSubNav />
-      <Manifesto />
-    </>
-  );
+  return <Manifesto />;
 }

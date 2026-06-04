@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useI18n } from '@/lib/i18n/context';
@@ -68,13 +68,24 @@ export default function Nav() {
         {/* Row 2 — desktop links */}
         <div className={styles.r2}>
           <ul className={styles.links}>
-            {links.map((l) => (
-              <li key={l.href}>
-                <Link href={l.href} className={styles.link}>
-                  {l.label}
-                </Link>
-              </li>
-            ))}
+            {links.map((l) =>
+              l.href === '/nosotros' ? (
+                <li key={l.href} className={styles.dropItem}>
+                  <Link href={l.href} className={styles.link}>
+                    {l.label} <span className={styles.dropChevron}>▾</span>
+                  </Link>
+                  <ul className={styles.dropMenu}>
+                    <li><Link href="/nosotros" className={styles.dropLink}>{t('subnav.about')}</Link></li>
+                    <li><Link href="/manifiesto" className={styles.dropLink}>{t('subnav.manifesto')}</Link></li>
+                    <li><Link href="/lujototal" className={styles.dropLink}>{t('subnav.lujototal')}</Link></li>
+                  </ul>
+                </li>
+              ) : (
+                <li key={l.href}>
+                  <Link href={l.href} className={styles.link}>{l.label}</Link>
+                </li>
+              )
+            )}
             <li>
               <a href={CONTACT_EMAIL} className={styles.link}>
                 {t('nav.contacto')}
@@ -103,11 +114,25 @@ export default function Nav() {
           <Image src={assetPath('/images/logo.webp')} alt="Dominios de Lujo" width={120} height={40} style={{ objectFit: 'contain', height: '32px', width: 'auto' }} />
         </div>
         <nav>
-          {links.map((l) => (
-            <Link key={l.href} href={l.href} className={styles.drwLink} onClick={() => setDrawerOpen(false)}>
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) =>
+            l.href === '/nosotros' ? (
+              <Fragment key={l.href}>
+                <Link href="/nosotros" className={styles.drwLink} onClick={() => setDrawerOpen(false)}>
+                  {l.label}
+                </Link>
+                <Link href="/manifiesto" className={`${styles.drwLink} ${styles.drwSubLink}`} onClick={() => setDrawerOpen(false)}>
+                  {t('subnav.manifesto')}
+                </Link>
+                <Link href="/lujototal" className={`${styles.drwLink} ${styles.drwSubLink}`} onClick={() => setDrawerOpen(false)}>
+                  {t('subnav.lujototal')}
+                </Link>
+              </Fragment>
+            ) : (
+              <Link key={l.href} href={l.href} className={styles.drwLink} onClick={() => setDrawerOpen(false)}>
+                {l.label}
+              </Link>
+            )
+          )}
           <a href={CONTACT_EMAIL} className={styles.drwLink} onClick={() => setDrawerOpen(false)}>
             {t('nav.contacto')}
           </a>
