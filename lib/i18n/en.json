@@ -12,6 +12,11 @@
     "manifestoLink": "Learn our Luxury Manifesto",
     "lujototalLink": "About LujoTotal™ Certification"
   },
+  "subnav": {
+    "about": "About Us",
+    "manifesto": "Manifesto",
+    "lujototal": "LujoTotal™"
+  },
   "hero": {
     "h1a": "The Spanish-language luxury editorial affiliate platform —",
     "h1b": "powered by 3,000+ premium exact-match domains",

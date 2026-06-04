@@ -12,6 +12,11 @@
     "manifestoLink": "Lee nuestro Manifiesto del Lujo",
     "lujototalLink": "Sobre la Certificación LujoTotal™"
   },
+  "subnav": {
+    "about": "Quiénes Somos",
+    "manifesto": "Manifiesto",
+    "lujototal": "LujoTotal™"
+  },
   "hero": {
     "h1a": "La plataforma editorial afiliada de lujo en español —",
     "h1b": "impulsada por más de 3.000 dominios exactos premium",
