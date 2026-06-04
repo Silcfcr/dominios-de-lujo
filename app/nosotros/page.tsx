@@ -1,3 +1,4 @@
+import WritersGrid from '@/components/about/WritersGrid';
 import MissionVision from '@/components/about/MissionVision';
 import Manifesto from '@/components/home/Manifesto';
 import LujoTotal from '@/components/home/LujoTotal';
@@ -10,6 +11,9 @@ export const metadata = {
 export default function NosotrosPage() {
   return (
     <main>
+      <section id="escritores">
+        <WritersGrid />
+      </section>
       <section id="nosotros">
         <MissionVision />
       </section>
