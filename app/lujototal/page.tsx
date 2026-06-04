@@ -6,9 +6,5 @@ export const metadata = {
 };
 
 export default function LujoTotalPage() {
-  return (
-    <main>
-      <LujoTotal />
-    </main>
-  );
+  return <LujoTotal />;
 }

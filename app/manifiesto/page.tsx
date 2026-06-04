@@ -6,9 +6,5 @@ export const metadata = {
 };
 
 export default function ManifestoPage() {
-  return (
-    <main>
-      <Manifesto />
-    </main>
-  );
+  return <Manifesto />;
 }
