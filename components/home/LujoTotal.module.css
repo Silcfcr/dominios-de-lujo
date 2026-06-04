@@ -47,6 +47,10 @@
   max-width: 560px;
 }
 
+.body + .body {
+  margin-top: 16px;
+}
+
 @media (max-width: 768px) {
   .section {
     padding: 56px 24px;

@@ -26,7 +26,8 @@ export default function LujoTotal() {
           <h2 className={styles.title}>
             {t('lujototal.title')} <em>{t('lujototal.titleEm')}</em>
           </h2>
-          <p className={styles.body}>{t('lujototal.body')}</p>
+          <p className={styles.body}>{t('lujototal.body1')}</p>
+          <p className={styles.body}>{t('lujototal.body2')}</p>
         </div>
       </RevealWrapper>
     </section>
