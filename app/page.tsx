@@ -1,11 +1,9 @@
 import Hero from '@/components/home/Hero';
 import Ticker from '@/components/home/Ticker';
 import CategoryTeaser from '@/components/home/CategoryTeaser';
-import Manifesto from '@/components/home/Manifesto';
+import HomeSectionLink from '@/components/home/HomeSectionLink';
 import ServicesGrid from '@/components/home/ServicesGrid';
 import PartnerValue from '@/components/home/PartnerValue';
-import LujoTotal from '@/components/home/LujoTotal';
-import PaginasSpotlight from '@/components/home/PaginasSpotlight';
 import CollaborateTeaser from '@/components/home/CollaborateTeaser';
 
 export default function HomePage() {
@@ -14,11 +12,10 @@ export default function HomePage() {
       <Hero />
       <Ticker />
       <CategoryTeaser />
-      <Manifesto />
+      <HomeSectionLink labelKey="home.manifestoLink" href="/manifiesto" />
       <ServicesGrid />
       <PartnerValue />
-      <LujoTotal />
-      <PaginasSpotlight />
+      <HomeSectionLink labelKey="home.lujototalLink" href="/lujototal" />
       <CollaborateTeaser />
     </>
   );
