@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Lora } from 'next/font/google';
 import { I18nProvider } from '@/lib/i18n/context';
 import Nav from '@/components/layout/Nav';
 import Footer from '@/components/layout/Footer';
+import FloatingCertBadge from '@/components/ui/FloatingCertBadge';
 import './globals.css';
 
 const cormorant = Cormorant_Garamond({
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Nav />
           <main style={{ paddingTop: '136px' }}>{children}</main>
           <Footer />
+          <FloatingCertBadge />
         </I18nProvider>
       </body>
     </html>
