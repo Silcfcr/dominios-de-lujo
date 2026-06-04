@@ -14,28 +14,33 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .card {
   background: var(--w);
   border: 1px solid var(--rule);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
   transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .card:hover {
   box-shadow: 0 8px 32px rgba(26, 23, 20, 0.08);
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 .photoWrap {
   position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .photo {
@@ -44,31 +49,33 @@
 }
 
 .photoPlaceholder {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
   background: var(--c2);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .initials {
   font-family: var(--fd);
-  font-size: clamp(28px, 3vw, 44px);
+  font-size: 20px;
   color: var(--gold);
   letter-spacing: 0.06em;
 }
 
 .info {
-  padding: 24px 28px 28px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
+  min-width: 0;
 }
 
 .vertical {
   font-family: var(--fb);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -78,7 +85,7 @@
 
 .name {
   font-family: var(--fd);
-  font-size: clamp(18px, 1.6vw, 22px);
+  font-size: clamp(16px, 1.4vw, 20px);
   font-weight: 400;
   color: var(--ink);
   line-height: 1.2;
@@ -87,11 +94,14 @@
 
 .quote {
   font-family: var(--fb);
-  font-size: 13px;
+  font-size: 12px;
   font-style: italic;
   color: var(--ink3);
-  line-height: 1.6;
-  margin: 4px 0 0;
+  line-height: 1.5;
+  margin: 2px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .quote::before {
@@ -101,13 +111,7 @@
   margin-right: 2px;
 }
 
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
   }
