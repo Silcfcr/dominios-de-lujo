@@ -10,8 +10,7 @@ export default function FloatingCertBadge() {
         src={assetPath('/images/lujo-total.webp')}
         alt="LujoTotal™ certification"
         width={72}
-        height={72}
-        style={{ objectFit: 'contain' }}
+        height={48}
       />
     </Link>
   );
