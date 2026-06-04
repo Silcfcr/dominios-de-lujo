@@ -6,7 +6,7 @@ import { useI18n } from '@/lib/i18n/context';
 import { assetPath } from '@/lib/assetPath';
 import styles from './Footer.module.css';
 
-const CONTACT_EMAIL = 'mailto:contacto@dominiosdelujo.com?subject=Consulta%20%E2%80%94%20Dominios%20de%20Lujo';
+const CONTACT_EMAIL = 'mailto:info@dominiosdelujo.com?subject=Consulta%20%E2%80%94%20Dominios%20de%20Lujo';
 
 export default function Footer() {
   const { t } = useI18n();

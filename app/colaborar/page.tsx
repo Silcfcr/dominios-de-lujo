@@ -7,7 +7,7 @@ import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './page.module.css';
 
 function mailtoFor(role: string, subject: string) {
-  return `mailto:contacto@dominiosdelujo.com?subject=${encodeURIComponent(subject)}`;
+  return `mailto:info@dominiosdelujo.com?subject=${encodeURIComponent(subject)}`;
 }
 
 const writerIcon = (

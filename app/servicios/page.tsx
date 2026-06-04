@@ -4,7 +4,7 @@ import { useI18n } from '@/lib/i18n/context';
 import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './page.module.css';
 
-const CONTACT = 'mailto:contacto@dominiosdelujo.com?subject=Consulta%20Servicios%20%E2%80%94%20Dominios%20de%20Lujo';
+const CONTACT = 'mailto:info@dominiosdelujo.com?subject=Consulta%20Servicios%20%E2%80%94%20Dominios%20de%20Lujo';
 
 const affiliateIcon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="0.8" aria-hidden="true">

@@ -40,7 +40,7 @@ const ITEMS = [
   },
 ];
 
-const CONTACT = 'mailto:contacto@dominiosdelujo.com?subject=Partner%20Application%20%E2%80%94%20Dominios%20de%20Lujo';
+const CONTACT = 'mailto:info@dominiosdelujo.com?subject=Partner%20Application%20%E2%80%94%20Dominios%20de%20Lujo';
 
 export default function PartnerValue() {
   const { t, lang } = useI18n();

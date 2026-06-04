@@ -12,7 +12,7 @@ export default function Newsletter() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    window.location.href = `mailto:contacto@dominiosdelujo.com?subject=Suscripci%C3%B3n%20Newsletter&body=Suscribir%20email%3A%20${encodeURIComponent(email)}`;
+    window.location.href = `mailto:info@dominiosdelujo.com?subject=Suscripci%C3%B3n%20Newsletter&body=Suscribir%20email%3A%20${encodeURIComponent(email)}`;
   };
 
   return (

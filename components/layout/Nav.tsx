@@ -8,7 +8,7 @@ import { assetPath } from '@/lib/assetPath';
 import LanguageToggle from '@/components/ui/LanguageToggle';
 import styles from './Nav.module.css';
 
-const CONTACT_EMAIL = 'mailto:contacto@dominiosdelujo.com?subject=Consulta%20%E2%80%94%20Dominios%20de%20Lujo';
+const CONTACT_EMAIL = 'mailto:info@dominiosdelujo.com?subject=Consulta%20%E2%80%94%20Dominios%20de%20Lujo';
 
 export default function Nav() {
   const { t } = useI18n();

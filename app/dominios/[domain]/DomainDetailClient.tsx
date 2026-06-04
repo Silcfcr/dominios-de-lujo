@@ -35,7 +35,7 @@ export default function DomainDetailClient({ domain }: { domain: Domain }) {
             </div>
             <div className={styles.headerRight}>
               <a
-                href={`mailto:contacto@dominiosdelujo.com?subject=Consulta%20sobre%20${encodeURIComponent(domain.domain)}`}
+                href={`mailto:info@dominiosdelujo.com?subject=Consulta%20sobre%20${encodeURIComponent(domain.domain)}`}
                 className="btn-dark"
               >
                 {t('nav.contacto')}
