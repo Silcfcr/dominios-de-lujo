@@ -1,4 +1,6 @@
 import MissionVision from '@/components/about/MissionVision';
+import Manifesto from '@/components/home/Manifesto';
+import LujoTotal from '@/components/home/LujoTotal';
 
 export const metadata = {
   title: 'Quiénes somos | Dominios de Lujo',
@@ -8,7 +10,15 @@ export const metadata = {
 export default function NosotrosPage() {
   return (
     <main>
-      <MissionVision />
+      <section id="nosotros">
+        <MissionVision />
+      </section>
+      <section id="manifiesto">
+        <Manifesto />
+      </section>
+      <section id="lujototal">
+        <LujoTotal />
+      </section>
     </main>
   );
 }

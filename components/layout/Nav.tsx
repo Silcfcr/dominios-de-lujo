@@ -75,9 +75,9 @@ export default function Nav() {
                     {l.label} <span className={styles.dropChevron}>▾</span>
                   </Link>
                   <ul className={styles.dropMenu}>
-                    <li><Link href="/nosotros" className={styles.dropLink}>{t('subnav.about')}</Link></li>
-                    <li><Link href="/manifiesto" className={styles.dropLink}>{t('subnav.manifesto')}</Link></li>
-                    <li><Link href="/lujototal" className={styles.dropLink}>{t('subnav.lujototal')}</Link></li>
+                    <li><Link href="/nosotros#nosotros" className={styles.dropLink}>{t('subnav.about')}</Link></li>
+                    <li><Link href="/nosotros#manifiesto" className={styles.dropLink}>{t('subnav.manifesto')}</Link></li>
+                    <li><Link href="/nosotros#lujototal" className={styles.dropLink}>{t('subnav.lujototal')}</Link></li>
                   </ul>
                 </li>
               ) : (
@@ -117,13 +117,13 @@ export default function Nav() {
           {links.map((l) =>
             l.href === '/nosotros' ? (
               <Fragment key={l.href}>
-                <Link href="/nosotros" className={styles.drwLink} onClick={() => setDrawerOpen(false)}>
+                <Link href="/nosotros#nosotros" className={styles.drwLink} onClick={() => setDrawerOpen(false)}>
                   {l.label}
                 </Link>
-                <Link href="/manifiesto" className={`${styles.drwLink} ${styles.drwSubLink}`} onClick={() => setDrawerOpen(false)}>
+                <Link href="/nosotros#manifiesto" className={`${styles.drwLink} ${styles.drwSubLink}`} onClick={() => setDrawerOpen(false)}>
                   {t('subnav.manifesto')}
                 </Link>
-                <Link href="/lujototal" className={`${styles.drwLink} ${styles.drwSubLink}`} onClick={() => setDrawerOpen(false)}>
+                <Link href="/nosotros#lujototal" className={`${styles.drwLink} ${styles.drwSubLink}`} onClick={() => setDrawerOpen(false)}>
                   {t('subnav.lujototal')}
                 </Link>
               </Fragment>
