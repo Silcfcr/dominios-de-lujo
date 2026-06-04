@@ -12,7 +12,7 @@ export default function HomePage() {
       <Hero />
       <Ticker />
       <CategoryTeaser />
-      <HomeSectionLink labelKey="home.lujototalLink" href="/nosotros#lujototal" imageSrc="/images/lujototal.webp" imageAlt="LujoTotal™" />
+      <HomeSectionLink labelKey="home.lujototalLink" href="/nosotros#lujototal" imageSrc="/images/lujo-total.webp" imageAlt="LujoTotal™" />
       <ServicesGrid />
       <PartnerValue />
       <HomeSectionLink labelKey="home.manifestoLink" href="/nosotros#manifiesto" />

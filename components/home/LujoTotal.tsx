@@ -14,7 +14,7 @@ export default function LujoTotal() {
       <RevealWrapper className={styles.inner}>
         <div className={styles.mark}>
           <Image
-            src={assetPath('/images/lujototal.webp')}
+            src={assetPath('/images/lujo-total.webp')}
             alt="LujoTotal™ certification"
             width={260}
             height={209}
