@@ -12,10 +12,10 @@ export default function HomePage() {
       <Hero />
       <Ticker />
       <CategoryTeaser />
-      <HomeSectionLink labelKey="home.manifestoLink" href="/nosotros#manifiesto" />
+      <HomeSectionLink labelKey="home.lujototalLink" href="/nosotros#lujototal" />
       <ServicesGrid />
       <PartnerValue />
-      <HomeSectionLink labelKey="home.lujototalLink" href="/nosotros#lujototal" />
+      <HomeSectionLink labelKey="home.manifestoLink" href="/nosotros#manifiesto" />
       <CollaborateTeaser />
     </>
   );
