@@ -38,6 +38,24 @@
   text-align: center;
 }
 
+.wordmarkGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.certBadge {
+  display: flex;
+  align-items: center;
+  opacity: 0.85;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.certBadge:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 .r1Right {
   display: flex;
   align-items: center;
@@ -302,6 +320,11 @@
 
   .r3 {
     padding: 6px 0 7px;
+  }
+
+  .certBadge img {
+    width: 22px !important;
+    height: 22px !important;
   }
 }
 
