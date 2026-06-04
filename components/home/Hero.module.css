@@ -158,7 +158,8 @@
     padding: 48px 20px 40px;
   }
 
-  .sub {
+  .sub,
+  .kvp {
     font-size: 14px;
   }
 }
