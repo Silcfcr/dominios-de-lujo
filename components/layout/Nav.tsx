@@ -55,8 +55,8 @@ export default function Nav() {
               <Image
                 src={assetPath('/images/lujo-total.webp')}
                 alt=""
-                width={28}
-                height={28}
+                width={30}
+                height={30}
               />
             </Link>
           </div>
