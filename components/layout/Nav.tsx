@@ -53,10 +53,9 @@ export default function Nav() {
             >
               <Image
                 src={assetPath('/images/lujo-total.webp')}
-                alt="LujoTotal™"
+                alt=""
                 width={28}
                 height={28}
-                style={{ objectFit: 'contain' }}
               />
             </Link>
           </div>

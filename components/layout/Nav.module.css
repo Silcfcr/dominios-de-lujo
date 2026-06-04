@@ -56,6 +56,10 @@
   opacity: 1;
 }
 
+.certBadge img {
+  object-fit: contain;
+}
+
 .r1Right {
   display: flex;
   align-items: center;
@@ -300,6 +304,10 @@
 
   .r1 {
     grid-template-columns: 1fr auto;
+  }
+
+  .wordmarkGroup {
+    justify-self: start;
   }
 
   .wordmark {
