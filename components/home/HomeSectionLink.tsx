@@ -21,8 +21,8 @@ export default function HomeSectionLink({ labelKey, href, imageSrc, imageAlt }: 
         <Image
           src={assetPath(imageSrc)}
           alt={imageAlt ?? ''}
-          width={56}
-          height={45}
+          width={200}
+          height={161}
           style={{ objectFit: 'contain' }}
         />
       )}
