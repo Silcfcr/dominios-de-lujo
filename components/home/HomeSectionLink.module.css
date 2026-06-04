@@ -1,0 +1,29 @@
+.wrap {
+  padding: 40px 64px;
+  background: var(--w);
+}
+
+.link {
+  font-family: var(--fb);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--ink);
+}
+
+.arrow {
+  color: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    padding: 32px 24px;
+  }
+}
