@@ -1,0 +1,25 @@
+.badge {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 50;
+  display: block;
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.badge:hover {
+  transform: scale(1.17);
+  filter: drop-shadow(0 4px 12px rgba(176, 138, 58, 0.35));
+}
+
+@media (max-width: 768px) {
+  .badge {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .badge img {
+    width: 56px !important;
+    height: auto !important;
+  }
+}
