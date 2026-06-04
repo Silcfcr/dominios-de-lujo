@@ -14,10 +14,10 @@ export default function LujoTotal() {
       <RevealWrapper className={styles.inner}>
         <div className={styles.mark}>
           <Image
-            src={assetPath('/images/lujototal-cert.webp')}
+            src={assetPath('/images/lujototal.webp')}
             alt="LujoTotal™ certification"
-            width={120}
-            height={120}
+            width={260}
+            height={209}
             style={{ objectFit: 'contain' }}
           />
         </div>
