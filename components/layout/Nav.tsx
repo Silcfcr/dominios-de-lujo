@@ -32,6 +32,7 @@ export default function Nav() {
     { href: '/servicios', label: t('nav.servicios') },
     { href: '/colaborar', label: t('nav.colaborar') },
     { href: '/nosotros', label: t('nav.about') },
+    { href: '/lujototal', label: t('nav.lujototal') },
   ];
 
   return (
@@ -47,7 +48,7 @@ export default function Nav() {
               DOMINIOS DE LUJO
             </Link>
             <Link
-              href="/nosotros#lujototal"
+              href="/lujototal"
               className={styles.certBadge}
               aria-label="LujoTotal™ certified"
             >
@@ -91,7 +92,6 @@ export default function Nav() {
                   <ul className={styles.dropMenu}>
                     <li><Link href="/nosotros#nosotros" className={styles.dropLink}>{t('subnav.about')}</Link></li>
                     <li><Link href="/nosotros#manifiesto" className={styles.dropLink}>{t('subnav.manifesto')}</Link></li>
-                    <li><Link href="/nosotros#lujototal" className={styles.dropLink}>{t('subnav.lujototal')}</Link></li>
                   </ul>
                 </li>
               ) : (
@@ -136,9 +136,6 @@ export default function Nav() {
                 </Link>
                 <Link href="/nosotros#manifiesto" className={`${styles.drwLink} ${styles.drwSubLink}`} onClick={() => setDrawerOpen(false)}>
                   {t('subnav.manifesto')}
-                </Link>
-                <Link href="/nosotros#lujototal" className={`${styles.drwLink} ${styles.drwSubLink}`} onClick={() => setDrawerOpen(false)}>
-                  {t('subnav.lujototal')}
                 </Link>
               </Fragment>
             ) : (

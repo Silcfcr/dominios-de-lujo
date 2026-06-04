@@ -1,7 +1,6 @@
 import WritersGrid from '@/components/about/WritersGrid';
 import MissionVision from '@/components/about/MissionVision';
 import Manifesto from '@/components/home/Manifesto';
-import LujoTotal from '@/components/home/LujoTotal';
 
 export const metadata = {
   title: 'Quiénes somos | Dominios de Lujo',
@@ -19,9 +18,6 @@ export default function NosotrosPage() {
       </section>
       <section id="manifiesto">
         <Manifesto />
-      </section>
-      <section id="lujototal">
-        <LujoTotal />
       </section>
     </main>
   );
