@@ -56,6 +56,27 @@ export default function AfiliadosPage() {
         </RevealWrapper>
       </section>
 
+      <section className={`sec ${styles.whySection}`}>
+        <RevealWrapper>
+          <p className="s-eye">{t('servicios.whyEyebrow')}</p>
+          <h2 className="s-title">{t('servicios.whyTitle')}</h2>
+        </RevealWrapper>
+        <RevealWrapper className={styles.whyGrid}>
+          {([
+            { num: '01', titleKey: 'servicios.why1Title', descKey: 'servicios.why1Desc' },
+            { num: '02', titleKey: 'servicios.why2Title', descKey: 'servicios.why2Desc' },
+            { num: '03', titleKey: 'servicios.why3Title', descKey: 'servicios.why3Desc' },
+            { num: '04', titleKey: 'servicios.why4Title', descKey: 'servicios.why4Desc' },
+          ] as const).map(({ num, titleKey, descKey }) => (
+            <div key={num} className={styles.whyCard}>
+              <span className={styles.whyNum}>{num}</span>
+              <h3 className={styles.whyCardTitle}>{t(titleKey)}</h3>
+              <p className={styles.whyCardDesc}>{t(descKey)}</p>
+            </div>
+          ))}
+        </RevealWrapper>
+      </section>
+
       <PartnerValue />
     </div>
   );
