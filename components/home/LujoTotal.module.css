@@ -41,7 +41,7 @@
 
 .body {
   font-family: var(--fb);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.85;
   color: var(--ink3);
   max-width: 560px;

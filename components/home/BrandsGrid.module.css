@@ -9,7 +9,7 @@
 
 .sub {
   font-family: var(--fb);
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink3);
   margin-top: 8px;
 }
@@ -52,7 +52,7 @@
 
 .desc {
   font-family: var(--fb);
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.65;
   color: var(--ink3);
   text-align: center;
