@@ -48,7 +48,7 @@
 
 .kvp {
   font-family: var(--fb);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.85;
   color: var(--ink2);
   margin-bottom: 40px;
@@ -165,6 +165,6 @@
   }
 
   .kvp {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
