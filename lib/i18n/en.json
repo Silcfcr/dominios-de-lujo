@@ -16,7 +16,10 @@
   "subnav": {
     "about": "About Us",
     "manifesto": "Manifesto",
-    "lujototal": "LujoTotal™"
+    "lujototal": "LujoTotal™",
+    "afiliados": "Affiliate Platform",
+    "paginas": "PaginasDeLujo.com",
+    "alquileres": "Rentals & Advertising"
   },
   "hero": {
     "h1a": "The Spanish-language luxury editorial affiliate platform —",
@@ -184,7 +187,8 @@
     "rentalsTitle": "Rentals & Advertising",
     "rentalsEyebrow": "Additional service",
     "rentalsBody": "Rent premium domains for product launches, luxury events, exhibitions or seasonal campaigns. Place banner ads on the most relevant domains in our network for your sector.",
-    "rentalsCta": "Check availability"
+    "rentalsCta": "Check availability",
+    "affiliateDetailCta": "View full page"
   },
   "colaborar": {
     "eyebrow": "Join the network",
@@ -233,9 +237,9 @@
     "w6Quote": "Luxury is the space that defines you."
   },
   "brandsGrid": {
-    "eyebrow": "Brand network",
-    "heading": "Our brands",
-    "sub": "Explore our exclusive brands",
+    "eyebrow": "The ecosystem",
+    "heading": "A network with its own identity",
+    "sub": "Projects built with purpose, domain by domain.",
     "soon": "Coming soon",
     "b1Desc": "A curated gateway to the world of luxury.",
     "b2Desc": "Where every \"Yes\" begins with inspiration.",

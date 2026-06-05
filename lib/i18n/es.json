@@ -16,7 +16,10 @@
   "subnav": {
     "about": "Quiénes Somos",
     "manifesto": "Manifiesto",
-    "lujototal": "LujoTotal™"
+    "lujototal": "LujoTotal™",
+    "afiliados": "Plataforma de Afiliados",
+    "paginas": "PaginasDeLujo.com",
+    "alquileres": "Alquileres & Publicidad"
   },
   "hero": {
     "h1a": "La plataforma editorial de afiliación de lujo en español-",
@@ -184,7 +187,8 @@
     "rentalsTitle": "Alquileres & Publicidad",
     "rentalsEyebrow": "Servicio adicional",
     "rentalsBody": "Alquila dominios premium para lanzamientos de producto, eventos de lujo, exposiciones o campañas de temporada. Coloca anuncios banner en los dominios más relevantes para tu sector dentro de nuestra red.",
-    "rentalsCta": "Consultar disponibilidad"
+    "rentalsCta": "Consultar disponibilidad",
+    "affiliateDetailCta": "Ver página completa"
   },
   "colaborar": {
     "eyebrow": "Únete a la red",
@@ -233,9 +237,9 @@
     "w6Quote": "El lujo es el espacio que te define."
   },
   "brandsGrid": {
-    "eyebrow": "Red de marcas",
-    "heading": "Nuestras marcas",
-    "sub": "Explora nuestras marcas exclusivas",
+    "eyebrow": "El ecosistema",
+    "heading": "Una red con identidad propia",
+    "sub": "Proyectos construidos con propósito, dominio a dominio.",
     "soon": "Próximamente",
     "b1Desc": "Una puerta de entrada curada al mundo del lujo.",
     "b2Desc": "Donde cada \"Sí\" comienza con la inspiración.",
