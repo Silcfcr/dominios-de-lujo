@@ -24,13 +24,13 @@ export default function AfiliadosPage() {
     <div className={styles.page}>
 
       {/* 1. Hero */}
-      <RevealWrapper className={styles.hero}>
+      <section className={styles.hero}>
         <div className={styles.heroIcon}>{affiliateIcon}</div>
         <p className="s-eye">{t('servicios.affiliateEyebrow')}</p>
         <h1 className={styles.heroTitle}>{t('servicios.affiliateTitle')}</h1>
         <p className={styles.heroSub}>{t('servicios.affiliateHeroSub')}</p>
         <a href={CONTACT} className="btn-dark">{t('servicios.affiliateCta')}</a>
-      </RevealWrapper>
+      </section>
 
       {/* 2. Stats bar */}
       <div className={styles.statsBar}>

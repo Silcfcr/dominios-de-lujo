@@ -137,7 +137,7 @@
   font-family: var(--fb);
   font-size: 15px;
   line-height: 2;
-  color: rgba(250, 247, 242, 0.75);
+  color: color-mix(in srgb, var(--c) 75%, transparent);
   margin: 0;
 }
 
