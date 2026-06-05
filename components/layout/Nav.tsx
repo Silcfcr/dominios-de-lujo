@@ -143,7 +143,7 @@ export default function Nav() {
       />
       <aside className={`${styles.drw} ${drawerOpen ? styles.drwOn : ''}`} aria-label="Menú de navegación">
         <button className={styles.drwClose} onClick={() => setDrawerOpen(false)}>
-          Cerrar ✕
+          {t('nav.drawerClose')}
         </button>
         <div className={styles.drwLogo}>
           <Image src={assetPath('/images/logo.webp')} alt="Dominios de Lujo" width={120} height={40} style={{ objectFit: 'contain', height: '32px', width: 'auto' }} />

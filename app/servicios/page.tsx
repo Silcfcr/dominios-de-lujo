@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useI18n } from '@/lib/i18n/context';
 import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './page.module.css';
@@ -72,7 +73,7 @@ export default function ServiciosPage() {
             </div>
             <div className={styles.ctaRow}>
               <a href={CONTACT} className="btn-dark">{t('servicios.affiliateCta')}</a>
-              <a href="/servicios/afiliados" className="btn-outline">{t('servicios.affiliateDetailCta')}</a>
+              <Link href="/servicios/afiliados" className="btn-outline">{t('servicios.affiliateDetailCta')}</Link>
             </div>
           </div>
         </RevealWrapper>
