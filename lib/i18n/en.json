@@ -197,7 +197,6 @@
     "rentalsEyebrow": "Additional service",
     "rentalsBody": "Rent premium domains for product launches, luxury events, exhibitions or seasonal campaigns. Place banner ads on the most relevant domains in our network for your sector.",
     "rentalsCta": "Check availability",
-    "affiliateDetailCta": "View full page",
     "editorialEyebrow": "Editorial authority",
     "editorialBody": "We write as true luxury authorities. Every article blends beauty, expertise, and clarity — without clichés, filler, or generic AI tone. Our voice is elegant, precise, and warm. Each piece is curated, technically rigorous, and emotionally resonant. We verify every detail, avoid exaggeration, and uphold a consistent standard across all verticals.",
     "whyEyebrow": "Why Dominios de Lujo",
@@ -209,7 +208,8 @@
     "why3Title": "Pioneer presence",
     "why3Desc": "The first and largest exact-match Spanish luxury domain network. A competitive space few brands have yet claimed.",
     "why4Title": "Audiences ready to convert",
-    "why4Desc": "Our readers arrive through organic search with genuine purchase intent. Active luxury consumers — not passive browsers."
+    "why4Desc": "Our readers arrive through organic search with genuine purchase intent. Active luxury consumers — not passive browsers.",
+    "affiliateExploreCta": "Explore more"
   },
   "colaborar": {
     "eyebrow": "Join the network",

@@ -57,24 +57,7 @@ export default function ServiciosPage() {
             <h2 className={styles.serviceTitle}>{t('servicios.affiliateTitle')}</h2>
             <p className={styles.serviceBody}>{t('servicios.affiliateBody1')}</p>
             <p className={styles.serviceBody}>{t('servicios.affiliateBody2')}</p>
-            <div className={styles.stats}>
-              <div className={styles.stat}>
-                <span className={styles.statNum}>3.000+</span>
-                <span className={styles.statLabel}>{t('servicios.stat1Label')}</span>
-              </div>
-              <div className={styles.stat}>
-                <span className={styles.statNum}>20</span>
-                <span className={styles.statLabel}>{t('servicios.stat2Label')}</span>
-              </div>
-              <div className={styles.stat}>
-                <span className={styles.statNum}>146</span>
-                <span className={styles.statLabel}>{t('servicios.stat3Label')}</span>
-              </div>
-            </div>
-            <div className={styles.ctaRow}>
-              <a href={CONTACT} className="btn-dark">{t('servicios.affiliateCta')}</a>
-              <Link href="/servicios/afiliados" className="btn-outline">{t('servicios.affiliateDetailCta')}</Link>
-            </div>
+            <Link href="/servicios/afiliados" className="btn-outline">{t('servicios.affiliateExploreCta')}</Link>
           </div>
         </RevealWrapper>
       </section>
