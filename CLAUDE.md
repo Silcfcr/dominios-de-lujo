@@ -29,6 +29,8 @@ No test suite exists yet. TypeScript type-checking: `npx tsc --noEmit`. Run the 
 
 **i18n** — Client-side only. `lib/i18n/context.tsx` provides `I18nProvider` and `useI18n()` with a `t(key)` function. Translations are flat JSON files in `lib/i18n/es.json` and `lib/i18n/en.json`. Language preference is stored in `localStorage` under key `ddl-lang`. Default language is Spanish (`es`).
 
+**Translation rule** — Every visible string in every component MUST be translated. No hardcoded Spanish (or any language) strings in JSX. Always add the new key to BOTH `lib/i18n/es.json` and `lib/i18n/en.json` before using it in a component. Group new keys under a logical namespace matching the component (e.g. `writersGrid`, `colaborar`). Never ship a feature without its English counterpart in `en.json`.
+
 **Styling** — CSS Modules (`.module.css` co-located with each component) plus a global `app/globals.css`. Do not use inline styles or Tailwind. Design tokens (CSS custom properties in `:root`):
 
 | Token | Value | Role |
