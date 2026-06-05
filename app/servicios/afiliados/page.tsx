@@ -27,7 +27,7 @@ export default function AfiliadosPage() {
       <section className={styles.hero}>
         <div className={styles.heroIcon}>{affiliateIcon}</div>
         <p className="s-eye">{t('servicios.affiliateEyebrow')}</p>
-        <h1 className={styles.heroTitle}>{t('servicios.affiliateTitle')}</h1>
+        <h1 className={styles.heroTitle}>{t('servicios.affiliateHeroTitle')}</h1>
         <p className={styles.heroSub}>{t('servicios.affiliateHeroSub')}</p>
         <a href={CONTACT} className="btn-dark">{t('servicios.affiliateCta')}</a>
       </section>
