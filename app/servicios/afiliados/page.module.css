@@ -2,67 +2,73 @@
   min-height: 100vh;
 }
 
-.header {
-  text-align: center;
-  padding: 72px 64px 64px;
-  background: var(--w);
-  border-bottom: 1px solid var(--rule);
-}
-
-.serviceSection {
-  border-bottom: 1px solid var(--rule);
-  background: var(--w);
-}
-
-.serviceCols {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 64px;
-  align-items: flex-start;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.serviceIcon {
+/* ─── 1. Hero ─────────────────────────────────────────────────── */
+.hero {
   display: flex;
-  align-items: flex-start;
-  padding-top: 8px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 48px;
+  background: var(--c);
+  border-bottom: 1px solid var(--rule);
 }
 
-.serviceIcon svg {
-  width: 56px;
-  height: 56px;
+.heroIcon {
+  margin-bottom: 24px;
+}
+
+.heroIcon svg {
+  width: 72px;
+  height: 72px;
   color: var(--gold);
 }
 
-.serviceBody {
+.heroTitle {
+  font-family: var(--fd);
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 400;
+  color: var(--ink);
+  max-width: 760px;
+  margin: 12px 0 0;
+  line-height: 1.15;
+}
+
+.heroSub {
   font-family: var(--fb);
   font-size: 15px;
   line-height: 1.85;
   color: var(--ink2);
-  margin-bottom: 16px;
-  max-width: 640px;
+  max-width: 560px;
+  margin: 20px 0 36px;
 }
 
-.stats {
+/* ─── 2. Stats bar ────────────────────────────────────────────── */
+.statsBar {
   display: flex;
-  gap: 48px;
-  padding: 28px 0;
-  border-top: 1px solid var(--rule);
+  background: var(--w);
   border-bottom: 1px solid var(--rule);
-  margin-bottom: 32px;
-  flex-wrap: wrap;
 }
 
 .stat {
+  flex: 1;
+  text-align: center;
+  padding: 40px 24px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
+  align-items: center;
+}
+
+.statDivider {
+  width: 1px;
+  align-self: stretch;
+  background: var(--rule);
+  margin: 24px 0;
 }
 
 .statNum {
   font-family: var(--fd);
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 300;
   color: var(--gold);
   line-height: 1;
@@ -71,22 +77,49 @@
 .statLabel {
   font-family: var(--fd);
   font-size: 10px;
-  font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink3);
 }
 
-.serviceContent {
-  padding-bottom: 8px;
+/* ─── 3. Value proposition ────────────────────────────────────── */
+.valueSection {
+  background: var(--w);
+  text-align: center;
 }
 
-.editorialBlock {
-  background: var(--c2);
-  border-left: 3px solid var(--gold);
-  padding: 20px 24px;
-  margin: 4px 0 28px;
-  max-width: 640px;
+.valueInner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.valueTitle {
+  font-family: var(--fd);
+  font-size: clamp(24px, 2.8vw, 38px);
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+.valueBody {
+  font-family: var(--fb);
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--ink2);
+  margin-bottom: 16px;
+}
+
+/* ─── 4. Editorial authority ──────────────────────────────────── */
+.editorialSection {
+  background: var(--ink);
+  padding: 80px 64px;
+  text-align: center;
+}
+
+.editorialInner {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .editorialEye {
@@ -96,17 +129,19 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 10px;
+  margin-bottom: 24px;
+  display: block;
 }
 
 .editorialText {
   font-family: var(--fb);
-  font-size: 14px;
-  line-height: 1.85;
-  color: var(--ink2);
+  font-size: 15px;
+  line-height: 2;
+  color: rgba(250, 247, 242, 0.75);
   margin: 0;
 }
 
+/* ─── 5. Why us ───────────────────────────────────────────────── */
 .whySection {
   background: var(--c);
   border-bottom: 1px solid var(--rule);
@@ -155,18 +190,24 @@
   margin: 0;
 }
 
+/* ─── Mobile ──────────────────────────────────────────────────── */
 @media (max-width: 900px) {
-  .header {
-    padding: 48px 24px 40px;
+  .hero {
+    padding: 48px 24px;
   }
 
-  .serviceCols {
-    grid-template-columns: 1fr;
-    gap: 28px;
+  .statsBar {
+    flex-direction: column;
   }
 
-  .stats {
-    gap: 28px;
+  .statDivider {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+  }
+
+  .editorialSection {
+    padding: 60px 24px;
   }
 
   .whyGrid {

@@ -22,40 +22,53 @@ export default function AfiliadosPage() {
 
   return (
     <div className={styles.page}>
-      <div className={styles.header}>
+
+      {/* 1. Hero */}
+      <RevealWrapper className={styles.hero}>
+        <div className={styles.heroIcon}>{affiliateIcon}</div>
         <p className="s-eye">{t('servicios.affiliateEyebrow')}</p>
-        <h1 className="s-title">{t('servicios.affiliateTitle')}</h1>
+        <h1 className={styles.heroTitle}>{t('servicios.affiliateTitle')}</h1>
+        <p className={styles.heroSub}>{t('servicios.affiliateHeroSub')}</p>
+        <a href={CONTACT} className="btn-dark">{t('servicios.affiliateCta')}</a>
+      </RevealWrapper>
+
+      {/* 2. Stats bar */}
+      <div className={styles.statsBar}>
+        <div className={styles.stat}>
+          <span className={styles.statNum}>3.000+</span>
+          <span className={styles.statLabel}>{t('servicios.stat1Label')}</span>
+        </div>
+        <div className={styles.statDivider} aria-hidden="true" />
+        <div className={styles.stat}>
+          <span className={styles.statNum}>20</span>
+          <span className={styles.statLabel}>{t('servicios.stat2Label')}</span>
+        </div>
+        <div className={styles.statDivider} aria-hidden="true" />
+        <div className={styles.stat}>
+          <span className={styles.statNum}>146</span>
+          <span className={styles.statLabel}>{t('servicios.stat3Label')}</span>
+        </div>
       </div>
 
-      <section className={`sec ${styles.serviceSection}`}>
-        <RevealWrapper className={styles.serviceCols}>
-          <div className={styles.serviceIcon}>{affiliateIcon}</div>
-          <div className={styles.serviceContent}>
-            <p className={styles.serviceBody}>{t('servicios.affiliateBody1')}</p>
-            <p className={styles.serviceBody}>{t('servicios.affiliateBody2')}</p>
-            <div className={styles.editorialBlock}>
-              <p className={styles.editorialEye}>{t('servicios.editorialEyebrow')}</p>
-              <p className={styles.editorialText}>{t('servicios.editorialBody')}</p>
-            </div>
-            <div className={styles.stats}>
-              <div className={styles.stat}>
-                <span className={styles.statNum}>3.000+</span>
-                <span className={styles.statLabel}>{t('servicios.stat1Label')}</span>
-              </div>
-              <div className={styles.stat}>
-                <span className={styles.statNum}>20</span>
-                <span className={styles.statLabel}>{t('servicios.stat2Label')}</span>
-              </div>
-              <div className={styles.stat}>
-                <span className={styles.statNum}>146</span>
-                <span className={styles.statLabel}>{t('servicios.stat3Label')}</span>
-              </div>
-            </div>
-            <a href={CONTACT} className="btn-dark">{t('servicios.affiliateCta')}</a>
-          </div>
+      {/* 3. Value proposition */}
+      <section className={`sec ${styles.valueSection}`}>
+        <RevealWrapper className={styles.valueInner}>
+          <p className="s-eye">{t('servicios.affiliateValueEyebrow')}</p>
+          <h2 className={styles.valueTitle}>{t('servicios.affiliateValueTitle')}</h2>
+          <p className={styles.valueBody}>{t('servicios.affiliateBody1')}</p>
+          <p className={styles.valueBody}>{t('servicios.affiliateBody2')}</p>
         </RevealWrapper>
       </section>
 
+      {/* 4. Editorial authority */}
+      <section className={styles.editorialSection}>
+        <RevealWrapper className={styles.editorialInner}>
+          <span className={styles.editorialEye}>{t('servicios.editorialEyebrow')}</span>
+          <p className={styles.editorialText}>{t('servicios.editorialBody')}</p>
+        </RevealWrapper>
+      </section>
+
+      {/* 5. Why us */}
       <section className={`sec ${styles.whySection}`}>
         <RevealWrapper>
           <p className="s-eye">{t('servicios.whyEyebrow')}</p>
@@ -77,6 +90,7 @@ export default function AfiliadosPage() {
         </RevealWrapper>
       </section>
 
+      {/* 6. Partner value */}
       <PartnerValue />
     </div>
   );
