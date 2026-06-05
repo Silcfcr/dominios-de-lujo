@@ -33,6 +33,10 @@ export default function AfiliadosPage() {
           <div className={styles.serviceContent}>
             <p className={styles.serviceBody}>{t('servicios.affiliateBody1')}</p>
             <p className={styles.serviceBody}>{t('servicios.affiliateBody2')}</p>
+            <div className={styles.editorialBlock}>
+              <p className={styles.editorialEye}>{t('servicios.editorialEyebrow')}</p>
+              <p className={styles.editorialText}>{t('servicios.editorialBody')}</p>
+            </div>
             <div className={styles.stats}>
               <div className={styles.stat}>
                 <span className={styles.statNum}>3.000+</span>

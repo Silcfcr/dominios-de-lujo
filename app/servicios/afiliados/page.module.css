@@ -81,6 +81,32 @@
   padding-bottom: 8px;
 }
 
+.editorialBlock {
+  background: var(--c2);
+  border-left: 3px solid var(--gold);
+  padding: 20px 24px;
+  margin: 4px 0 28px;
+  max-width: 640px;
+}
+
+.editorialEye {
+  font-family: var(--fb);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.editorialText {
+  font-family: var(--fb);
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--ink2);
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .header {
     padding: 48px 24px 40px;
