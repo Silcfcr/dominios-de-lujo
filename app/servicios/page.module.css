@@ -148,6 +148,13 @@
   padding-bottom: 8px;
 }
 
+.ctaRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 @media (max-width: 900px) {
   .header {
     padding: 48px 24px 40px;

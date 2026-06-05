@@ -70,13 +70,16 @@ export default function ServiciosPage() {
                 <span className={styles.statLabel}>{t('servicios.stat3Label')}</span>
               </div>
             </div>
-            <a href={CONTACT} className="btn-dark">{t('servicios.affiliateCta')}</a>
+            <div className={styles.ctaRow}>
+              <a href={CONTACT} className="btn-dark">{t('servicios.affiliateCta')}</a>
+              <a href="/servicios/afiliados" className="btn-outline">{t('servicios.affiliateDetailCta')}</a>
+            </div>
           </div>
         </RevealWrapper>
       </section>
 
       {/* Service 2: PaginasDeLujo */}
-      <section className={`sec ${styles.serviceSection} ${styles.darkBg}`}>
+      <section id="paginas" className={`sec ${styles.serviceSection} ${styles.darkBg}`}>
         <RevealWrapper className={`${styles.serviceCols} ${styles.serviceColsReverse}`}>
           <div className={`${styles.serviceIcon} ${styles.serviceIconDark}`}>{paginasIcon}</div>
           <div className={styles.serviceContent}>
@@ -102,7 +105,7 @@ export default function ServiciosPage() {
       </section>
 
       {/* Service 3: Rentals */}
-      <section className={`sec ${styles.serviceSection} ${styles.lightBg}`}>
+      <section id="alquileres" className={`sec ${styles.serviceSection} ${styles.lightBg}`}>
         <RevealWrapper className={styles.serviceCols}>
           <div className={styles.serviceIcon}>{rentalsIcon}</div>
           <div className={styles.serviceContent}>
