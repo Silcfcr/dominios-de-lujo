@@ -8,10 +8,10 @@ import { assetPath } from '@/lib/assetPath';
 import styles from './Hero.module.css';
 
 const IMAGES = [
+  { src: '/images/travel.webp', alt: 'Luxury travel' },
   { src: '/images/realEstate.webp', alt: 'Luxury real estate' },
-  { src: '/images/watches.webp',    alt: 'Luxury watches' },
-  { src: '/images/travel.webp',     alt: 'Luxury travel' },
-  { src: '/images/fashion.webp',    alt: 'Luxury fashion' },
+  { src: '/images/watches.webp', alt: 'Luxury watches' },
+  { src: '/images/fashion.webp', alt: 'Luxury fashion' },
 ];
 
 const INTERVAL = 4500;

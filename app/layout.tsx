@@ -4,6 +4,7 @@ import { I18nProvider } from '@/lib/i18n/context';
 import Nav from '@/components/layout/Nav';
 import Footer from '@/components/layout/Footer';
 import FloatingCertBadge from '@/components/ui/FloatingCertBadge';
+import ScrollReset from '@/components/ui/ScrollReset';
 import './globals.css';
 
 const cormorant = Cormorant_Garamond({
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es" className={`${cormorant.variable} ${lora.variable}`}>
       <body>
         <I18nProvider>
+          <ScrollReset />
           <Nav />
           <main style={{ paddingTop: '136px' }}>{children}</main>
           <Footer />

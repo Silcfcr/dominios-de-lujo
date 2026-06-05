@@ -39,7 +39,7 @@ const ITEMS = [
   },
 ];
 
-const N        = ITEMS.length;
+const N = ITEMS.length;
 const INTERVAL = 5000;
 
 export default function CategoryTeaser() {
@@ -62,9 +62,9 @@ export default function CategoryTeaser() {
   }, [startTimer]);
 
   const getPos = (i: number): 'active' | 'prev' | 'next' | 'hidden' => {
-    if (i === active)                   return 'active';
-    if (i === (active - 1 + N) % N)    return 'prev';
-    if (i === (active + 1) % N)        return 'next';
+    if (i === active) return 'active';
+    if (i === (active - 1 + N) % N) return 'prev';
+    if (i === (active + 1) % N) return 'next';
     return 'hidden';
   };
 
@@ -93,8 +93,8 @@ export default function CategoryTeaser() {
 
         <div className={styles.track}>
           {ITEMS.map((item, i) => {
-            const pos    = getPos(i);
-            const name   = lang === 'es' ? item.key : item.nameEn;
+            const pos = getPos(i);
+            const name = lang === 'es' ? item.key : item.nameEn;
             const phrase = lang === 'es' ? item.phraseEs : item.phraseEn;
             return (
               <Link
@@ -125,7 +125,7 @@ export default function CategoryTeaser() {
         <button
           className={`${styles.navBtn} ${styles.navRight}`}
           onClick={() => { advance(1); startTimer(); }}
-          aria-label={t('categoryTeaser.nextAriaLabel')}
+          aria-label="Next category"
         >
           ›
         </button>

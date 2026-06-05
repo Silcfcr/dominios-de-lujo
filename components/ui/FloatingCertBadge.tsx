@@ -5,7 +5,7 @@ import styles from './FloatingCertBadge.module.css';
 
 export default function FloatingCertBadge() {
   return (
-    <Link href="/nosotros#lujototal" className={styles.badge}>
+    <Link href="/lujototal" className={styles.badge}>
       <Image
         src={assetPath('/images/lujo-total.webp')}
         alt="LujoTotal™ certification"

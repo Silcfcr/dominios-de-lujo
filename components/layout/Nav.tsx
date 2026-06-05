@@ -62,23 +62,9 @@ export default function Nav() {
           <Link href="/" className={styles.logoMark} aria-label="Dominios de Lujo — inicio">
             <Image src={assetPath('/images/logo.webp')} alt="Dominios de Lujo" width={120} height={44} priority style={{ height: '36px', width: 'auto' }} />
           </Link>
-          <div className={styles.wordmarkGroup}>
-            <Link href="/" className={styles.wordmark}>
-              DOMINIOS DE LUJO
-            </Link>
-            <Link
-              href="/lujototal"
-              className={styles.certBadge}
-              aria-label="LujoTotal™ certified"
-            >
-              <Image
-                src={assetPath('/images/lujo-total.webp')}
-                alt=""
-                width={48}
-                height={48}
-              />
-            </Link>
-          </div>
+          <Link href="/" className={styles.wordmark}>
+            DOMINIOS DE LUJO
+          </Link>
           <div className={styles.r1Right}>
             <LanguageToggle />
             <a href={CONTACT_EMAIL} className={styles.iconBtn} aria-label={t('nav.contacto')}>
