@@ -36,9 +36,9 @@
 }
 
 .logo {
-  height: 34px;
+  height: 56px;
   width: auto;
-  opacity: 0.7;
+  opacity: 0.85;
   transition: opacity 0.2s;
 }
 

@@ -17,7 +17,7 @@ export default function BrandsGrid() {
 
   const brands: Brand[] = [
     { src: '/images/brands/ddl-logo.svg',     alt: 'Dominios de Lujo', descKey: 'brandsGrid.b1Desc' },
-    { src: '/images/brands/brand-2-logo.png', alt: '',                 descKey: 'brandsGrid.b2Desc', invert: true },
+    { src: '/images/brands/me-dijo-que-si.png', alt: 'Me Dijo Que Sí', descKey: 'brandsGrid.b2Desc' },
     { src: '/images/brands/brand-3-logo.png', alt: '',                 descKey: 'brandsGrid.b3Desc' },
     { src: '/images/brands/casasen-logo.png', alt: 'Casasen',          descKey: 'brandsGrid.b4Desc' },
   ];
