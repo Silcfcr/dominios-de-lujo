@@ -8,42 +8,17 @@ import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './PartnerValue.module.css';
 
 const ITEMS = [
-  {
-    titleKey: 'partnerValue.item1Title',
-    descKey:  'partnerValue.item1Desc',
-    subEs: 'Audiencias que no llegan a través de otras redes',
-    subEn: 'Audiences no other network reaches',
-  },
-  {
-    titleKey: 'partnerValue.item2Title',
-    descKey:  'partnerValue.item2Desc',
-    subEs: 'Presencia en contenido editorial genuino',
-    subEn: 'Placement within genuine editorial content',
-  },
-  {
-    titleKey: 'partnerValue.item3Title',
-    descKey:  'partnerValue.item3Desc',
-    subEs: 'Una sola asociación, miles de puntos de contacto',
-    subEn: 'One partnership, thousands of touchpoints',
-  },
-  {
-    titleKey: 'partnerValue.item4Title',
-    descKey:  'partnerValue.item4Desc',
-    subEs: 'Estándares editoriales que protegen tu reputación',
-    subEn: 'Editorial standards that protect your reputation',
-  },
-  {
-    titleKey: 'partnerValue.item5Title',
-    descKey:  'partnerValue.item5Desc',
-    subEs: 'Integración sin fricción para tu equipo',
-    subEn: 'Frictionless integration for your team',
-  },
+  { titleKey: 'partnerValue.item1Title', descKey: 'partnerValue.item1Desc', subKey: 'partnerValue.item1Sub' },
+  { titleKey: 'partnerValue.item2Title', descKey: 'partnerValue.item2Desc', subKey: 'partnerValue.item2Sub' },
+  { titleKey: 'partnerValue.item3Title', descKey: 'partnerValue.item3Desc', subKey: 'partnerValue.item3Sub' },
+  { titleKey: 'partnerValue.item4Title', descKey: 'partnerValue.item4Desc', subKey: 'partnerValue.item4Sub' },
+  { titleKey: 'partnerValue.item5Title', descKey: 'partnerValue.item5Desc', subKey: 'partnerValue.item5Sub' },
 ];
 
 const CONTACT = 'mailto:info@dominiosdelujo.com?subject=Partner%20Application%20%E2%80%94%20Dominios%20de%20Lujo';
 
 export default function PartnerValue() {
-  const { t, lang } = useI18n();
+  const { t } = useI18n();
   const [open, setOpen] = useState(0);
 
   return (
@@ -75,7 +50,7 @@ export default function PartnerValue() {
               const isOpen = open === i;
               const title = t(item.titleKey);
               const desc  = t(item.descKey);
-              const sub   = lang === 'es' ? item.subEs : item.subEn;
+              const sub   = t(item.subKey);
 
               return (
                 <div

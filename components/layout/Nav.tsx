@@ -89,7 +89,7 @@ export default function Nav() {
             <button
               className={styles.ham}
               onClick={() => setDrawerOpen(true)}
-              aria-label="Menú"
+              aria-label={t('nav.menu')}
             >
               <span />
               <span />

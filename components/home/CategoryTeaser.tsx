@@ -86,7 +86,7 @@ export default function CategoryTeaser() {
         <button
           className={`${styles.navBtn} ${styles.navLeft}`}
           onClick={() => { advance(-1); startTimer(); }}
-          aria-label="Previous category"
+          aria-label={t('categoryTeaser.prevAriaLabel')}
         >
           ‹
         </button>
@@ -125,7 +125,7 @@ export default function CategoryTeaser() {
         <button
           className={`${styles.navBtn} ${styles.navRight}`}
           onClick={() => { advance(1); startTimer(); }}
-          aria-label="Next category"
+          aria-label={t('categoryTeaser.nextAriaLabel')}
         >
           ›
         </button>

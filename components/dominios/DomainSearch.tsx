@@ -26,7 +26,7 @@ export default function DomainSearch({ value, onChange }: Props) {
         aria-label={t('dominios.searchPlaceholder')}
       />
       {value && (
-        <button className={styles.clear} onClick={() => onChange('')} aria-label="Clear search">
+        <button className={styles.clear} onClick={() => onChange('')} aria-label={t('dominios.clearSearch')}>
           ✕
         </button>
       )}

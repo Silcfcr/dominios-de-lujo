@@ -8,7 +8,8 @@
     "contacto": "Contacto",
     "about": "Quiénes somos",
     "lujototal": "LujoTotal™",
-    "drawerClose": "Cerrar ✕"
+    "drawerClose": "Cerrar ✕",
+    "menu": "Menú"
   },
   "home": {
     "manifestoLink": "Lee nuestro Manifiesto del Lujo",
@@ -49,7 +50,9 @@
     "titleEm": "mejor de la vida",
     "sub": "Selecciona una categoría para explorar los dominios disponibles",
     "cta": "Ver todos los dominios",
-    "explore": "Explorar"
+    "explore": "Explorar",
+    "prevAriaLabel": "Categoría anterior",
+    "nextAriaLabel": "Siguiente categoría"
   },
   "categories": {
     "Propiedades y Bienes Raíces de Lujo": "Propiedades de Lujo",
@@ -165,7 +168,10 @@
     "description": "Descripción",
     "affiliateReady": "Listo para afiliados",
     "loading": "Cargando…",
-    "notFound": "Dominio no encontrado"
+    "notFound": "Dominio no encontrado",
+    "prev": "← Anterior",
+    "next": "Siguiente →",
+    "clearSearch": "Borrar búsqueda"
   },
   "servicios": {
     "eyebrow": "Nuestros servicios",
@@ -218,7 +224,10 @@
     "influencersTitle": "Influencers & Creadores",
     "influencersEyebrow": "Colaboraciones creativas",
     "influencersBody": "¿Tu audiencia vive el lujo? Colabora con nuestra red para amplificar tu marca personal y crear contenido co-branded en los dominios más exclusivos del mercado hispano.",
-    "influencersCta": "Proponer colaboración"
+    "influencersCta": "Proponer colaboración",
+    "valuesTitle": "Calidad editorial,",
+    "valuesTitleEm": "sin compromiso.",
+    "valuesBody": "Todos los colaboradores trabajan bajo el estándar LujoTotal™ — el sello de excelencia que unifica nuestra red editorial. Rigor, elegancia y autenticidad son nuestros valores fundamentales."
   },
   "nosotros": {
     "eyebrow": "Lo que nos mueve",
@@ -273,6 +282,11 @@
     "item4Desc": "Cada sitio de nuestra red publica bajo el estándar editorial LujoTotal™ — un marco de calidad que regula el tono, la precisión y la presentación. Tu marca no aparecerá junto a contenido superficial, afirmaciones engañosas ni nada que ponga en riesgo tu reputación.",
     "item5Title": "Mínimo esfuerzo de tu parte",
     "item5Desc": "Nosotros gestionamos la integración, la ubicación y el contenido continuo. Lo que necesitamos de tu equipo es una aprobación de afiliados y los activos de marca. Ese es el alcance total de la solicitud. Todo lo demás es responsabilidad nuestra.",
+    "item1Sub": "Audiencias que no llegan a través de otras redes",
+    "item2Sub": "Presencia en contenido editorial genuino",
+    "item3Sub": "Una sola asociación, miles de puntos de contacto",
+    "item4Sub": "Estándares editoriales que protegen tu reputación",
+    "item5Sub": "Integración sin fricción para tu equipo",
     "cta": "Solicitar asociación"
   }
 }

@@ -6,7 +6,7 @@ import { assetPath } from '@/lib/assetPath';
 import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './page.module.css';
 
-function mailtoFor(role: string, subject: string) {
+function mailtoFor(_role: string, subject: string) {
   return `mailto:info@dominiosdelujo.com?subject=${encodeURIComponent(subject)}`;
 }
 
@@ -103,10 +103,10 @@ export default function ColaborarPage() {
           />
           <p className="s-eye">{t('lujototal.eyebrow')}</p>
           <h2 className={`s-title ${styles.valuesTitle}`}>
-            Calidad editorial,<br /><em>sin compromiso.</em>
+            {t('colaborar.valuesTitle')}<br /><em>{t('colaborar.valuesTitleEm')}</em>
           </h2>
           <p className={styles.valuesBody}>
-            Todos los colaboradores trabajan bajo el estándar LujoTotal™ — el sello de excelencia que unifica nuestra red editorial. Rigor, elegancia y autenticidad son nuestros valores fundamentales.
+            {t('colaborar.valuesBody')}
           </p>
         </div>
       </RevealWrapper>

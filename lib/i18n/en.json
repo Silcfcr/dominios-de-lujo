@@ -8,7 +8,8 @@
     "contacto": "Contact",
     "about": "About us",
     "lujototal": "LujoTotal™",
-    "drawerClose": "Close ✕"
+    "drawerClose": "Close ✕",
+    "menu": "Menu"
   },
   "home": {
     "manifestoLink": "Learn our Luxury Manifesto",
@@ -49,7 +50,9 @@
     "titleEm": "best in life",
     "sub": "Select a category to explore the available domains",
     "cta": "View all domains",
-    "explore": "Explore"
+    "explore": "Explore",
+    "prevAriaLabel": "Previous category",
+    "nextAriaLabel": "Next category"
   },
   "categories": {
     "Propiedades y Bienes Raíces de Lujo": "Luxury Real Estate",
@@ -165,7 +168,10 @@
     "description": "Description",
     "affiliateReady": "Affiliate-ready",
     "loading": "Loading…",
-    "notFound": "Domain not found"
+    "notFound": "Domain not found",
+    "prev": "← Previous",
+    "next": "Next →",
+    "clearSearch": "Clear search"
   },
   "servicios": {
     "eyebrow": "Our services",
@@ -218,7 +224,10 @@
     "influencersTitle": "Influencers & Creators",
     "influencersEyebrow": "Creative collaborations",
     "influencersBody": "Does your audience live luxury? Collaborate with our network to amplify your personal brand and create co-branded content on the most exclusive domains in the Hispanic market.",
-    "influencersCta": "Propose a collaboration"
+    "influencersCta": "Propose a collaboration",
+    "valuesTitle": "Editorial quality,",
+    "valuesTitleEm": "without compromise.",
+    "valuesBody": "All collaborators work under the LujoTotal™ standard — the mark of excellence that unifies our editorial network. Rigour, elegance, and authenticity are our core values."
   },
   "nosotros": {
     "eyebrow": "What drives us",
@@ -273,6 +282,11 @@
     "item4Desc": "Every site in our network publishes under the LujoTotal™ editorial standard — a quality framework that governs tone, accuracy, and presentation. Your brand will not appear next to thin content, misleading claims, or anything that puts your reputation at risk.",
     "item5Title": "Minimal lift on your side",
     "item5Desc": "We handle integration, placement, and ongoing content. What we need from your team is an affiliate approval and brand assets. That is the full extent of the ask. Everything else is ours to manage.",
+    "item1Sub": "Audiences no other network reaches",
+    "item2Sub": "Placement within genuine editorial content",
+    "item3Sub": "One partnership, thousands of touchpoints",
+    "item4Sub": "Editorial standards that protect your reputation",
+    "item5Sub": "Frictionless integration for your team",
     "cta": "Apply to Partner"
   }
 }

@@ -154,7 +154,7 @@ function DominiosContent() {
               onClick={() => setPage((p) => Math.max(1, p - 1))}
               disabled={page === 1}
             >
-              ← Anterior
+              {t('dominios.prev')}
             </button>
             <span className={styles.pageInfo}>
               {page} / {totalPages}
@@ -164,7 +164,7 @@ function DominiosContent() {
               onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
               disabled={page === totalPages}
             >
-              Siguiente →
+              {t('dominios.next')}
             </button>
           </div>
         )}
@@ -182,7 +182,7 @@ export default function DominiosPage() {
         <p className="s-eye">{t('dominios.title')}</p>
         <h1 className={`s-title ${styles.h1}`}>{t('dominios.sub')}</h1>
       </div>
-      <Suspense fallback={<div className={styles.loading}>Cargando…</div>}>
+      <Suspense fallback={<div className={styles.loading}>{t('dominios.loading')}</div>}>
         <DominiosContent />
       </Suspense>
     </div>
