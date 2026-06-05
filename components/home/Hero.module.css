@@ -12,9 +12,21 @@
   padding: 80px 48px;
 }
 
+.eyebrow {
+  font-family: var(--fb);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
 .h1 {
   font-family: var(--fd);
-  font-size: clamp(26px, 2.2vw, 56px);
+  font-size: clamp(36.4px, 3.08vw, 78.4px);
   font-weight: 400;
   line-height: 1.15;
   color: var(--ink);
@@ -32,15 +44,6 @@
   height: 1px;
   background: var(--gold);
   margin: 28px 0;
-}
-
-.sub {
-  font-family: var(--fb);
-  font-size: 15px;
-  font-style: italic;
-  line-height: 1.85;
-  color: var(--ink2);
-  margin-bottom: 20px;
 }
 
 .kvp {
@@ -156,7 +159,6 @@
     padding: 48px 20px 40px;
   }
 
-  .sub,
   .kvp {
     font-size: 14px;
   }

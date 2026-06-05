@@ -30,13 +30,13 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.left}>
+        <p className={styles.eyebrow}>{t('hero.eyebrow')}</p>
         <h1 className={styles.h1}>
           {t('hero.h1a')}<br />
           {t('hero.h1b')}<br />
           <em>{t('hero.h1em')}</em>
         </h1>
         <div className={styles.rule} />
-        <p className={styles.sub}>{t('hero.sub')}</p>
         <p className={styles.kvp}>{t('hero.kvp')}</p>
         <div className={styles.ctas}>
           <Link href="/dominios" className="btn-dark">{t('hero.cta1')}</Link>
