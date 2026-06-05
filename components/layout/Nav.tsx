@@ -10,6 +10,9 @@ import styles from './Nav.module.css';
 
 const CONTACT_EMAIL = 'mailto:info@dominiosdelujo.com?subject=Consulta%20%E2%80%94%20Dominios%20de%20Lujo';
 
+type NavChild = { href: string; label: string };
+type NavLink  = { href: string; label: string; children?: NavChild[] };
+
 export default function Nav() {
   const { t } = useI18n();
   const [scrolled, setScrolled] = useState(false);
@@ -26,12 +29,27 @@ export default function Nav() {
     return () => { document.body.style.overflow = ''; };
   }, [drawerOpen]);
 
-  const links = [
+  const links: NavLink[] = [
     { href: '/', label: t('nav.inicio') },
     { href: '/dominios', label: t('nav.dominios') },
-    { href: '/servicios', label: t('nav.servicios') },
+    {
+      href: '/servicios',
+      label: t('nav.servicios'),
+      children: [
+        { href: '/servicios/afiliados',  label: t('subnav.afiliados') },
+        { href: '/servicios#paginas',    label: t('subnav.paginas') },
+        { href: '/servicios#alquileres', label: t('subnav.alquileres') },
+      ],
+    },
     { href: '/colaborar', label: t('nav.colaborar') },
-    { href: '/nosotros', label: t('nav.about') },
+    {
+      href: '/nosotros',
+      label: t('nav.about'),
+      children: [
+        { href: '/nosotros#nosotros',   label: t('subnav.about') },
+        { href: '/nosotros#manifiesto', label: t('subnav.manifesto') },
+      ],
+    },
     { href: '/lujototal', label: t('nav.lujototal') },
   ];
 
@@ -84,14 +102,17 @@ export default function Nav() {
         <div className={styles.r2}>
           <ul className={styles.links}>
             {links.map((l) =>
-              l.href === '/nosotros' ? (
+              l.children ? (
                 <li key={l.href} className={styles.dropItem}>
                   <Link href={l.href} className={styles.link}>
                     {l.label} <span className={styles.dropChevron}>▾</span>
                   </Link>
                   <ul className={styles.dropMenu}>
-                    <li><Link href="/nosotros#nosotros" className={styles.dropLink}>{t('subnav.about')}</Link></li>
-                    <li><Link href="/nosotros#manifiesto" className={styles.dropLink}>{t('subnav.manifesto')}</Link></li>
+                    {l.children.map((c) => (
+                      <li key={c.href}>
+                        <Link href={c.href} className={styles.dropLink}>{c.label}</Link>
+                      </li>
+                    ))}
                   </ul>
                 </li>
               ) : (
@@ -129,14 +150,16 @@ export default function Nav() {
         </div>
         <nav>
           {links.map((l) =>
-            l.href === '/nosotros' ? (
+            l.children ? (
               <Fragment key={l.href}>
-                <Link href="/nosotros#nosotros" className={styles.drwLink} onClick={() => setDrawerOpen(false)}>
+                <Link href={l.href} className={styles.drwLink} onClick={() => setDrawerOpen(false)}>
                   {l.label}
                 </Link>
-                <Link href="/nosotros#manifiesto" className={`${styles.drwLink} ${styles.drwSubLink}`} onClick={() => setDrawerOpen(false)}>
-                  {t('subnav.manifesto')}
-                </Link>
+                {l.children.map((c) => (
+                  <Link key={c.href} href={c.href} className={`${styles.drwLink} ${styles.drwSubLink}`} onClick={() => setDrawerOpen(false)}>
+                    {c.label}
+                  </Link>
+                ))}
               </Fragment>
             ) : (
               <Link key={l.href} href={l.href} className={styles.drwLink} onClick={() => setDrawerOpen(false)}>
