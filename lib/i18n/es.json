@@ -19,10 +19,10 @@
     "lujototal": "LujoTotal™"
   },
   "hero": {
-    "h1a": "La plataforma editorial afiliada de lujo en español —",
+    "h1a": "La plataforma editorial de afiliación de lujo en español-",
     "h1b": "impulsada por más de 3.000 dominios exactos premium",
     "h1em": "unificada bajo LujoTotal™.",
-    "sub": "Donde cada deseo tiene su lugar — moda, propiedades de lujo, viajes, joyería y mucho más.",
+    "eyebrow": "Donde cada deseo tiene su lugar — moda, propiedades de lujo, viajes, joyería y mucho más.",
     "kvp": "Construimos el internet de lujo en español — unificando 650 millones de hablantes en 24 mercados fragmentados a través de dominios premium, ecosistemas de afiliación estructurados y autoridad editorial. Conectamos marcas de lujo con audiencias de alto poder adquisitivo en España y Latinoamérica.",
     "cta1": "Explorar dominios",
     "cta2": "Nuestros servicios",
@@ -209,6 +209,38 @@
     "missionBody": "Conectar marcas de lujo y alta gama con audiencias hispanohablantes exigentes a través de una red selecta de plataformas digitales de alto impacto, ofreciendo confianza, exclusividad y rendimiento medible a escala.",
     "visionTitle": "Nuestra Visión",
     "visionBody": "Nuestro objetivo es redefinir la forma en que las marcas de lujo crecen en línea, creando la plataforma de membresía y promoción de marca más confiable y de mayor calidad en el mundo hispanohablante, transformando las colaboraciones de simples transacciones en experiencias digitales personalizadas y de alto valor."
+  },
+  "writersGrid": {
+    "eyebrow": "Voces del lujo",
+    "heading": "Nuestros Escritores de Lujo",
+    "w1Name": "Escritora Uno",
+    "w1Vertical": "Moda & Estilo",
+    "w1Quote": "El lujo es elegir con intención.",
+    "w2Name": "Escritora Dos",
+    "w2Vertical": "Gastronomía",
+    "w2Quote": "El lujo es saborear sin prisa.",
+    "w3Name": "Escritora Tres",
+    "w3Vertical": "Viajes de Lujo",
+    "w3Quote": "El lujo es llegar a lugares que te cambian.",
+    "w4Name": "Escritora Cuatro",
+    "w4Vertical": "Joyería & Relojes",
+    "w4Quote": "El lujo es el tiempo que no se ve.",
+    "w5Name": "Escritora Cinco",
+    "w5Vertical": "Arte & Cultura",
+    "w5Quote": "El lujo es lo que permanece.",
+    "w6Name": "Escritora Seis",
+    "w6Vertical": "Propiedades",
+    "w6Quote": "El lujo es el espacio que te define."
+  },
+  "brandsGrid": {
+    "eyebrow": "Red de marcas",
+    "heading": "Nuestras marcas",
+    "sub": "Explora nuestras marcas exclusivas",
+    "soon": "Próximamente",
+    "b1Desc": "Una puerta de entrada curada al mundo del lujo.",
+    "b2Desc": "Donde cada \"Sí\" comienza con la inspiración.",
+    "b3Desc": "Un destino refinado para anillos de lujo atemporales.",
+    "b4Desc": "Descubre hogares y alquileres en toda España."
   },
   "partnerValue": {
     "eyebrow": "Para marcas asociadas",
