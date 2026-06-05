@@ -46,7 +46,8 @@ export default function Nav() {
       href: '/nosotros',
       label: t('nav.about'),
       children: [
-        { href: '/nosotros#nosotros',   label: t('subnav.about') },
+        { href: '/nosotros#escritores', label: t('subnav.escritores') },
+        { href: '/nosotros#nosotros',   label: t('subnav.mision') },
         { href: '/nosotros#manifiesto', label: t('subnav.manifesto') },
       ],
     },
