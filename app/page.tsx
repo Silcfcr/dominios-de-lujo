@@ -4,6 +4,7 @@ import CategoryTeaser from '@/components/home/CategoryTeaser';
 import HomeSectionLink from '@/components/home/HomeSectionLink';
 import ServicesGrid from '@/components/home/ServicesGrid';
 import PartnerValue from '@/components/home/PartnerValue';
+import BrandsGrid from '@/components/home/BrandsGrid';
 import CollaborateTeaser from '@/components/home/CollaborateTeaser';
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
       <HomeSectionLink labelKey="home.lujototalLink" href="/nosotros#lujototal" imageSrc="/images/lujo-total.webp" imageAlt="LujoTotal™" />
       <ServicesGrid />
       <PartnerValue />
+      <BrandsGrid />
       <HomeSectionLink labelKey="home.manifestoLink" href="/nosotros#manifiesto" />
       <CollaborateTeaser />
     </>
