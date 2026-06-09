@@ -18,7 +18,7 @@
   margin-bottom: 20px;
 }
 
-.para:last-child {
+.para:last-of-type {
   margin-bottom: 0;
 }
 
