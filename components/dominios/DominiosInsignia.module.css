@@ -136,6 +136,15 @@
   background: var(--w);
 }
 
+.tagline {
+  font-family: var(--fb);
+  font-size: 12px;
+  color: var(--ink3);
+  letter-spacing: 0.08em;
+  margin-top: 10px;
+  text-align: center;
+}
+
 @media (max-width: 1024px) {
   .imageWrap {
     height: 200px;

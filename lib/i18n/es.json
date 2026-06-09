@@ -4,6 +4,7 @@
     "inicio": "Inicio",
     "dominios": "Dominios",
     "servicios": "Servicios",
+    "afiliados": "Afiliados",
     "colaborar": "Colaborar",
     "contacto": "Contacto",
     "about": "Quiénes somos",
@@ -17,7 +18,7 @@
   },
   "subnav": {
     "about": "Quiénes Somos",
-    "manifesto": "Manifiesto",
+    "manifesto": "Nuestra Cultura",
     "lujototal": "LujoTotal™",
     "afiliados": "Plataforma de Afiliados",
     "paginas": "PaginasDeLujo.com",
@@ -27,7 +28,7 @@
   },
   "hero": {
     "h1a": "La plataforma editorial de afiliación de lujo en español-",
-    "h1b": "impulsada por más de 3.000 dominios exactos premium",
+    "h1b": "impulsada por más de 4.000 dominios exactos premium",
     "h1em": "unificada bajo LujoTotal™.",
     "eyebrow": "Donde cada deseo tiene su lugar",
     "kvp": "Construimos el ecosistema digital de lujo en español, uniendo a 650 millones de hispanohablantes en 24 mercados. A través de dominios premium, redes de afiliados estructuradas y autoridad editorial, conectamos a las marcas de alta gama con audiencias de alto poder adquisitivo en España y América Latina",
@@ -40,7 +41,7 @@
     "title": "Una plataforma,",
     "titleEm": "tres pilares.",
     "col1Title": "Alcance Editorial",
-    "col1Desc": "Red de más de 3.000 dominios exactos de lujo que generan tráfico orgánico de alto valor en toda la industria premium.",
+    "col1Desc": "Red de más de 4.000 dominios exactos de lujo que generan tráfico orgánico de alto valor en toda la industria premium.",
     "col2Title": "Dominios Exactos",
     "col2Desc": "Los mejores dominios de lujo en español del mundo: propiedades, joyería, moda, gastronomía, viajes, yates y mucho más.",
     "col3Title": "Estándar LujoTotal™",
@@ -86,7 +87,7 @@
     "titleEm": "tres audiencias.",
     "s1Eyebrow": "Para marcas y redes afiliadas",
     "s1Title": "Plataforma Editorial de Afiliados",
-    "s1Desc": "Publica contenido editorial de lujo en nuestra red de 3.000+ dominios exactos. Llega a consumidores hispanohablantes de alto poder adquisitivo en el momento de intención de compra.",
+    "s1Desc": "Publica contenido editorial de lujo en nuestra red de 4.000+ dominios exactos. Llega a consumidores hispanohablantes de alto poder adquisitivo en el momento de intención de compra.",
     "s1Cta": "Conocer más",
     "s2Eyebrow": "Para profesionales y negocios de lujo",
     "s2Title": "PaginasDeLujo.com",
@@ -100,8 +101,8 @@
   "lujototal": {
     "eyebrow": "Nuestra certificación",
     "title": "El sello que define",
-    "titleEm": "la excelencia.",
-    "body1": "LujoTotal™ es nuestra certificación oficial de excelencia, otorgada a productos y servicios que destacan por su calidad, autenticidad y nivel superior dentro del mercado de lujo hispanohablante.",
+    "titleEm": "la calidad.",
+    "body1": "LujoTotal™ es nuestra certificación oficial de calidad, otorgada a productos y servicios que destacan por su autenticidad y nivel superior dentro del mercado de lujo hispanohablante.",
     "body2": "La presencia del sello LujoTotal™ garantiza a consumidores y marcas que cada producto o servicio ha sido evaluado bajo criterios rigurosos de calidad, prestigio, experiencia y confianza. Más que una distinción, es un reconocimiento reservado para aquellas propuestas que representan lo mejor de su categoría y cumplen con los estándares que definen el verdadero lujo."
   },
   "paginasSpotlight": {
@@ -156,7 +157,7 @@
   },
   "dominios": {
     "title": "Portafolio de Dominios",
-    "sub": "3.000+ dominios exactos de lujo en español",
+    "sub": "4.000+ dominios exactos de lujo en español",
     "searchPlaceholder": "Buscar dominio...",
     "allCategories": "Todas las categorías",
     "flagship": "Flagship",
@@ -182,7 +183,7 @@
     "sub": "Tres vías para colaborar con la mayor red editorial de lujo en español.",
     "affiliateTitle": "Plataforma de Marketing de Afiliados",
     "affiliateEyebrow": "Servicio principal",
-    "affiliateBody1": "Somos el puente entre marcas premium y audiencias de alto poder adquisitivo en el mundo hispanohablante. Nuestra red editorial de más de 3.000 dominios exactos de lujo genera tráfico orgánico cualificado, listo para convertir.",
+    "affiliateBody1": "Somos el puente entre marcas premium y audiencias de alto poder adquisitivo en el mundo hispanohablante. Nuestra red editorial de más de 4.000 dominios exactos de lujo genera tráfico orgánico cualificado, listo para convertir.",
     "affiliateBody2": "Cada dominio está diseñado para atraer exactamente al comprador que tu marca necesita: el que busca 'joyas de lujo', 'villas de lujo', 'relojes exclusivos' — y llega directo a tu producto.",
     "stat1Label": "dominios premium",
     "stat2Label": "categorías de lujo",
@@ -202,7 +203,7 @@
     "whyEyebrow": "Por qué Dominios de Lujo",
     "whyTitle": "Una red pensada para el lujo.",
     "why1Title": "Escala con intención",
-    "why1Desc": "Más de 3.000 activos digitales, cada uno diseñado para capturar un momento preciso de intención de compra. Organizados por vertical, mercado y perfil de consumidor.",
+    "why1Desc": "Más de 4.000 activos digitales, cada uno diseñado para capturar un momento preciso de intención de compra. Organizados por vertical, mercado y perfil de consumidor.",
     "why2Title": "Alcance multisectorial",
     "why2Desc": "De la propiedad a la joyería, del viaje a la gastronomía — una sola colaboración llega a consumidores de alto poder adquisitivo en todo el espectro del lujo.",
     "why3Title": "Ventaja pionera",
@@ -299,7 +300,7 @@
     "item1Desc": "Nuestra audiencia es el consumidor hispanohablante de alto poder adquisitivo — en España, México, Argentina, Colombia y en toda Latinoamérica. Leen en español por elección, no por necesidad. No son un elemento secundario en tus campañas actuales. Son el punto central de las nuestras.",
     "item2Title": "Presencia editorial, no publicidad",
     "item2Desc": "Tu marca aparece dentro de contenido editorial genuino producido por redactores especializados que viven y entienden el lujo en su mercado. No son banners. No son listados de pago. Es una presencia contextual que genera confianza en un lector que ya está interesado en lo que vendes.",
-    "item3Title": "Más de 3.000 dominios exactos. Una sola asociación.",
+    "item3Title": "Más de 4.000 dominios exactos. Una sola asociación.",
     "item3Desc": "Una sola alianza con Dominios de Lujo da a tu marca presencia potencial en el mayor portafolio de dominios exactos de lujo en español que existe — en viajes, joyería, moda, propiedades, gastronomía, bienestar y más.",
     "item4Title": "Seguridad de marca garantizada por estándares editoriales",
     "item4Desc": "Cada sitio de nuestra red publica bajo el estándar editorial LujoTotal™ — un marco de calidad que regula el tono, la precisión y la presentación. Tu marca no aparecerá junto a contenido superficial, afirmaciones engañosas ni nada que ponga en riesgo tu reputación.",
@@ -310,13 +311,14 @@
     "item3Sub": "Una sola asociación, miles de puntos de contacto",
     "item4Sub": "Estándares editoriales que protegen tu reputación",
     "item5Sub": "Integración sin fricción para tu equipo",
-    "cta": "Solicitar asociación"
+    "cta": "Conviértete en afiliado"
   },
   "dominiosInsignia": {
     "eyebrow": "Dominios Insignia",
     "title": "El portafolio",
     "titleEm": "más exclusivo.",
     "sub": "Los dominios más estratégicos de nuestra red, organizados por vertical. Cada nombre es una marca en potencia.",
+    "tagline": "DominiosDeLujo controla la mayor red de dominios de lujo en español.",
     "results": "dominios",
     "cat_viajes": "Viajes, Wellness & Experiencias de Lujo",
     "cat_autos": "Autos, Motos & Movilidad",
@@ -330,5 +332,11 @@
     "alt_arte": "Arte, coleccionismo y gastronomía de lujo",
     "alt_deportes": "Deportes y entretenimiento de lujo",
     "alt_propiedades": "Propiedades y finanzas de lujo"
+  },
+  "dominiosInsigniaAlt": {
+    "eyebrow": "Dominios Insignia",
+    "title": "El portafolio",
+    "titleEm": "más exclusivo.",
+    "tagline": "DominiosDeLujo controla la mayor red de dominios de lujo en español."
   }
 }

@@ -4,6 +4,7 @@
     "inicio": "Home",
     "dominios": "Domains",
     "servicios": "Services",
+    "afiliados": "Affiliates",
     "colaborar": "Collaborate",
     "contacto": "Contact",
     "about": "About us",
@@ -17,7 +18,7 @@
   },
   "subnav": {
     "about": "About Us",
-    "manifesto": "Manifesto",
+    "manifesto": "Our Culture",
     "lujototal": "LujoTotal™",
     "afiliados": "Affiliate Platform",
     "paginas": "PaginasDeLujo.com",
@@ -27,7 +28,7 @@
   },
   "hero": {
     "h1a": "The Spanish-language luxury editorial affiliate platform —",
-    "h1b": "powered by 3,000+ premium exact-match domains",
+    "h1b": "powered by 4,000+ premium exact-match domains",
     "h1em": "unified under LujoTotal™.",
     "eyebrow": "Where every desire has its place",
     "kvp": "We build the Spanish-language luxury internet — unifying 650 million speakers across 24 fragmented markets through premium domains, structured affiliate ecosystems, and editorial authority. We connect luxury brands with high-net-worth audiences across Spain and Latin America.",
@@ -40,7 +41,7 @@
     "title": "One platform,",
     "titleEm": "three pillars.",
     "col1Title": "Editorial Reach",
-    "col1Desc": "A network of 3,000+ exact-match luxury domains generating high-value organic traffic across the entire premium industry.",
+    "col1Desc": "A network of 4,000+ exact-match luxury domains generating high-value organic traffic across the entire premium industry.",
     "col2Title": "Exact-Match Domains",
     "col2Desc": "The world's best Spanish luxury domains: real estate, jewellery, fashion, gastronomy, travel, yachts and much more.",
     "col3Title": "LujoTotal™ Standard",
@@ -86,7 +87,7 @@
     "titleEm": "three audiences.",
     "s1Eyebrow": "For brands and affiliate networks",
     "s1Title": "Editorial Affiliate Platform",
-    "s1Desc": "Publish luxury editorial content across our network of 3,000+ exact-match domains. Reach high-net-worth Spanish-speaking consumers at the precise moment of purchase intent.",
+    "s1Desc": "Publish luxury editorial content across our network of 4,000+ exact-match domains. Reach high-net-worth Spanish-speaking consumers at the precise moment of purchase intent.",
     "s1Cta": "Learn more",
     "s2Eyebrow": "For luxury professionals and businesses",
     "s2Title": "PaginasDeLujo.com",
@@ -100,8 +101,8 @@
   "lujototal": {
     "eyebrow": "Our certification",
     "title": "The mark that defines",
-    "titleEm": "excellence.",
-    "body1": "LujoTotal™ is our official mark of excellence, awarded to products and services that stand out for their quality, authenticity, and superior standards within the Spanish-speaking luxury market.",
+    "titleEm": "quality.",
+    "body1": "LujoTotal™ is our official mark of quality, awarded to products and services that stand out for their authenticity and superior standards within the Spanish-speaking luxury market.",
     "body2": "The LujoTotal™ seal assures both consumers and brands that every product or service has been evaluated against rigorous criteria for quality, prestige, craftsmanship, and trust. More than a distinction, it is a recognition reserved for offerings that represent the very best in their category and embody the standards that define true luxury."
   },
   "paginasSpotlight": {
@@ -156,7 +157,7 @@
   },
   "dominios": {
     "title": "Domain Portfolio",
-    "sub": "3,000+ exact-match Spanish luxury domains",
+    "sub": "4,000+ exact-match Spanish luxury domains",
     "searchPlaceholder": "Search domain...",
     "allCategories": "All categories",
     "flagship": "Flagship",
@@ -182,7 +183,7 @@
     "sub": "Three ways to collaborate with the largest Spanish luxury editorial network.",
     "affiliateTitle": "Affiliate Marketing Platform",
     "affiliateEyebrow": "Core service",
-    "affiliateBody1": "We bridge premium brands and high-net-worth audiences in the Spanish-speaking world. Our editorial network of 3,000+ exact-match luxury domains drives qualified organic traffic, ready to convert.",
+    "affiliateBody1": "We bridge premium brands and high-net-worth audiences in the Spanish-speaking world. Our editorial network of 4,000+ exact-match luxury domains drives qualified organic traffic, ready to convert.",
     "affiliateBody2": "Every domain is designed to attract exactly the buyer your brand needs: the one searching for 'luxury jewellery', 'luxury villas', 'exclusive watches' — arriving directly at your product.",
     "stat1Label": "premium domains",
     "stat2Label": "luxury categories",
@@ -202,7 +203,7 @@
     "whyEyebrow": "Why Dominios de Lujo",
     "whyTitle": "A network built for luxury.",
     "why1Title": "Scale with precision",
-    "why1Desc": "3,000+ digital assets, each designed to capture a precise moment of purchase intent. Organised by vertical, market, and consumer profile.",
+    "why1Desc": "4,000+ digital assets, each designed to capture a precise moment of purchase intent. Organised by vertical, market, and consumer profile.",
     "why2Title": "Cross-category reach",
     "why2Desc": "From real estate to jewellery, travel to gastronomy — one partnership reaches high-net-worth consumers across the full luxury spectrum.",
     "why3Title": "Pioneer presence",
@@ -213,7 +214,7 @@
     "affiliateHeroSub": "We connect premium brands with luxury buyers across the Spanish-speaking world. Qualified organic traffic, audiences with genuine purchase intent.",
     "affiliateValueEyebrow": "Our platform",
     "affiliateValueTitle": "The bridge between luxury brands and their buyers.",
-    "affiliateHeroTitle": "The Spanish‑language luxury editorial affiliate platform — connecting brands with high‑intent luxury audiences through 3,000+ premium exact‑match domains unified under LujoTotal™"
+    "affiliateHeroTitle": "The Spanish‑language luxury editorial affiliate platform — connecting brands with high‑intent luxury audiences through 4,000+ premium exact‑match domains unified under LujoTotal™"
   },
   "colaborar": {
     "eyebrow": "Join the network",
@@ -299,7 +300,7 @@
     "item1Desc": "Our audience is the high-net-worth Spanish-speaking consumer — in Spain, Mexico, Argentina, Colombia, and across Latin America. They read in Spanish by choice, not necessity. They are not an afterthought in your existing campaigns. They are the entire point of ours.",
     "item2Title": "Editorial placement, not advertising",
     "item2Desc": "Your brand appears within genuine editorial content produced by specialist writers who live and understand luxury in their market. Not banner ads. Not paid listings. Contextual placement that earns trust from a reader who is already interested in what you sell.",
-    "item3Title": "3,000+ exact-match domains. One partnership.",
+    "item3Title": "4,000+ exact-match domains. One partnership.",
     "item3Desc": "A single partnership with Dominios de Lujo gives your brand placement potential across the largest exact-match Spanish luxury domain portfolio in existence — across travel, jewelry, fashion, real estate, gastronomy, wellness, and more.",
     "item4Title": "Brand safety guaranteed by editorial standard",
     "item4Desc": "Every site in our network publishes under the LujoTotal™ editorial standard — a quality framework that governs tone, accuracy, and presentation. Your brand will not appear next to thin content, misleading claims, or anything that puts your reputation at risk.",
@@ -310,13 +311,14 @@
     "item3Sub": "One partnership, thousands of touchpoints",
     "item4Sub": "Editorial standards that protect your reputation",
     "item5Sub": "Frictionless integration for your team",
-    "cta": "Apply to Partner"
+    "cta": "Become Our Affiliate"
   },
   "dominiosInsignia": {
     "eyebrow": "Dominios Insignia",
     "title": "The most exclusive",
     "titleEm": "portfolio.",
     "sub": "Our most strategic domains, organised by vertical. Each name is a brand in waiting.",
+    "tagline": "DominiosDeLujo controls the largest network of luxury domains in Spanish.",
     "results": "domains",
     "cat_viajes": "Travel, Wellness & Luxury Experiences",
     "cat_autos": "Cars, Motorcycles & Mobility",
@@ -330,5 +332,11 @@
     "alt_arte": "Luxury art, collectibles and gastronomy",
     "alt_deportes": "Luxury sports and entertainment",
     "alt_propiedades": "Luxury properties and finance"
+  },
+  "dominiosInsigniaAlt": {
+    "eyebrow": "Dominios Insignia",
+    "title": "The most exclusive",
+    "titleEm": "portfolio.",
+    "tagline": "DominiosDeLujo controls the largest network of luxury domains in Spanish."
   }
 }

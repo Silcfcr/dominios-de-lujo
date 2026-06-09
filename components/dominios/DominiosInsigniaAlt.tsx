@@ -1,11 +1,10 @@
 'use client';
-import { useState, useMemo } from 'react';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { useI18n } from '@/lib/i18n/context';
 import { assetPath } from '@/lib/assetPath';
-import DomainSearch from '@/components/dominios/DomainSearch';
-import styles from './DominiosInsignia.module.css';
+import styles from './DominiosInsigniaAlt.module.css';
 
 type InsigniaCategory = {
   id: string;
@@ -88,81 +87,57 @@ const CATEGORIES: InsigniaCategory[] = [
   },
 ];
 
-export default function DominiosInsignia() {
+export default function DominiosInsigniaAlt() {
   const { t } = useI18n();
-  const [query, setQuery] = useState<string>('');
-
-  const filteredCategories = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return CATEGORIES
-      .map((cat) => ({
-        ...cat,
-        domains: q
-          ? cat.domains.filter((d) => d.toLowerCase().includes(q))
-          : cat.domains,
-      }))
-      .filter((cat) => cat.domains.length > 0);
-  }, [query]);
-
-  const totalVisible = filteredCategories.reduce((sum, c) => sum + c.domains.length, 0);
 
   return (
     <div className={styles.page}>
-      {/* Page header */}
+      {/* Header */}
       <div className={styles.header}>
-        <p className="s-eye">{t('dominiosInsignia.eyebrow')}</p>
-        <h1 className={`s-title ${styles.h1}`}>
-          {t('dominiosInsignia.title')} <em>{t('dominiosInsignia.titleEm')}</em>
+        <p className="s-eye">{t('dominiosInsigniaAlt.eyebrow')}</p>
+        <h1 className={`s-title inv ${styles.h1}`}>
+          {t('dominiosInsigniaAlt.title')} <em>{t('dominiosInsigniaAlt.titleEm')}</em>
         </h1>
-        <p className={styles.sub}>{t('dominiosInsignia.sub')}</p>
-        <p className={styles.tagline}>{t('dominiosInsignia.tagline')}</p>
+        <p className={styles.tagline}>{t('dominiosInsigniaAlt.tagline')}</p>
       </div>
 
-      {/* Search band */}
-      <div className={styles.searchBand}>
-        <div className={styles.searchInner}>
-          <DomainSearch value={query} onChange={setQuery} />
-          {query && (
-            <p className={styles.searchCount}>
-              {totalVisible} {t('dominiosInsignia.results')}
-            </p>
-          )}
-        </div>
-      </div>
+      {/* Category rows */}
+      <div className={styles.rows}>
+        {CATEGORIES.map((cat, index) => (
+          <div
+            key={cat.id}
+            className={`${styles.row} ${index % 2 === 1 ? styles.rowReverse : ''}`}
+          >
+            {/* Image half */}
+            <div className={styles.imageWrap}>
+              <Image
+                src={assetPath(cat.image)}
+                alt={t(cat.imageAlt)}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className={styles.img}
+                priority={index < 2}
+              />
+            </div>
 
-      {/* Category grid */}
-      <div className={styles.grid}>
-        {filteredCategories.length === 0 ? (
-          <p className={styles.empty}>{t('dominios.noResults')}</p>
-        ) : (
-          filteredCategories.map((cat, index) => (
-            <article key={cat.id} className={styles.card}>
-              <div className={styles.imageWrap}>
-                <Image
-                  src={assetPath(cat.image)}
-                  alt={t(cat.imageAlt)}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className={styles.img}
-                  priority={index < 2}
-                />
-                <div className={styles.overlay} />
-                <h2 className={styles.catTitle}>{t(cat.titleKey)}</h2>
-              </div>
-              <div className={styles.pillsWrap}>
+            {/* Content half */}
+            <div className={styles.content}>
+              <p className={styles.catEye}>{t(cat.titleKey)}</p>
+              <ul className={styles.domainList}>
                 {cat.domains.map((domain) => (
-                  <Link
-                    key={domain}
-                    href={`/dominios/${encodeURIComponent(domain)}`}
-                    className={styles.pill}
-                  >
-                    {domain}
-                  </Link>
+                  <li key={domain}>
+                    <Link
+                      href={`/dominios/${encodeURIComponent(domain)}`}
+                      className={styles.domainLink}
+                    >
+                      {domain}
+                    </Link>
+                  </li>
                 ))}
-              </div>
-            </article>
-          ))
-        )}
+              </ul>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
