@@ -32,3 +32,17 @@
     font-size: 15px;
   }
 }
+
+.rule {
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  border: none;
+  margin: 24px auto 32px;
+  display: block;
+}
+
+.cta {
+  margin-top: 36px;
+  text-align: center;
+}
