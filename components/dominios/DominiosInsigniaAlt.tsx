@@ -68,7 +68,7 @@ const CATEGORIES: InsigniaCategory[] = [
     image: '/images/watches.webp',
     imageAlt: 'dominiosInsignia.alt_deportes',
     domains: [
-      'baresdelujo.com','casinosdelujo.com','clubsdelujo.com',
+      'baresdelujo.com','casinosdelujo.com','clubesdelujo.com',
       'deportesdelujo.com','golfdelujo.com','polodelujo.com','skidelujo.com',
     ],
   },
@@ -123,18 +123,23 @@ export default function DominiosInsigniaAlt() {
             {/* Content half */}
             <div className={styles.content}>
               <p className={styles.catEye}>{t(cat.titleKey)}</p>
-              <ul className={styles.domainList}>
-                {cat.domains.map((domain) => (
-                  <li key={domain}>
-                    <Link
-                      href={`/dominios/${encodeURIComponent(domain)}`}
-                      className={styles.domainLink}
-                    >
-                      {domain}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <div className={styles.scrollMask}>
+                <ul
+                  className={styles.domainTrack}
+                  style={{ animationDuration: `${Math.max(18, cat.domains.length * 2.5)}s` }}
+                >
+                  {[...cat.domains, ...cat.domains].map((domain, i) => (
+                    <li key={`${domain}-${i}`}>
+                      <Link
+                        href={`/dominios/${encodeURIComponent(domain)}`}
+                        className={styles.domainLink}
+                      >
+                        {domain}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         ))}
