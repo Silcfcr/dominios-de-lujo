@@ -1,24 +1,23 @@
 'use client';
 
-import Image from 'next/image';
-import { assetPath } from '@/lib/assetPath';
-import RevealWrapper from '@/components/ui/RevealWrapper';
 import { useI18n } from '@/lib/i18n/context';
+import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './WritersGrid.module.css';
 
 type Writer = {
   name: string;
   vertical: string;
   quote: string;
-  photo?: string;
 };
 
-function initials(name: string): string {
-  return name
-    .split(' ')
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join('');
+function WriterCard({ writer, ariaHidden }: { writer: Writer; ariaHidden?: boolean }) {
+  return (
+    <div className={styles.card} aria-hidden={ariaHidden || undefined}>
+      <p className={styles.vertical}>{writer.vertical}</p>
+      <p className={styles.quote}>{writer.quote}</p>
+      <p className={styles.name}>{writer.name}</p>
+    </div>
+  );
 }
 
 export default function WritersGrid() {
@@ -33,37 +32,29 @@ export default function WritersGrid() {
     { name: t('writersGrid.w6Name'), vertical: t('writersGrid.w6Vertical'), quote: t('writersGrid.w6Quote') },
   ];
 
+  const reversed = [...writers].reverse();
+
   return (
-    <section className={`sec ${styles.section}`}>
-      <div className={styles.header}>
+    <section className={styles.section}>
+      <RevealWrapper className={styles.header}>
         <p className="s-eye">{t('writersGrid.eyebrow')}</p>
         <h2 className={`s-title ${styles.heading}`}>{t('writersGrid.heading')}</h2>
-      </div>
-      <div className={styles.grid}>
-        {writers.map((writer, i) => (
-          <RevealWrapper key={writer.name} delay={(i % 3) as 0 | 1 | 2} className={styles.card}>
-            {writer.photo ? (
-              <div className={styles.photoWrap}>
-                <Image
-                  src={assetPath(writer.photo)}
-                  alt={writer.name}
-                  fill
-                  className={styles.photo}
-                  sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 33vw"
-                />
-              </div>
-            ) : (
-              <div className={styles.photoPlaceholder} aria-hidden="true">
-                <span className={styles.initials}>{initials(writer.name)}</span>
-              </div>
-            )}
-            <div className={styles.info}>
-              <p className={styles.vertical}>{writer.vertical}</p>
-              <h3 className={styles.name}>{writer.name}</h3>
-              <p className={styles.quote}>{writer.quote}</p>
-            </div>
-          </RevealWrapper>
-        ))}
+        <p className={styles.sub}>{t('writersGrid.sub')}</p>
+      </RevealWrapper>
+
+      <div className={styles.tracks}>
+        <div className={styles.track}>
+          <div className={styles.trackInner}>
+            {writers.map((w, i) => <WriterCard key={i} writer={w} />)}
+            {writers.map((w, i) => <WriterCard key={`c-${i}`} writer={w} ariaHidden />)}
+          </div>
+        </div>
+        <div className={`${styles.track} ${styles.trackReverse}`}>
+          <div className={styles.trackInner}>
+            {reversed.map((w, i) => <WriterCard key={i} writer={w} />)}
+            {reversed.map((w, i) => <WriterCard key={`c-${i}`} writer={w} ariaHidden />)}
+          </div>
+        </div>
       </div>
     </section>
   );

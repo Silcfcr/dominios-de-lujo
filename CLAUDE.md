@@ -27,11 +27,11 @@ No test suite exists yet. TypeScript type-checking: `npx tsc --noEmit`. Run the 
 
 **Asset paths** — `NEXT_PUBLIC_BASE_PATH` is set to `/dominios-de-lujo` in production (GitHub Pages). Always use `lib/assetPath.ts`'s `assetPath()` helper for paths to `public/` assets, and `<Link href=…>` / `next/image` for internal navigation/images (they handle `basePath` automatically).
 
-**i18n** — Client-side only. `lib/i18n/context.tsx` provides `I18nProvider` and `useI18n()` with a `t(key)` function. Translations are flat JSON files in `lib/i18n/es.json` and `lib/i18n/en.json`. Language preference is stored in `localStorage` under key `ddl-lang`. Default language is Spanish (`es`).
+**i18n** — Client-side only. `lib/i18n/context.tsx` provides `I18nProvider` and `useI18n()` with a `t(key)` function. Translations are flat JSON files in `lib/i18n/es.json` and `lib/i18n/en.json`. Language preference is stored in `localStorage` under key `ddl-lang`. Default language is Spanish (`es`). Because `useI18n()` is a React context hook, any component or page that calls `t()` directly must be a Client Component — add `'use client'` at the top.
 
 **Translation rule** — Every visible string in every component MUST be translated. No hardcoded Spanish (or any language) strings in JSX. Always add the new key to BOTH `lib/i18n/es.json` and `lib/i18n/en.json` before using it in a component. Group new keys under a logical namespace matching the component (e.g. `writersGrid`, `colaborar`). Never ship a feature without its English counterpart in `en.json`.
 
-**Styling** — CSS Modules (`.module.css` co-located with each component) plus a global `app/globals.css`. Do not use inline styles or Tailwind. Design tokens (CSS custom properties in `:root`):
+**Styling** — CSS Modules (`.module.css` co-located with each component) plus a global `app/globals.css`. Do not use inline styles or Tailwind. `globals.css` also defines shared utility classes that components reference directly via `className` (not via CSS Modules): `sec` / `sec-sm` (section padding), `s-eye` (gold eyebrow label), `s-title` (display heading; `.inv` inverts to white, `em` renders in gold), `btn-dark` / `btn-outline` / `btn-gold` (CTA buttons), and `reveal` / `reveal2` / `reveal3` (staggered scroll-in animations — applied by `RevealWrapper`). Design tokens (CSS custom properties in `:root`):
 
 | Token | Value | Role |
 |---|---|---|
@@ -53,14 +53,16 @@ No test suite exists yet. TypeScript type-checking: `npx tsc --noEmit`. Run the 
 - `components/home/` — one component per homepage section, assembled in `app/page.tsx`
 - `components/dominios/` — domain catalogue UI (search, cards, category filter)
 - `components/about/` — about page sections
-- `components/ui/` — shared primitives (`RevealWrapper`, `LanguageToggle`)
+- `components/ui/` — shared primitives: `RevealWrapper` (wraps children in a scroll-triggered reveal animation), `LanguageToggle`, `FloatingCertBadge` (fixed-position badge, rendered globally in `app/layout.tsx`), `ScrollReset` (resets scroll on route change, also in root layout)
 
 **Pages:**
 - `/` — homepage
 - `/dominios` — domain catalogue with search/filter
 - `/dominios/[domain]` — domain detail (static, server-rendered shell + `DomainDetailClient`)
 - `/servicios` — services page
+- `/servicios/afiliados` — affiliate programme detail page
 - `/colaborar` — partner/collaborate page
 - `/nosotros` — about page
+- `/lujototal` — LujoTotal™ editorial standard page
 
-**Deployment** — GitHub Actions workflow (`.github/workflows/deploy.yml`) builds with `NEXT_PUBLIC_BASE_PATH=/dominios-de-lujo` and deploys `out/` to GitHub Pages on every push to `main`.
+**Deployment** — GitHub Actions workflow (`.github/workflows/deploy.yml`) builds with `NEXT_PUBLIC_BASE_PATH=/dominios-de-lujo` and deploys `out/` to GitHub Pages on every push to `main` or `client-feedback/v1`.

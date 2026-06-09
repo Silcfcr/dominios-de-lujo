@@ -1,8 +1,6 @@
 'use client';
 
-import Image from 'next/image';
 import { useI18n } from '@/lib/i18n/context';
-import { assetPath } from '@/lib/assetPath';
 import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './page.module.css';
 
@@ -14,15 +12,6 @@ const writerIcon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="0.8" aria-hidden="true">
     <path d="M20 40l-6 2 2-6L34 14a4 4 0 0 1 6 6L20 40z" />
     <line x1="10" y1="44" x2="38" y2="44" />
-  </svg>
-);
-
-const editorIcon = (
-  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="0.8" aria-hidden="true">
-    <rect x="6" y="6" width="36" height="36" rx="1" />
-    <line x1="14" y1="18" x2="34" y2="18" />
-    <line x1="14" y1="25" x2="34" y2="25" />
-    <line x1="14" y1="32" x2="26" y2="32" />
   </svg>
 );
 
@@ -40,6 +29,7 @@ export default function ColaborarPage() {
   const roles = [
     {
       icon: writerIcon,
+      number: '01',
       eyebrow: t('colaborar.writersEyebrow'),
       title: t('colaborar.writersTitle'),
       body: t('colaborar.writersBody'),
@@ -47,15 +37,8 @@ export default function ColaborarPage() {
       mailto: mailtoFor('writer', 'Aplicación Redactor — Dominios de Lujo'),
     },
     {
-      icon: editorIcon,
-      eyebrow: t('colaborar.editorsEyebrow'),
-      title: t('colaborar.editorsTitle'),
-      body: t('colaborar.editorsBody'),
-      cta: t('colaborar.editorsCta'),
-      mailto: mailtoFor('editor', 'Aplicación Editor — Dominios de Lujo'),
-    },
-    {
       icon: influencerIcon,
+      number: '02',
       eyebrow: t('colaborar.influencersEyebrow'),
       title: t('colaborar.influencersTitle'),
       body: t('colaborar.influencersBody'),
@@ -68,15 +51,33 @@ export default function ColaborarPage() {
     <div className={styles.page}>
       {/* Header */}
       <div className={styles.header}>
-        <p className="s-eye">{t('colaborar.eyebrow')}</p>
-        <h1 className={`s-title ${styles.h1}`}>{t('colaborar.title')}</h1>
-        <p className={`s-sub ${styles.sub}`}>{t('colaborar.sub')}</p>
+        <div className={styles.headerInner}>
+          <p className="s-eye">{t('colaborar.eyebrow')}</p>
+          <h1 className={`s-title ${styles.h1}`}>{t('colaborar.title')}</h1>
+          <p className={`s-sub ${styles.sub}`}>{t('colaborar.sub')}</p>
+        </div>
       </div>
+
+      {/* Writers Intro */}
+      <RevealWrapper className={styles.writersIntro}>
+        <div className={styles.writersIntroInner}>
+          <div className={styles.writersIntroLeft}>
+            <h2 className={styles.writersIntroTitle}>{t('colaborar.wiHeading')}</h2>
+          </div>
+          <div>
+            <p className={styles.writersIntroPara}>{t('colaborar.wiP1')}</p>
+            <p className={styles.writersIntroPara}>{t('colaborar.wiP2')}</p>
+            <p className={styles.writersIntroPara}>{t('colaborar.wiP3')}</p>
+            <p className={styles.writersIntroPara}>{t('colaborar.wiP4')}</p>
+          </div>
+        </div>
+      </RevealWrapper>
 
       {/* Roles */}
       <div className={styles.roles}>
         {roles.map((role, i) => (
-          <RevealWrapper key={i} delay={(i % 3) as 0 | 1 | 2} className={styles.role}>
+          <RevealWrapper key={i} delay={(i % 2) as 0 | 1} className={styles.role}>
+            <span className={styles.roleNumber}>{role.number}</span>
             <div className={styles.roleTop}>
               <div className={styles.roleIcon}>{role.icon}</div>
               <div>
@@ -90,26 +91,6 @@ export default function ColaborarPage() {
         ))}
       </div>
 
-      {/* Values section */}
-      <RevealWrapper className={styles.values}>
-        <div className={styles.valuesInner}>
-          <Image
-            src={assetPath('/images/lujo-total.webp')}
-            alt="LujoTotal™"
-            width={100}
-            height={100}
-            className={styles.certImage}
-            style={{ objectFit: 'contain' }}
-          />
-          <p className="s-eye">{t('lujototal.eyebrow')}</p>
-          <h2 className={`s-title ${styles.valuesTitle}`}>
-            {t('colaborar.valuesTitle')}<br /><em>{t('colaborar.valuesTitleEm')}</em>
-          </h2>
-          <p className={styles.valuesBody}>
-            {t('colaborar.valuesBody')}
-          </p>
-        </div>
-      </RevealWrapper>
     </div>
   );
 }

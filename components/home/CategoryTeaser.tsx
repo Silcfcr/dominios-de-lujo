@@ -10,32 +10,36 @@ import styles from './CategoryTeaser.module.css';
 
 const ITEMS = [
   {
-    key: 'Propiedades y Bienes Raíces de Lujo',
-    nameEn: 'Luxury Properties & Real Estate',
-    image: '/images/realEstate.webp',
-    phraseEn: 'Luxury is owning a space that defines you.',
-    phraseEs: 'El lujo es poseer un espacio que te define.',
-  },
-  {
-    key: 'Joyería, Relojería y Metales Preciosos',
-    nameEn: 'Jewellery, Watches & Precious Metals',
-    image: '/images/watches.webp',
-    phraseEn: 'Luxury is wearing something that survives generations.',
-    phraseEs: 'El lujo es llevar algo que sobrevive generaciones.',
-  },
-  {
     key: 'Viajes, Turismo, Destinos y Alojamientos',
-    nameEn: 'Travel, Tourism & Destinations',
+    nameEs: 'Viajes, Wellness & Experiencias de Lujo',
+    nameEn: 'Travel, Wellness & Luxury Experiences',
     image: '/images/travel.webp',
     phraseEn: 'Luxury is sleeping somewhere that changes your sense of time.',
     phraseEs: 'El lujo es dormir en un lugar que cambia tu sentido del tiempo.',
   },
   {
-    key: 'Moda, Accesorios y Alta Costura',
-    nameEn: 'Fashion, Accessories & Haute Couture',
+    key: 'Joyería, Relojería y Metales Preciosos',
+    nameEs: 'Joyería, Moda & Belleza',
+    nameEn: 'Jewellery, Fashion & Beauty',
     image: '/images/fashion.webp',
-    phraseEn: "Luxury is dressing for who you're becoming.",
-    phraseEs: 'El lujo es vestirte para quien estás llegando a ser.',
+    phraseEn: 'Luxury is wearing something that survives generations.',
+    phraseEs: 'El lujo es llevar algo que sobrevive generaciones.',
+  },
+  {
+    key: 'Moda, Accesorios y Alta Costura',
+    nameEs: 'Deportes & Entretenimiento',
+    nameEn: 'Sports & Entertainment',
+    image: '/images/watches.webp',
+    phraseEn: 'Luxury is competing at a level most will never see.',
+    phraseEs: 'El lujo es competir en un nivel que pocos verán.',
+  },
+  {
+    key: 'Propiedades y Bienes Raíces de Lujo',
+    nameEs: 'Propiedades, Finanzas & Innovación',
+    nameEn: 'Properties, Finance & Innovation',
+    image: '/images/realEstate.webp',
+    phraseEn: 'Luxury is owning a space that defines you.',
+    phraseEs: 'El lujo es poseer un espacio que te define.',
   },
 ];
 
@@ -75,7 +79,6 @@ export default function CategoryTeaser() {
         <h2 className="s-title">
           {t('categoryTeaser.title')} <em>{t('categoryTeaser.titleEm')}</em>
         </h2>
-        <p className="s-sub">{t('categoryTeaser.sub')}</p>
       </RevealWrapper>
 
       <div
@@ -94,7 +97,7 @@ export default function CategoryTeaser() {
         <div className={styles.track}>
           {ITEMS.map((item, i) => {
             const pos = getPos(i);
-            const name = lang === 'es' ? item.key : item.nameEn;
+            const name = lang === 'es' ? item.nameEs : item.nameEn;
             const phrase = lang === 'es' ? item.phraseEs : item.phraseEn;
             return (
               <Link

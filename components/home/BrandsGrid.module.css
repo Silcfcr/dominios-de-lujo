@@ -35,19 +35,34 @@
   background: var(--c2);
 }
 
-.logo {
-  height: 56px;
-  width: auto;
-  opacity: 0.85;
-  transition: opacity 0.2s;
+.placeholder {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gdim);
+  border-radius: 4px;
+  font-family: var(--fd);
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  background: var(--c2);
+  transition: background 0.2s, color 0.2s;
 }
 
-.card:hover .logo {
-  opacity: 1;
+.card:hover .placeholder {
+  background: var(--gdim);
+  color: var(--ink);
 }
 
-.invert {
-  filter: invert(1);
+.brandName {
+  font-family: var(--fd);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .desc {

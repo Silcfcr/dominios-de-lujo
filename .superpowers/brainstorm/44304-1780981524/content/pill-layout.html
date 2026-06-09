@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insignia1 – Pill layout options</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+<script src="../../../../../../../.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/skills/brainstorming/scripts/helper.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #181410;
+    color: #FAF7F2;
+    font-family: 'Lora', serif;
+    padding: 40px 32px 60px;
+  }
+
+  .page-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    color: #FAF7F2;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  .page-sub {
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    color: rgba(250,247,242,0.5);
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* ── CARD ── */
+  .card {
+    border: 1px solid rgba(176,138,58,0.18);
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.25s, box-shadow 0.25s, transform 0.2s;
+    position: relative;
+  }
+
+  .card:hover { border-color: rgba(176,138,58,0.5); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+  .card.selected { border-color: #C9A55C; box-shadow: 0 0 0 2px #C9A55C; }
+
+  .selected-badge {
+    display: none;
+    position: absolute;
+    top: 12px; right: 12px;
+    background: #C9A55C; color: #0A0806;
+    font-family: 'Lora', serif; font-size: 9px;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    padding: 3px 9px; border-radius: 1px; z-index: 10;
+  }
+  .card.selected .selected-badge { display: block; }
+
+  /* ── SIMULATED ROW ── */
+  .sim-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 260px;
+  }
+
+  .sim-image {
+    background: linear-gradient(135deg, #2e2418 0%, #1c1610 60%, #0f0c09 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sim-image span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(176,138,58,0.3);
+  }
+
+  /* ── CONTENT SHARED ── */
+  .sim-content {
+    padding: 22px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cat-eye {
+    font-family: 'Lora', serif;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #C9A55C;
+  }
+
+  /* ── OPTION 1: Static wrapped pills ── */
+  .opt-static .sim-content {
+    background: linear-gradient(to right, #111009, #0A0806);
+    border-left: 1px solid rgba(176,138,58,0.3);
+  }
+
+  .pill-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .pill {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #C9A55C;
+    border: 1px solid rgba(176,138,58,0.38);
+    border-radius: 40px;
+    padding: 4px 12px;
+    background: rgba(176,138,58,0.05);
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+    white-space: nowrap;
+  }
+
+  .pill:hover {
+    background: rgba(176,138,58,0.12);
+    border-color: rgba(176,138,58,0.65);
+    color: #E2CFA0;
+  }
+
+  .pill.demo-hover {
+    background: rgba(176,138,58,0.12);
+    border-color: rgba(176,138,58,0.65);
+    color: #E2CFA0;
+  }
+
+  /* ── OPTION 2: Scrolling pills ── */
+  .opt-scroll .sim-content {
+    background: linear-gradient(to right, #111009, #0A0806);
+    border-left: 1px solid rgba(176,138,58,0.3);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .scroll-mask {
+    overflow: hidden;
+    flex: 1;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  }
+
+  .pill-track {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    animation: pillScroll 12s linear infinite;
+  }
+
+  .pill-track:hover { animation-play-state: paused; }
+
+  @keyframes pillScroll {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+  }
+
+  /* ── OPTION 3: Pills in vertical list (original scroll, pill-styled) ── */
+  .opt-list .sim-content {
+    background: linear-gradient(to right, #111009, #0A0806);
+    border-left: 1px solid rgba(176,138,58,0.3);
+    overflow: hidden;
+  }
+
+  .list-mask {
+    overflow: hidden;
+    flex: 1;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+  }
+
+  .list-track {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    animation: listScroll 10s linear infinite;
+  }
+
+  .list-track:hover { animation-play-state: paused; }
+
+  @keyframes listScroll {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+  }
+
+  .pill-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  /* ── CARD FOOTER ── */
+  .card-footer {
+    padding: 14px 18px;
+    border-top: 1px solid rgba(176,138,58,0.1);
+    background: rgba(0,0,0,0.25);
+  }
+
+  .opt-label {
+    font-family: 'Lora', serif;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #C9A55C;
+    margin-bottom: 3px;
+  }
+
+  .opt-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FAF7F2;
+    margin-bottom: 5px;
+  }
+
+  .opt-desc {
+    font-family: 'Lora', serif;
+    font-size: 11px;
+    color: rgba(250,247,242,0.5);
+    line-height: 1.55;
+  }
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Domain Pills — Layout Options</h1>
+<p class="page-sub">Three ways to render domain names as pill badges. Click to select your preference.</p>
+
+<div class="grid">
+
+  <!-- ── 1: Static wrapped grid ── -->
+  <div class="card opt-static" data-choice="static" onclick="toggleSelect(this)">
+    <div class="selected-badge">Selected</div>
+
+    <div class="sim-row">
+      <div class="sim-image"><span>Imagen</span></div>
+      <div class="sim-content">
+        <div class="cat-eye">Viajes &amp; Lifestyle</div>
+        <div class="pill-wrap">
+          <span class="pill">hotelesdelujo.com</span>
+          <span class="pill demo-hover">yatesdelujo.com</span>
+          <span class="pill">viajesdelujo.com</span>
+          <span class="pill">resortsdelujo.com</span>
+          <span class="pill">spasdelujo.com</span>
+          <span class="pill">jetsdelujo.com</span>
+          <span class="pill">turismodelujo.com</span>
+          <span class="pill">vuelosdelujo.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <div class="opt-label">Opción 1</div>
+      <div class="opt-name">Static grid of pills</div>
+      <div class="opt-desc">All domains visible at once, wrapped in a flex grid. Fully scannable. No animation. Clean and legible.</div>
+    </div>
+  </div>
+
+  <!-- ── 2: Scrolling wrapped pills ── -->
+  <div class="card opt-scroll" data-choice="scroll" onclick="toggleSelect(this)">
+    <div class="selected-badge">Selected</div>
+
+    <div class="sim-row">
+      <div class="sim-image"><span>Imagen</span></div>
+      <div class="sim-content">
+        <div class="cat-eye">Viajes &amp; Lifestyle</div>
+        <div class="scroll-mask">
+          <div class="pill-track">
+            <span class="pill">hotelesdelujo.com</span>
+            <span class="pill">yatesdelujo.com</span>
+            <span class="pill">viajesdelujo.com</span>
+            <span class="pill">resortsdelujo.com</span>
+            <span class="pill">spasdelujo.com</span>
+            <span class="pill">jetsdelujo.com</span>
+            <span class="pill">turismodelujo.com</span>
+            <span class="pill">vuelosdelujo.com</span>
+            <!-- duplicated for seamless loop -->
+            <span class="pill">hotelesdelujo.com</span>
+            <span class="pill">yatesdelujo.com</span>
+            <span class="pill">viajesdelujo.com</span>
+            <span class="pill">resortsdelujo.com</span>
+            <span class="pill">spasdelujo.com</span>
+            <span class="pill">jetsdelujo.com</span>
+            <span class="pill">turismodelujo.com</span>
+            <span class="pill">vuelosdelujo.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <div class="opt-label">Opción 2</div>
+      <div class="opt-name">Scrolling pills (wrap)</div>
+      <div class="opt-desc">Pills scroll upward as a group. Keeps the kinetic editorial energy. Hover to pause. Fades at top &amp; bottom.</div>
+    </div>
+  </div>
+
+  <!-- ── 3: Scrolling vertical list, pill-styled ── -->
+  <div class="card opt-list" data-choice="list" onclick="toggleSelect(this)">
+    <div class="selected-badge">Selected</div>
+
+    <div class="sim-row">
+      <div class="sim-image"><span>Imagen</span></div>
+      <div class="sim-content">
+        <div class="cat-eye">Viajes &amp; Lifestyle</div>
+        <div class="list-mask">
+          <div class="list-track">
+            <div class="pill-row"><span class="pill">hotelesdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">yatesdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">viajesdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">resortsdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">spasdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">jetsdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">turismodelujo.com</span></div>
+            <div class="pill-row"><span class="pill">vuelosdelujo.com</span></div>
+            <!-- duplicated -->
+            <div class="pill-row"><span class="pill">hotelesdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">yatesdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">viajesdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">resortsdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">spasdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">jetsdelujo.com</span></div>
+            <div class="pill-row"><span class="pill">turismodelujo.com</span></div>
+            <div class="pill-row"><span class="pill">vuelosdelujo.com</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <div class="opt-label">Opción 3</div>
+      <div class="opt-name">Vertical scroll, pill-styled</div>
+      <div class="opt-desc">Keeps the original vertical scroll but wraps each domain in a pill badge. One per line, scrolling upward.</div>
+    </div>
+  </div>
+
+</div>
+
+<p style="text-align:center;margin-top:28px;font-family:'Lora',serif;font-size:11px;color:rgba(250,247,242,0.35);letter-spacing:0.08em;">
+  Haz clic para seleccionar · http://localhost:53456
+</p>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push *)",
+      "Bash(echo \"Server PID: $!\")",
+      "Bash(sed -n '51p' /Users/silviacastro/Desktop/dominiosdelujo-app/components/home/Hero.module.css)",
+      "Bash(sed -n '168p' /Users/silviacastro/Desktop/dominiosdelujo-app/components/home/Hero.module.css)",
+      "Bash(sed -n '119p' /Users/silviacastro/Desktop/dominiosdelujo-app/components/home/CategoryTeaser.module.css)",
+      "Bash(sed -n '54p' /Users/silviacastro/Desktop/dominiosdelujo-app/components/home/BrandStrip.module.css)",
+      "Bash(sed -n '149p' /Users/silviacastro/Desktop/dominiosdelujo-app/components/home/Manifesto.module.css)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/Users/silviacastro/Desktop/dominiosdelujo-app/lib/i18n/es.json'\\)\\); [print\\(f'{k}: {v}'\\) for k,v in d.get\\('servicios',{}\\).items\\(\\)]\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/Users/silviacastro/Desktop/dominiosdelujo-app/lib/i18n/en.json'\\)\\); [print\\(f'{k}: {v}'\\) for k,v in d.get\\('servicios',{}\\).items\\(\\)]\")",
+      "Bash(python3 -)",
+      "Bash(python3)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app diff --stat 34ce6e0..ab45988)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app diff 34ce6e0..ab45988)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app add app/servicios/afiliados/page.tsx app/servicios/afiliados/page.module.css)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app commit -m ' *)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app push -u origin client-feedback/v1)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app log --oneline main..client-feedback/v1)",
+      "Bash(gh pr create --title 'client-feedback/v1: UI polish, servicios redesign, i18n fixes' --body ' *)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app diff --stat HEAD)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app diff HEAD -- app/page.tsx app/layout.tsx components/layout/Nav.tsx lib/i18n/en.json lib/i18n/es.json)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app diff HEAD -- components/home/CategoryTeaser.tsx components/home/Hero.tsx components/ui/FloatingCertBadge.tsx)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app add app/layout.tsx app/page.tsx components/home/CategoryTeaser.tsx components/home/Hero.tsx components/layout/Nav.tsx components/ui/FloatingCertBadge.tsx components/ui/ScrollReset.tsx lib/i18n/en.json lib/i18n/es.json)",
+      "Bash(git -C /Users/silviacastro/Desktop/dominiosdelujo-app push)"
+    ]
+  }
+}

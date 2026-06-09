@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insignia1 – 3 design options</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+<script src="../../../../../../../.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/skills/brainstorming/scripts/helper.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #181410;
+    color: #FAF7F2;
+    font-family: 'Lora', serif;
+    padding: 40px 32px 60px;
+  }
+
+  .page-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 0.06em;
+    color: #FAF7F2;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .page-sub {
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    color: rgba(250,247,242,0.55);
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* ── CARD WRAPPER ── */
+  .card {
+    border: 1px solid rgba(176,138,58,0.18);
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.25s, box-shadow 0.25s, transform 0.2s;
+    position: relative;
+  }
+
+  .card:hover {
+    border-color: rgba(176,138,58,0.55);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    transform: translateY(-2px);
+  }
+
+  .card.selected {
+    border-color: #C9A55C;
+    box-shadow: 0 0 0 2px #C9A55C, 0 8px 40px rgba(176,138,58,0.25);
+  }
+
+  .selected-badge {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #C9A55C;
+    color: #0A0806;
+    font-family: 'Lora', serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 1px;
+    z-index: 10;
+  }
+  .card.selected .selected-badge { display: block; }
+
+  /* ── MOCK HEADER (page header preview) ── */
+  .mock-header {
+    padding: 20px 24px 16px;
+    text-align: center;
+    border-bottom: 1px solid rgba(176,138,58,0.15);
+  }
+
+  .mock-eyebrow {
+    font-family: 'Lora', serif;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #C9A55C;
+    margin-bottom: 8px;
+  }
+
+  .mock-h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: #FAF7F2;
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+
+  .mock-h1 em { color: #B08A3A; font-style: italic; }
+
+  /* ── ROW PREVIEW ── */
+  .mock-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 240px;
+  }
+
+  .mock-image {
+    background: linear-gradient(135deg, #2a2018 0%, #1a1410 50%, #0f0c09 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mock-image-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(176,138,58,0.35);
+  }
+
+  .mock-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect width='60' height='60' fill='none' stroke='rgba(176,138,58,0.06)' stroke-width='1'/%3E%3C/svg%3E");
+  }
+
+  /* ── CONTENT HALF (the thing we're redesigning) ── */
+  .mock-content {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+  }
+
+  /* ── DOMAIN LIST ── */
+  .mock-domains {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    list-style: none;
+  }
+
+  .mock-domain {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    line-height: 2;
+  }
+
+  /* ── OPTION A ── */
+  .opt-a .mock-header,
+  .opt-a .mock-content { background: #0A0806; }
+
+  .opt-a .mock-tagline {
+    font-family: 'Lora', serif;
+    font-size: 10px;
+    color: rgba(250,247,242,0.55);
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+  }
+
+  .opt-a .cat-label {
+    font-family: 'Lora', serif;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C9A55C;
+  }
+
+  .opt-a .mock-domain { color: #F0E4C8; font-weight: 400; }
+
+  /* ── OPTION B ── */
+  .opt-b .mock-header { background: #0A0806; }
+  .opt-b .mock-content {
+    background: linear-gradient(to right, #111009, #0A0806);
+    border-left: 1px solid rgba(176,138,58,0.35);
+  }
+
+  .opt-b .mock-tagline {
+    font-family: 'Lora', serif;
+    font-size: 10px;
+    color: rgba(250,247,242,0.82);
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+  }
+
+  .opt-b .cat-label {
+    font-family: 'Lora', serif;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C9A55C;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(176,138,58,0.2);
+    margin-bottom: 4px;
+  }
+
+  .opt-b .mock-domain { color: #EDE3D0; font-weight: 400; }
+  .opt-b .mock-domain.hovered { color: #FFFFFF; }
+
+  /* ── OPTION C ── */
+  .opt-c .mock-header { background: #0A0806; }
+  .opt-c .mock-content {
+    background: #141210;
+  }
+
+  .opt-c .mock-tagline {
+    font-family: 'Lora', serif;
+    font-size: 10px;
+    color: rgba(250,247,242,0.9);
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+  }
+
+  .opt-c .cat-rule {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  .opt-c .cat-rule::before {
+    content: '';
+    flex: 0 0 20px;
+    height: 1px;
+    background: #B08A3A;
+  }
+
+  .opt-c .cat-label {
+    font-family: 'Lora', serif;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #B08A3A;
+  }
+
+  .opt-c .mock-domain { color: #FFFFFF; font-weight: 400; }
+
+  /* ── CARD FOOTER ── */
+  .card-footer {
+    padding: 16px 20px;
+    border-top: 1px solid rgba(176,138,58,0.12);
+    background: rgba(0,0,0,0.3);
+  }
+
+  .option-label {
+    font-family: 'Lora', serif;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #C9A55C;
+    margin-bottom: 4px;
+  }
+
+  .option-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FAF7F2;
+    margin-bottom: 6px;
+  }
+
+  .option-desc {
+    font-family: 'Lora', serif;
+    font-size: 11px;
+    color: rgba(250,247,242,0.55);
+    line-height: 1.55;
+  }
+
+  .rec-badge {
+    display: inline-block;
+    margin-left: 6px;
+    font-family: 'Lora', serif;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #0A0806;
+    background: #C9A55C;
+    padding: 2px 7px;
+    border-radius: 1px;
+    vertical-align: middle;
+  }
+
+  /* ── CONTRAST BADGES ── */
+  .contrast-row {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .contrast-pill {
+    font-family: 'Lora', serif;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 10px;
+    border: 1px solid;
+  }
+
+  .pill-green { color: #7EC8A0; border-color: rgba(126,200,160,0.4); background: rgba(126,200,160,0.08); }
+  .pill-yellow { color: #E2CFA0; border-color: rgba(226,207,160,0.4); background: rgba(226,207,160,0.08); }
+  .pill-gold { color: #C9A55C; border-color: rgba(201,165,92,0.4); background: rgba(201,165,92,0.08); }
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Dominios Insignia — Readability Redesign</h1>
+<p class="page-sub">Three approaches to improving contrast and legibility on the dark layout. Click to select.</p>
+
+<div class="grid">
+
+  <!-- ── OPTION A ── -->
+  <div class="card opt-a" data-choice="a" onclick="toggleSelect(this)">
+    <div class="selected-badge">Selected</div>
+
+    <div class="mock-header">
+      <div class="mock-eyebrow">Portfolio · Dominios Insignia</div>
+      <div class="mock-h1">La mayor red de dominios<br>de <em>lujo en español</em></div>
+      <div class="mock-tagline">Más de 60 activos digitales en las categorías de mayor valor.</div>
+    </div>
+
+    <div class="mock-row">
+      <div class="mock-image">
+        <span class="mock-image-text">Imagen</span>
+      </div>
+      <div class="mock-content">
+        <div class="cat-label">Viajes & Lifestyle</div>
+        <ul class="mock-domains">
+          <li class="mock-domain">hotelesdelujo.com</li>
+          <li class="mock-domain">yatesdelujo.com</li>
+          <li class="mock-domain">viajesdelujo.com</li>
+          <li class="mock-domain">resortsdelujo.com</li>
+          <li class="mock-domain">spasdelujo.com</li>
+          <li class="mock-domain">jetsdelujo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <div class="option-label">Opción A</div>
+      <div class="option-name">Calibrated contrast</div>
+      <div class="option-desc">Domain names in warm cream (#F0E4C8) at weight 400. Tagline bumped to 80% opacity. Gold kept everywhere it currently appears. Minimal structural change.</div>
+      <div class="contrast-row">
+        <span class="contrast-pill pill-green">Cream text ✓</span>
+        <span class="contrast-pill pill-yellow">Gold eyebrow</span>
+        <span class="contrast-pill pill-yellow">No panel sep.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── OPTION B ── -->
+  <div class="card opt-b" data-choice="b" onclick="toggleSelect(this)">
+    <div class="selected-badge">Selected</div>
+
+    <div class="mock-header">
+      <div class="mock-eyebrow">Portfolio · Dominios Insignia</div>
+      <div class="mock-h1">La mayor red de dominios<br>de <em>lujo en español</em></div>
+      <div class="mock-tagline">Más de 60 activos digitales en las categorías de mayor valor.</div>
+    </div>
+
+    <div class="mock-row">
+      <div class="mock-image">
+        <span class="mock-image-text">Imagen</span>
+      </div>
+      <div class="mock-content">
+        <div class="cat-label">Viajes & Lifestyle</div>
+        <ul class="mock-domains">
+          <li class="mock-domain">hotelesdelujo.com</li>
+          <li class="mock-domain">yatesdelujo.com</li>
+          <li class="mock-domain hovered">viajesdelujo.com</li>
+          <li class="mock-domain">resortsdelujo.com</li>
+          <li class="mock-domain">spasdelujo.com</li>
+          <li class="mock-domain">jetsdelujo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <div class="option-label">Opción B <span class="rec-badge">Recomendada</span></div>
+      <div class="option-name">Editorial hierarchy</div>
+      <div class="option-desc">Warm off-white (#EDE3D0) for domain names. Gold only on category label. Content panel gets subtle warm gradient + thin gold left border. Hover: pure white.</div>
+      <div class="contrast-row">
+        <span class="contrast-pill pill-green">Warm white text ✓</span>
+        <span class="contrast-pill pill-green">Panel separation ✓</span>
+        <span class="contrast-pill pill-gold">Gold as accent only</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── OPTION C ── -->
+  <div class="card opt-c" data-choice="c" onclick="toggleSelect(this)">
+    <div class="selected-badge">Selected</div>
+
+    <div class="mock-header">
+      <div class="mock-eyebrow">Portfolio · Dominios Insignia</div>
+      <div class="mock-h1">La mayor red de dominios<br>de <em>lujo en español</em></div>
+      <div class="mock-tagline">Más de 60 activos digitales en las categorías de mayor valor.</div>
+    </div>
+
+    <div class="mock-row">
+      <div class="mock-image">
+        <span class="mock-image-text">Imagen</span>
+      </div>
+      <div class="mock-content">
+        <div class="cat-rule">
+          <span class="cat-label">Viajes & Lifestyle</span>
+        </div>
+        <ul class="mock-domains">
+          <li class="mock-domain">hotelesdelujo.com</li>
+          <li class="mock-domain">yatesdelujo.com</li>
+          <li class="mock-domain">viajesdelujo.com</li>
+          <li class="mock-domain">resortsdelujo.com</li>
+          <li class="mock-domain">spasdelujo.com</li>
+          <li class="mock-domain">jetsdelujo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <div class="option-label">Opción C</div>
+      <div class="option-name">High-contrast editorial</div>
+      <div class="option-desc">Pure white domain names. Content panel in #141210 (distinct from page bg). Thin gold rule above category label. Maximum legibility, slightly cooler feel.</div>
+      <div class="contrast-row">
+        <span class="contrast-pill pill-green">Pure white text ✓</span>
+        <span class="contrast-pill pill-green">Strong panel sep. ✓</span>
+        <span class="contrast-pill pill-yellow">Cooler, less warm</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p style="text-align:center;margin-top:32px;font-family:'Lora',serif;font-size:11px;color:rgba(250,247,242,0.4);letter-spacing:0.08em;">
+  Haz clic en una opción para seleccionarla, luego responde en el terminal
+</p>
+
+</body>
+</html>

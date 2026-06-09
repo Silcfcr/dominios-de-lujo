@@ -40,7 +40,7 @@ export default function Hero() {
         <p className={styles.kvp}>{t('hero.kvp')}</p>
         <div className={styles.ctas}>
           <Link href="/dominios" className="btn-dark">{t('hero.cta1')}</Link>
-          <Link href="/servicios" className="btn-outline">{t('hero.cta2')}</Link>
+          <Link href="/servicios/afiliados" className="btn-outline">{t('partnerValue.cta')}</Link>
         </div>
       </div>
 
@@ -67,7 +67,7 @@ export default function Hero() {
         })}
         <div className={styles.overlay} />
         <div className={styles.badge}>
-          <span className={styles.badgeNum}>3.000+</span>
+          <span className={styles.badgeNum}>4.000+</span>
           <span className={styles.badgeTxt}>{t('hero.badgeTxt')}</span>
         </div>
       </div>

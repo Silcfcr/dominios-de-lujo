@@ -35,7 +35,7 @@ export default function AfiliadosPage() {
       {/* 2. Stats bar */}
       <div className={styles.statsBar}>
         <div className={styles.stat}>
-          <span className={styles.statNum}>3.000+</span>
+          <span className={styles.statNum}>4.000+</span>
           <span className={styles.statLabel}>{t('servicios.stat1Label')}</span>
         </div>
         <div className={styles.statDivider} aria-hidden="true" />

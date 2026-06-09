@@ -3,15 +3,20 @@
   background: var(--c);
 }
 
+/* === HEADER === */
 .header {
   background: var(--w);
-  padding: 72px 64px 64px;
-  border-bottom: 1px solid var(--rule);
+  padding: 72px 64px 32px;
   text-align: center;
 }
 
+.headerInner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 .h1 {
-  font-size: clamp(32px, 4vw, 56px);
+  font-size: clamp(36px, 4.5vw, 62px);
   margin-bottom: 16px;
 }
 
@@ -19,38 +24,102 @@
   margin-top: 0;
 }
 
+/* === WRITERS INTRO === */
+.writersIntro {
+  background: var(--w);
+  padding: 40px 64px 96px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.writersIntroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 96px;
+  align-items: start;
+}
+
+.writersIntroLeft {
+  position: sticky;
+  top: 120px;
+}
+
+.writersIntroTitle {
+  font-family: var(--fd);
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+
+.writersIntroPara {
+  font-family: var(--fb);
+  font-size: 15px;
+  line-height: 1.95;
+  color: var(--ink2);
+  margin-bottom: 24px;
+}
+
+.writersIntroPara:last-child {
+  margin-bottom: 0;
+}
+
+/* === ROLES === */
 .roles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--rule);
-  padding: 0;
+  grid-template-columns: repeat(2, 1fr);
+  background: var(--c);
 }
 
 .role {
   background: var(--w);
-  padding: 48px 40px;
+  padding: 64px 56px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
   transition: background 0.3s;
+  border-bottom: 1px solid var(--rule);
+}
+
+.role:first-child {
+  border-right: 1px solid var(--rule);
 }
 
 .role:hover {
   background: var(--c);
 }
 
+.roleNumber {
+  font-family: var(--fd);
+  font-size: 140px;
+  font-weight: 300;
+  color: rgba(176, 138, 58, 0.055);
+  line-height: 1;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  user-select: none;
+  pointer-events: none;
+  letter-spacing: -0.02em;
+}
+
 .roleTop {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  position: relative;
 }
 
 .roleIcon svg {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   color: var(--gold);
   flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .roleEye {
@@ -65,7 +134,7 @@
 
 .roleTitle {
   font-family: var(--fd);
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   color: var(--ink);
   line-height: 1.2;
@@ -77,57 +146,48 @@
   line-height: 1.85;
   color: var(--ink2);
   flex: 1;
+  position: relative;
 }
 
-.certImage {
-  display: block;
-  margin: 0 auto 32px;
-  opacity: 0.9;
-}
-
-/* Values section */
-.values {
-  background: var(--ink);
-  padding: 96px 64px;
-}
-
-.valuesInner {
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.valuesTitle {
-  color: var(--c);
-  font-size: clamp(28px, 3.2vw, 44px);
-  margin-top: 14px;
-  margin-bottom: 24px;
-}
-
-.valuesTitle em {
-  color: var(--glt);
-}
-
-.valuesBody {
-  font-family: var(--fb);
-  font-size: 14px;
-  line-height: 1.85;
-  color: rgba(250, 247, 242, 0.7);
-}
-
+/* === RESPONSIVE === */
 @media (max-width: 1024px) {
-  .roles {
+  .writersIntroInner {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .role {
-    padding: 40px 32px;
+  .writersIntroLeft {
+    position: static;
+  }
+
+  .writersIntroTitle::after {
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .header {
-    padding: 48px 24px 40px;
+    padding: 64px 24px 56px;
+  }
+
+  .writersIntro {
+    padding: 64px 24px;
+  }
+
+  .roles {
+    grid-template-columns: 1fr;
+  }
+
+  .role {
+    padding: 48px 28px;
+  }
+
+  .role:first-child {
+    border-right: none;
+  }
+
+  .roleNumber {
+    font-size: 90px;
   }
 
   .values {

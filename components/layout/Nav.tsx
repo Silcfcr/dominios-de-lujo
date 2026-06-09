@@ -32,26 +32,16 @@ export default function Nav() {
   const links: NavLink[] = [
     { href: '/', label: t('nav.inicio') },
     { href: '/dominios', label: t('nav.dominios') },
-    {
-      href: '/servicios',
-      label: t('nav.servicios'),
-      children: [
-        { href: '/servicios/afiliados',  label: t('subnav.afiliados') },
-        { href: '/servicios#paginas',    label: t('subnav.paginas') },
-        { href: '/servicios#alquileres', label: t('subnav.alquileres') },
-      ],
-    },
+    { href: '/servicios/afiliados', label: t('nav.afiliados') },
     { href: '/colaborar', label: t('nav.colaborar') },
     {
       href: '/nosotros',
       label: t('nav.about'),
       children: [
-        { href: '/nosotros#escritores', label: t('subnav.escritores') },
         { href: '/nosotros#nosotros',   label: t('subnav.mision') },
         { href: '/nosotros#manifiesto', label: t('subnav.manifesto') },
       ],
     },
-    { href: '/lujototal', label: t('nav.lujototal') },
   ];
 
   return (

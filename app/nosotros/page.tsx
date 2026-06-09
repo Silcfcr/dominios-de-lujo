@@ -10,14 +10,14 @@ export const metadata = {
 export default function NosotrosPage() {
   return (
     <main>
-      <section id="escritores">
-        <WritersGrid />
-      </section>
       <section id="nosotros">
         <MissionVision />
       </section>
       <section id="manifiesto">
         <Manifesto />
+      </section>
+      <section id="escritores">
+        <WritersGrid />
       </section>
     </main>
   );

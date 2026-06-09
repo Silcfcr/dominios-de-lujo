@@ -2,24 +2,22 @@
 
 import { useI18n } from '@/lib/i18n/context';
 import RevealWrapper from '@/components/ui/RevealWrapper';
-import { assetPath } from '@/lib/assetPath';
 import styles from './BrandsGrid.module.css';
 
 type Brand = {
-  src: string;
-  alt: string;
+  initials: string;
+  name: string;
   descKey: string;
-  invert?: boolean;
 };
 
 export default function BrandsGrid() {
   const { t } = useI18n();
 
   const brands: Brand[] = [
-    { src: '/images/brands/ddl-logo.svg',     alt: 'Dominios de Lujo', descKey: 'brandsGrid.b1Desc' },
-    { src: '/images/brands/me-dijo-que-si.png', alt: 'Me Dijo Que Sí', descKey: 'brandsGrid.b2Desc' },
-    { src: '/images/brands/brand-3-logo.png', alt: '',                 descKey: 'brandsGrid.b3Desc' },
-    { src: '/images/brands/casasen-logo.png', alt: 'Casasen',          descKey: 'brandsGrid.b4Desc' },
+    { initials: 'BL',  name: 'Belleza de Lujo',  descKey: 'brandsGrid.b1Desc' },
+    { initials: 'PL',  name: 'Perfumes de Lujo', descKey: 'brandsGrid.b2Desc' },
+    { initials: 'ME',  name: 'Moda Exclusiva',   descKey: 'brandsGrid.b3Desc' },
+    { initials: 'PDL', name: 'PaginasDeLujo',    descKey: 'brandsGrid.b4Desc' },
   ];
 
   return (
@@ -32,11 +30,10 @@ export default function BrandsGrid() {
       <RevealWrapper className={styles.grid}>
         {brands.map((brand, i) => (
           <div key={i} className={styles.card}>
-            <img
-              src={assetPath(brand.src)}
-              alt={brand.alt}
-              className={brand.invert ? `${styles.logo} ${styles.invert}` : styles.logo}
-            />
+            <div className={styles.placeholder} aria-label={brand.name}>
+              {brand.initials}
+            </div>
+            <p className={styles.brandName}>{brand.name}</p>
             <p className={styles.desc}>{t(brand.descKey)}</p>
             <span className={styles.badge}>{t('brandsGrid.soon')}</span>
           </div>

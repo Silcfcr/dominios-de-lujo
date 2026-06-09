@@ -69,7 +69,7 @@ const CATEGORIES: InsigniaCategory[] = [
     image: '/images/watches.webp',
     imageAlt: 'dominiosInsignia.alt_deportes',
     domains: [
-      'baresdelujo.com','casinosdelujo.com','clubsdelujo.com',
+      'baresdelujo.com','casinosdelujo.com','clubesdelujo.com',
       'deportesdelujo.com','golfdelujo.com','polodelujo.com','skidelujo.com',
     ],
   },
