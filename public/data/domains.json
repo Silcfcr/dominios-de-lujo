@@ -1,5 +1,5 @@
 {
-  "total_domains": 2505,
+  "total_domains": 2510,
   "domains": [
     {
       "category": "Animales y Mascotas de Lujo",
@@ -27507,6 +27507,61 @@
       "flagship": "no",
       "include_in_categories": "yes",
       "one_pager": "yes"
+    },
+    {
+      "category": "Gastronomía, Bebidas y Puros",
+      "domain": "restaurantesdelujo.com",
+      "country": "Global",
+      "description": "Portal de referencia para restaurantes de lujo en España y Latinoamérica. Reseñas, reservas y experiencias gastronómicas de alto nivel.",
+      "targeted_audience": "Amantes de la gastronomía de lujo, turistas premium y empresas de hospitalidad.",
+      "use_cases": "Marketing de restaurantes Michelin, reservas de experiencias gastronómicas exclusivas, contenido editorial gourmet.",
+      "flagship": "yes",
+      "include_in_categories": "yes",
+      "affiliate_marketing": "yes"
+    },
+    {
+      "category": "Joyería, Relojería y Metales Preciosos",
+      "domain": "gemasdelujo.com",
+      "country": "Global",
+      "description": "Referencia editorial sobre gemas preciosas y semipreciosas de lujo. Diamantes, rubíes, esmeraldas y zafiros de colección.",
+      "targeted_audience": "Coleccionistas de gemas, joyeros y compradores de lujo de alto poder adquisitivo.",
+      "use_cases": "Afiliación con joyerías de alta gama, contenido sobre gemas certificadas, marketplace de piedras preciosas.",
+      "flagship": "yes",
+      "include_in_categories": "yes",
+      "affiliate_marketing": "yes"
+    },
+    {
+      "category": "Entretenimiento, Eventos, Deportes y Experiencias",
+      "domain": "baresdelujo.com",
+      "country": "Global",
+      "description": "Guía de bares y coctelería de lujo en España y Latinoamérica. Los mejores speakeasies, rooftops y coctelerías de autor.",
+      "targeted_audience": "Profesionales del sector de la hostelería de lujo, turistas premium y consumidores de experiencias nocturnas exclusivas.",
+      "use_cases": "Promoción de bares premium, reservas de experiencias VIP, contenido sobre destilados y coctelería de autor.",
+      "flagship": "yes",
+      "include_in_categories": "yes",
+      "affiliate_marketing": "yes"
+    },
+    {
+      "category": "Entretenimiento, Eventos, Deportes y Experiencias",
+      "domain": "clubsdelujo.com",
+      "country": "Global",
+      "description": "Directorio de clubes privados y de membresía de lujo en España y Latinoamérica. Acceso exclusivo, eventos privados y lifestyle premium.",
+      "targeted_audience": "Miembros de clubes privados, ejecutivos de alto nivel y familias de alto patrimonio.",
+      "use_cases": "Marketing de clubes exclusivos, gestión de membresías premium, contenido sobre lifestyle de élite.",
+      "flagship": "yes",
+      "include_in_categories": "yes",
+      "affiliate_marketing": "yes"
+    },
+    {
+      "category": "Hogar, Diseño e Interiorismo",
+      "domain": "decoraciondelujo.com",
+      "country": "Global",
+      "description": "Portal de decoración e interiorismo de lujo. Tendencias, firmas internacionales y proyectos residenciales de alto standing.",
+      "targeted_audience": "Propietarios de viviendas de lujo, interioristas y arquitectos de alto standing.",
+      "use_cases": "Afiliación con firmas de decoración premium, proyectos de interiorismo de lujo, contenido editorial sobre diseño exclusivo.",
+      "flagship": "yes",
+      "include_in_categories": "yes",
+      "affiliate_marketing": "yes"
     }
   ]
 }

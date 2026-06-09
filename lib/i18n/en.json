@@ -219,6 +219,11 @@
     "eyebrow": "Join the network",
     "title": "Collaborate with us.",
     "sub": "We're looking for talent to build the largest Spanish luxury editorial network.",
+    "wiHeading": "Why join DominiosDeLujo as a writer?",
+    "wiP1": "What we're building is rare. We're not just producing content — we're shaping entire digital publications, each one built on real expertise, passion, and long‑term vision. Some writers here lead full verticals as editors and strategists, guiding the long‑term growth of the brands they manage. Others contribute as specialised writers, bringing depth, clarity, and authority to the topics they know best. Both roles matter — and both shape the quality of our ecosystem.",
+    "wiP2": "You won't be building alone. You'll be part of a team that actively supports one another, shares knowledge, and grows together. Behind you stands a full digital infrastructure — premium domains, tools, structure, and an ecosystem built to help every vertical scale with intention and clarity.",
+    "wiP3": "As the platform expands, we reinvest directly into the writers and publications that deliver results, providing support and resources far beyond what any individual creator could build alone. This is the strength of our ecosystem: a community of creators who think with intention, take pride in their craft, and grow with the platform as the platform grows with them. With the right structure and the right people, a small, focused group can build something far greater than the sum of its parts.",
+    "wiP4": "To protect the quality of what we build, we follow the editorial principles of the world's leading luxury publications: independence, accuracy, transparency, and a premium human voice. Every article is crafted with care, grounded in real expertise, and written with the long‑term reputation of the publication in mind. Affiliate links are used with clarity and integrity, never at the expense of trust. Our standards ensure that each site in the ecosystem feels like a true luxury magazine — elegant, authoritative, and built on editorial excellence — while giving every writer the freedom to express their perspective with honesty and depth.",
     "writersTitle": "Writers",
     "writersEyebrow": "Luxury writers",
     "writersBody": "Do you write about lifestyle, fashion, gastronomy, travel or luxury properties? We want your voice. We seek writers with a passion for the premium sector and the ability to create high-calibre editorial content.",
@@ -244,7 +249,8 @@
   },
   "writersGrid": {
     "eyebrow": "Voices of luxury",
-    "heading": "Our Luxury Writers",
+    "heading": "Some of the voices that define us",
+    "sub": "A selection of the writers who shape our editorial.",
     "w1Name": "Writer One",
     "w1Vertical": "Fashion & Style",
     "w1Quote": "Luxury is choosing with intention.",
@@ -274,6 +280,17 @@
     "b3Desc": "A refined destination for timeless luxury rings.",
     "b4Desc": "Discover homes and rentals across Spain."
   },
+  "affiliateIntro": {
+    "p1a": "We have an ",
+    "p1b": "exclusive affiliate marketing platform",
+    "p1c": ", designed to connect brands, entrepreneurs, and creators with an ecosystem of premium domains.",
+    "p2a": "Our system combines ",
+    "p2b": "intelligent automation",
+    "p2c": ", luxury editorial standards, and an optimised infrastructure to scale campaigns quickly, clearly, and efficiently.",
+    "p3a": "The result is simple: ",
+    "p3b": "more visibility, more authority, and more conversions",
+    "p3c": " — all within an elegant and professional digital environment."
+  },
   "partnerValue": {
     "eyebrow": "For Brand Partners",
     "title": "What your brand gets access to",
@@ -294,5 +311,24 @@
     "item4Sub": "Editorial standards that protect your reputation",
     "item5Sub": "Frictionless integration for your team",
     "cta": "Apply to Partner"
+  },
+  "dominiosInsignia": {
+    "eyebrow": "Dominios Insignia",
+    "title": "The most exclusive",
+    "titleEm": "portfolio.",
+    "sub": "Our most strategic domains, organised by vertical. Each name is a brand in waiting.",
+    "results": "domains",
+    "cat_viajes": "Travel, Wellness & Luxury Experiences",
+    "cat_autos": "Cars, Motorcycles & Mobility",
+    "cat_joyeria": "Jewellery, Fashion & Beauty",
+    "cat_arte": "Art, Collectibles & Gastronomy",
+    "cat_deportes": "Sports & Entertainment",
+    "cat_propiedades": "Properties, Finance & Future",
+    "alt_viajes": "Luxury travel and experiences",
+    "alt_autos": "Luxury cars and mobility",
+    "alt_joyeria": "Luxury jewellery, fashion and beauty",
+    "alt_arte": "Luxury art, collectibles and gastronomy",
+    "alt_deportes": "Luxury sports and entertainment",
+    "alt_propiedades": "Luxury properties and finance"
   }
 }

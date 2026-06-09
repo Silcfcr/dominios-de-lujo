@@ -1,4 +1,15 @@
-'use client';
+import DominiosInsignia from '@/components/dominios/DominiosInsignia';
+
+export const metadata = {
+  title: 'Dominios Insignia — Dominios de Lujo',
+  description: 'Los dominios más estratégicos de nuestra red, organizados por vertical. Cada nombre es una marca en potencia.',
+};
+
+export default function DominiosPage() {
+  return <DominiosInsignia />;
+}
+
+/* ── LEGACY list view — preserved for reference ────────────────────
 
 import { useState, useEffect, useMemo, useCallback, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
@@ -67,11 +78,9 @@ function DominiosContent() {
 
   return (
     <div className={styles.layout}>
-      {/* Sidebar */}
       <aside className={styles.sidebar}>
         <h2 className={styles.sideTitle}>{t('dominios.allCategories')}</h2>
 
-        {/* Desktop filter list */}
         <div className={styles.filters}>
           <button
             className={`${styles.filterBtn} ${!activeCategory && !showFlagship ? styles.filterActive : ''}`}
@@ -105,7 +114,6 @@ function DominiosContent() {
           })}
         </div>
 
-        {/* Mobile filter select */}
         <div className={styles.mobileFilters}>
           <button
             className={`${styles.filterBtn} ${showFlagship ? styles.filterActive : ''} ${styles.flagshipMobile}`}
@@ -122,7 +130,6 @@ function DominiosContent() {
         </div>
       </aside>
 
-      {/* Main */}
       <div className={styles.main}>
         <div className={styles.topBar}>
           <DomainSearch value={query} onChange={handleQuery} />
@@ -173,7 +180,7 @@ function DominiosContent() {
   );
 }
 
-export default function DominiosPage() {
+export function LegacyDominiosPage() {
   const { t } = useI18n();
 
   return (
@@ -188,3 +195,5 @@ export default function DominiosPage() {
     </div>
   );
 }
+
+────────────────────────────────────────────────────────────────── */

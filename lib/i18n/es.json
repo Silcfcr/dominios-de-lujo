@@ -219,6 +219,11 @@
     "eyebrow": "Únete a la red",
     "title": "Colabora con nosotros.",
     "sub": "Buscamos talento para construir la mayor red editorial de lujo en español.",
+    "wiHeading": "¿Por qué unirte como escritor?",
+    "wiP1": "Lo que estamos construyendo es excepcional. No nos limitamos a producir contenido — estamos dando forma a publicaciones digitales completas, cada una construida sobre experiencia real, pasión y visión a largo plazo. Algunos escritores lideran verticales completas como editores y estrategas, guiando el crecimiento sostenido de las marcas que gestionan. Otros contribuyen como escritores especializados, aportando profundidad, claridad y autoridad a los temas que mejor conocen. Ambos roles importan — y ambos determinan la calidad de nuestro ecosistema.",
+    "wiP2": "No construirás solo. Formarás parte de un equipo que se apoya activamente, comparte conocimiento y crece junto. Detrás de ti hay una infraestructura digital completa — dominios premium, herramientas, estructura y un ecosistema diseñado para ayudar a cada vertical a escalar con intención y claridad.",
+    "wiP3": "A medida que la plataforma crece, reinvertimos directamente en los escritores y publicaciones que generan resultados, ofreciendo apoyo y recursos muy por encima de lo que cualquier creador podría construir en solitario. Esta es la fortaleza de nuestro ecosistema: una comunidad de creadores que piensan con intención, se enorgullecen de su oficio y crecen con la plataforma mientras la plataforma crece con ellos. Con la estructura adecuada y las personas adecuadas, un grupo pequeño y enfocado puede construir algo mucho mayor que la suma de sus partes.",
+    "wiP4": "Para proteger la calidad de lo que construimos, aplicamos los principios editoriales de las grandes publicaciones de lujo: independencia, precisión, transparencia y una voz humana de primer nivel. Cada artículo se elabora con cuidado, se fundamenta en experiencia real y se escribe pensando en la reputación a largo plazo de la publicación. Los enlaces de afiliados se utilizan con claridad e integridad, nunca a expensas de la confianza. Nuestros estándares aseguran que cada sitio del ecosistema se sienta como una verdadera revista de lujo — elegante, con autoridad y construida sobre la excelencia editorial — mientras da a cada escritor la libertad de expresar su perspectiva con honestidad y profundidad.",
     "writersTitle": "Redactores",
     "writersEyebrow": "Escritores de lujo",
     "writersBody": "¿Escribes sobre estilo de vida, moda, gastronomía, viajes o propiedades de lujo? Queremos tu voz. Buscamos redactores con pasión por el sector premium y capacidad para crear contenido editorial de alto nivel.",
@@ -244,7 +249,8 @@
   },
   "writersGrid": {
     "eyebrow": "Voces del lujo",
-    "heading": "Nuestros Escritores de Lujo",
+    "heading": "Algunas de las voces que nos definen",
+    "sub": "Una selección de los escritores que dan forma a nuestra editorial.",
     "w1Name": "Escritora Uno",
     "w1Vertical": "Moda & Estilo",
     "w1Quote": "El lujo es elegir con intención.",
@@ -274,6 +280,17 @@
     "b3Desc": "Un destino refinado para anillos de lujo atemporales.",
     "b4Desc": "Descubre hogares y alquileres en toda España."
   },
+  "affiliateIntro": {
+    "p1a": "Contamos con una ",
+    "p1b": "plataforma exclusiva de marketing de afiliados",
+    "p1c": ", diseñada para conectar marcas, emprendedores y creadores con un ecosistema de dominios premium.",
+    "p2a": "Nuestro sistema combina ",
+    "p2b": "automatización inteligente",
+    "p2c": ", estándares editoriales de lujo y una infraestructura optimizada para escalar campañas de forma rápida, clara y eficiente.",
+    "p3a": "El resultado es simple: ",
+    "p3b": "más visibilidad, más autoridad y más conversiones",
+    "p3c": ", todo dentro de un entorno digital elegante y profesional."
+  },
   "partnerValue": {
     "eyebrow": "Para marcas asociadas",
     "title": "A lo que tu marca accede",
@@ -294,5 +311,24 @@
     "item4Sub": "Estándares editoriales que protegen tu reputación",
     "item5Sub": "Integración sin fricción para tu equipo",
     "cta": "Solicitar asociación"
+  },
+  "dominiosInsignia": {
+    "eyebrow": "Dominios Insignia",
+    "title": "El portafolio",
+    "titleEm": "más exclusivo.",
+    "sub": "Los dominios más estratégicos de nuestra red, organizados por vertical. Cada nombre es una marca en potencia.",
+    "results": "dominios",
+    "cat_viajes": "Viajes, Wellness & Experiencias de Lujo",
+    "cat_autos": "Autos, Motos & Movilidad",
+    "cat_joyeria": "Joyería, Moda & Belleza",
+    "cat_arte": "Arte, Coleccionismo & Gastronomía",
+    "cat_deportes": "Deportes & Entretenimiento",
+    "cat_propiedades": "Propiedades, Finanzas & Futuro",
+    "alt_viajes": "Viajes y experiencias de lujo",
+    "alt_autos": "Automóviles y movilidad de lujo",
+    "alt_joyeria": "Joyería, moda y belleza de lujo",
+    "alt_arte": "Arte, coleccionismo y gastronomía de lujo",
+    "alt_deportes": "Deportes y entretenimiento de lujo",
+    "alt_propiedades": "Propiedades y finanzas de lujo"
   }
 }
