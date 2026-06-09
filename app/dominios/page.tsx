@@ -1,4 +1,4 @@
-import DominiosInsignia from '@/components/dominios/DominiosInsignia';
+import DominiosInsigniaAlt from '@/components/dominios/DominiosInsigniaAlt';
 
 export const metadata = {
   title: 'Dominios Insignia — Dominios de Lujo',
@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 export default function DominiosPage() {
-  return <DominiosInsignia />;
+  return <DominiosInsigniaAlt />;
 }
 
 /* ── LEGACY list view — preserved for reference ────────────────────
