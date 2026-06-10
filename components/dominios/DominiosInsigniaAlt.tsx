@@ -16,6 +16,18 @@ type InsigniaCategory = {
   domains: string[];
 };
 
+function scoreMatch(domain: string, q: string): number {
+  const name = domain.slice(0, domain.lastIndexOf('.')).toLowerCase();
+  if (name === q) return 3;
+  if (name.startsWith(q)) return 2;
+  return 1;
+}
+
+function splitDomain(full: string): { name: string; tld: string } {
+  const idx = full.lastIndexOf('.');
+  return { name: full.slice(0, idx), tld: full.slice(idx) };
+}
+
 const CATEGORIES: InsigniaCategory[] = [
   {
     id: 'viajes',
@@ -28,6 +40,8 @@ const CATEGORIES: InsigniaCategory[] = [
       'saluddelujo.com','spasdelujo.com','turismodelujo.com',
       'viajesdelujo.com','vuelosdelujo.com','wellnessdelujo.com',
       'yatesdelujo.com','yogadelujo.com',
+      'nuevayorkdelujo.com','parisdelujo.com','londresdelujo.com',
+      'espanadelujo.com','italiadelujo.com',
     ],
   },
   {
@@ -94,6 +108,7 @@ export default function DominiosInsigniaAlt() {
   const { t } = useI18n();
   const [query, setQuery] = useState('');
   const [allDomains, setAllDomains] = useState<string[]>([]);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     fetch(assetPath('/data/search-index.json'))
@@ -103,15 +118,18 @@ export default function DominiosInsigniaAlt() {
   }, []);
 
   const q = query.trim().toLowerCase();
-  const searchResults = q ? allDomains.filter((d) => d.toLowerCase().includes(q)) : [];
-  const visibleCategories = q ? [] : CATEGORIES;
+  const searchResults = q
+    ? [...new Set(allDomains)]
+        .filter((d) => d.toLowerCase().includes(q))
+        .sort((a, b) => scoreMatch(b, q) - scoreMatch(a, q))
+    : [];
 
   return (
     <div className={styles.page}>
       {/* Header */}
       <div className={styles.header}>
         <p className="s-eye">{t('dominiosInsigniaAlt.eyebrow')}</p>
-        <h1 className={`s-title inv ${styles.h1}`}>
+        <h1 className={`s-title ${styles.h1}`}>
           {t('dominiosInsigniaAlt.title')} <em>{t('dominiosInsigniaAlt.titleEm')}</em>
         </h1>
         <p className={styles.tagline}>{t('dominiosInsigniaAlt.tagline')}</p>
@@ -125,40 +143,49 @@ export default function DominiosInsigniaAlt() {
             className={styles.searchInput}
             placeholder={t('dominios.searchPlaceholder')}
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => { setQuery(e.target.value); setIsOpen(true); }}
+            onFocus={() => { if (query.trim()) setIsOpen(true); }}
+            onBlur={() => setIsOpen(false)}
             aria-label={t('dominios.searchPlaceholder')}
           />
           {query && (
-            <button className={styles.searchClear} onClick={() => setQuery('')} aria-label={t('dominios.clearSearch')}>
+            <button
+              className={styles.searchClear}
+              onClick={() => { setQuery(''); setIsOpen(false); }}
+              aria-label={t('dominios.clearSearch')}
+            >
               ✕
             </button>
+          )}
+          {isOpen && searchResults.length > 0 && (
+            <div className={styles.dropdown}>
+              {searchResults.slice(0, 20).map((domain) => {
+                const { name, tld } = splitDomain(domain);
+                return (
+                  <Link
+                    key={domain}
+                    href={`/dominios/${encodeURIComponent(domain)}`}
+                    className={styles.dropdownItem}
+                    onMouseDown={(e) => e.preventDefault()}
+                  >
+                    <span className={styles.dropdownDomain}>{name}</span>
+                    <span className={styles.dropdownTld}>{tld}</span>
+                  </Link>
+                );
+              })}
+              {searchResults.length > 20 && (
+                <p className={styles.dropdownMore}>
+                  + {searchResults.length - 20} {t('dominiosInsignia.results')}
+                </p>
+              )}
+            </div>
           )}
         </div>
       </div>
 
-      {/* Search results (full list) */}
-      {q && (
-        <div className={styles.results}>
-          {searchResults.length === 0 ? (
-            <p className={styles.noResults}>{t('dominios.noResults')}</p>
-          ) : (
-            <>
-              <p className={styles.resultsCount}>{searchResults.length} {t('dominiosInsignia.results')}</p>
-              <div className={styles.resultsPills}>
-                {searchResults.map((domain) => (
-                  <Link key={domain} href={`/dominios/${encodeURIComponent(domain)}`} className={styles.pill}>
-                    {domain}
-                  </Link>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-      )}
-
       {/* Category rows */}
-      {!q && <div className={styles.rows}>
-        {visibleCategories.map((cat, index) => (
+      <div className={styles.rows}>
+        {CATEGORIES.map((cat, index) => (
           <div
             key={cat.id}
             className={`${styles.row} ${index % 2 === 1 ? styles.rowReverse : ''}`}
@@ -179,41 +206,24 @@ export default function DominiosInsigniaAlt() {
             {/* Content half */}
             <div className={styles.content}>
               <p className={styles.catEye}>{t(cat.titleKey)}</p>
-              {(() => {
-                const third = Math.ceil(cat.domains.length / 3);
-                const row2 = [...cat.domains.slice(third), ...cat.domains.slice(0, third)];
-                const row3 = [...cat.domains.slice(third * 2), ...cat.domains.slice(0, third * 2)];
-                const dur = Math.max(25, cat.domains.length * 3.5);
-                return (
-                  <div className={styles.scrollMask}>
-                    <div className={styles.pillTrack} style={{ animationDuration: `${dur}s` }}>
-                      {[...cat.domains, ...cat.domains].map((domain, i) => (
-                        <Link key={`r1-${domain}-${i}`} href={`/dominios/${encodeURIComponent(domain)}`} className={styles.pill}>
-                          {domain}
-                        </Link>
-                      ))}
-                    </div>
-                    <div className={`${styles.pillTrack} ${styles.pillTrackReverse}`} style={{ animationDuration: `${dur + 5}s` }}>
-                      {[...row2, ...row2].map((domain, i) => (
-                        <Link key={`r2-${domain}-${i}`} href={`/dominios/${encodeURIComponent(domain)}`} className={styles.pill}>
-                          {domain}
-                        </Link>
-                      ))}
-                    </div>
-                    <div className={styles.pillTrack} style={{ animationDuration: `${dur - 5}s` }}>
-                      {[...row3, ...row3].map((domain, i) => (
-                        <Link key={`r3-${domain}-${i}`} href={`/dominios/${encodeURIComponent(domain)}`} className={styles.pill}>
-                          {domain}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                );
-              })()}
+              <div className={styles.domainGrid}>
+                {cat.domains.map((domain) => {
+                  const { name, tld } = splitDomain(domain);
+                  const descKey = `dominiosGrid.${name}`;
+                  return (
+                    <Link key={domain} href={`/dominios/${encodeURIComponent(domain)}`} className={styles.domainItem}>
+                      <p className={styles.domainName}>
+                        {name}<span className={styles.domainTld}>{tld}</span>
+                      </p>
+                      <p className={styles.domainDesc}>{t(descKey)}</p>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </div>
         ))}
-      </div>}
+      </div>
     </div>
   );
 }
