@@ -35,17 +35,17 @@ export default function AfiliadosPage() {
       {/* 2. Stats bar */}
       <div className={styles.statsBar}>
         <div className={styles.stat}>
-          <span className={styles.statNum}>4.000+</span>
+          <span className={styles.statNum}>+4.000</span>
           <span className={styles.statLabel}>{t('servicios.stat1Label')}</span>
         </div>
         <div className={styles.statDivider} aria-hidden="true" />
         <div className={styles.stat}>
-          <span className={styles.statNum}>20</span>
+          <span className={styles.statNum}>650M</span>
           <span className={styles.statLabel}>{t('servicios.stat2Label')}</span>
         </div>
         <div className={styles.statDivider} aria-hidden="true" />
         <div className={styles.stat}>
-          <span className={styles.statNum}>146</span>
+          <span className={styles.statNum}>50+</span>
           <span className={styles.statLabel}>{t('servicios.stat3Label')}</span>
         </div>
       </div>
