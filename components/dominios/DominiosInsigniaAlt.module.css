@@ -123,7 +123,7 @@
   transition: background 0.15s;
 }
 
-.dropdownItem:last-child {
+.dropdownItem:last-of-type {
   border-bottom: none;
 }
 

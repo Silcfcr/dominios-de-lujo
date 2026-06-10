@@ -175,7 +175,7 @@ export default function DominiosInsigniaAlt() {
               })}
               {searchResults.length > 20 && (
                 <p className={styles.dropdownMore}>
-                  + {searchResults.length - 20} {t('dominiosInsignia.results')}
+                  + {searchResults.length - 20} {t('dominiosInsigniaAlt.results')}
                 </p>
               )}
             </div>
