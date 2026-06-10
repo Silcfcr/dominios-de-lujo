@@ -12,8 +12,24 @@ export default function AffiliateEditorial() {
     <section className={`sec ${styles.section}`}>
       <RevealWrapper className={styles.inner}>
         <p className="s-eye">{t('affiliateIntro.eyebrow')}</p>
-        <h2 className="s-title">{t('affiliateIntro.heading')}</h2>
+        <h2 className="s-title inv">{t('affiliateIntro.heading')}</h2>
         <hr className={styles.rule} />
+
+        <div className={styles.stats}>
+          <div className={styles.stat}>
+            <span className={styles.statNum}>{t('affiliateIntro.stat1Num')}</span>
+            <span className={styles.statLabel}>{t('affiliateIntro.stat1Label')}</span>
+          </div>
+          <div className={styles.stat}>
+            <span className={styles.statNum}>{t('affiliateIntro.stat2Num')}</span>
+            <span className={styles.statLabel}>{t('affiliateIntro.stat2Label')}</span>
+          </div>
+          <div className={styles.stat}>
+            <span className={styles.statNum}>{t('affiliateIntro.stat3Num')}</span>
+            <span className={styles.statLabel}>{t('affiliateIntro.stat3Label')}</span>
+          </div>
+        </div>
+
         <p className={styles.para}>
           {t('affiliateIntro.p1a')}<strong>{t('affiliateIntro.p1b')}</strong>{t('affiliateIntro.p1c')}
         </p>
