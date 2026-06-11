@@ -43,7 +43,7 @@ export default function Footer() {
         <div>
           <h4 className={styles.colHead}>{t('footer.colServicios')}</h4>
           <ul className={styles.colList}>
-            <li><Link href="/servicios">{t('footer.affiliate')}</Link></li>
+            <li><Link href="/servicios/afiliados">{t('footer.affiliate')}</Link></li>
             <li><a href="https://paginasdelujo.com" target="_blank" rel="noopener noreferrer">{t('footer.paginas')}</a></li>
             <li><Link href="/servicios">{t('footer.rentals')}</Link></li>
             <li><Link href="/lujototal">{t('footer.lujototal')}</Link></li>
