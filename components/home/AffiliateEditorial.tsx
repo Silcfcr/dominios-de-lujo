@@ -42,7 +42,7 @@ export default function AffiliateEditorial() {
             {t('affiliateIntro.p3a')}<em>{t('affiliateIntro.p3b')}</em>{t('affiliateIntro.p3c')}
           </p>
           <div className={styles.cta}>
-            <Link href="/servicios/afiliados" className="btn-gold">
+            <Link href="/brands" className="btn-gold">
               {t('affiliateIntro.cta')}
             </Link>
           </div>

@@ -42,7 +42,7 @@ export default function ServicesGrid() {
       title: t('services.s1Title'),
       desc: t('services.s1Desc'),
       cta: t('services.s1Cta'),
-      href: '/servicios/afiliados',
+      href: '/brands',
     },
     {
       icon: icons.paginas,
@@ -59,7 +59,7 @@ export default function ServicesGrid() {
       title: t('services.s3Title'),
       desc: t('services.s3Desc'),
       cta: t('services.s3Cta'),
-      href: '/servicios',
+      href: '/brands',
     },
   ];
 

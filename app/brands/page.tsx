@@ -17,7 +17,7 @@ const affiliateIcon = (
   </svg>
 );
 
-export default function AfiliadosPage() {
+export default function BrandsPage() {
   const { t } = useI18n();
 
   return (

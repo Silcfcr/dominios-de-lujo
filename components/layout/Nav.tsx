@@ -32,7 +32,7 @@ export default function Nav() {
   const links: NavLink[] = [
     { href: '/', label: t('nav.inicio') },
     { href: '/dominios', label: t('nav.dominios') },
-    { href: '/servicios/afiliados', label: t('nav.afiliados') },
+    { href: '/brands', label: t('nav.brands') },
     { href: '/colaborar', label: t('nav.colaborar') },
     {
       href: '/nosotros',
