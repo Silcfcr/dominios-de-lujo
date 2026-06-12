@@ -5,9 +5,10 @@ export interface Domain {
   description: string;
   targeted_audience?: string;
   use_cases: string;
-  flagship: 'yes' | 'no';
-  include_in_categories: 'yes' | 'no';
-  affiliate_marketing: 'yes' | 'no';
+  flagship: string;
+  include_in_categories: string;
+  affiliate_marketing?: string;
+  one_pager?: string;
 }
 
 export interface Category {
