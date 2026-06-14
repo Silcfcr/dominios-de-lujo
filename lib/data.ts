@@ -1,4 +1,4 @@
-import type { DomainsData, CategoriesData, FlagshipData, Domain } from './types';
+import type { DomainsData, CategoriesData, Domain } from './types';
 
 const BASE =
   typeof window !== 'undefined'
@@ -17,10 +17,6 @@ export async function getCategories(): Promise<CategoriesData> {
 
 export async function getDomains(): Promise<DomainsData> {
   return fetchJSON<DomainsData>('/data/domains.json');
-}
-
-export async function getFlagship(): Promise<FlagshipData> {
-  return fetchJSON<FlagshipData>('/data/flagship.json');
 }
 
 export async function getSearchIndex(): Promise<string[]> {

@@ -14,16 +14,20 @@ export default function AffiliateEditorial() {
         <div className={styles.leftCol}>
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <span className={styles.statNum}>{t('affiliateIntro.stat1Num')}</span>
-              <span className={styles.statLabel}>{t('affiliateIntro.stat1Label')}</span>
+              <span className={styles.statNum}>{t('stats.stat1Num')}</span>
+              <span className={styles.statLabel}>{t('stats.stat1Label')}</span>
             </div>
             <div className={styles.stat}>
-              <span className={styles.statNum}>{t('affiliateIntro.stat2Num')}</span>
-              <span className={styles.statLabel}>{t('affiliateIntro.stat2Label')}</span>
+              <span className={styles.statNum}>{t('stats.stat2Num')}</span>
+              <span className={styles.statLabel}>{t('stats.stat2Label')}</span>
             </div>
             <div className={styles.stat}>
-              <span className={styles.statNum}>{t('affiliateIntro.stat3Num')}</span>
-              <span className={styles.statLabel}>{t('affiliateIntro.stat3Label')}</span>
+              <span className={styles.statNum}>{t('stats.stat3Num')}</span>
+              <span className={styles.statLabel}>{t('stats.stat3Label')}</span>
+            </div>
+            <div className={styles.stat}>
+              <span className={styles.statNum}>{t('stats.stat4Num')}</span>
+              <span className={styles.statLabel}>{t('stats.stat4Label')}</span>
             </div>
           </div>
         </div>

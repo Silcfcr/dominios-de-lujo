@@ -1,0 +1,227 @@
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sectionHead {
+  margin-bottom: 52px;
+}
+
+.sectionTitle {
+  margin-top: 10px;
+}
+
+/* ── Principles ── */
+
+.principles {
+  padding: 88px 64px;
+  background: var(--w);
+}
+
+.principlesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.principle {
+  padding: 32px 40px 32px 0;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.principle:nth-child(even) {
+  padding-left: 40px;
+  padding-right: 0;
+  border-left: 1px solid var(--rule);
+}
+
+.principle:nth-last-child(1):nth-child(odd) {
+  grid-column: 1 / -1;
+  border-right: none;
+  padding-right: 0;
+  max-width: 50%;
+}
+
+.principleNum {
+  font-family: var(--fd);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.principleTitle {
+  font-family: var(--fd);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.principleDesc {
+  font-family: var(--fb);
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: var(--ink3);
+  max-width: 400px;
+}
+
+/* ── Levels ── */
+
+.levels {
+  padding: 88px 64px;
+  background: var(--c2);
+}
+
+.levelsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.levelCard {
+  background: var(--w);
+  border: 1px solid var(--rule);
+  padding: 44px 40px;
+}
+
+.levelFeatured {
+  border-color: var(--gold);
+}
+
+.levelLabel {
+  display: inline-block;
+  font-family: var(--fd);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gdim);
+  padding: 4px 12px;
+  margin-bottom: 22px;
+}
+
+.levelTitle {
+  font-family: var(--fd);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.levelDesc {
+  font-family: var(--fb);
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--ink3);
+}
+
+/* ── CTA ── */
+
+.cta {
+  padding: 100px 64px;
+  background: var(--ink);
+  text-align: center;
+}
+
+.ctaInner {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.ctaEyebrow {
+  font-family: var(--fd);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.ctaTitle {
+  font-family: var(--fd);
+  font-size: clamp(26px, 3vw, 42px);
+  font-weight: 400;
+  color: var(--w);
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.ctaTitle em {
+  font-style: italic;
+  color: var(--glt);
+}
+
+.ctaBody {
+  font-family: var(--fb);
+  font-size: 14.5px;
+  line-height: 1.95;
+  color: rgba(250, 250, 248, 0.6);
+  margin-bottom: 40px;
+}
+
+/* ── Disclosure ── */
+
+.disclosure {
+  padding: 32px 64px;
+  background: var(--c);
+  border-top: 1px solid var(--rule);
+  text-align: center;
+}
+
+.disclosureText {
+  font-family: var(--fb);
+  font-size: 12px;
+  line-height: 1.75;
+  color: var(--ink3);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .principles,
+  .levels,
+  .cta {
+    padding: 56px 24px;
+  }
+
+  .principlesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .principle,
+  .principle:nth-child(even) {
+    padding: 28px 0;
+    border-left: none;
+  }
+
+  .principle:nth-last-child(1):nth-child(odd) {
+    max-width: 100%;
+  }
+
+  .principleDesc {
+    max-width: 100%;
+  }
+
+  .levelsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .levelCard {
+    padding: 32px 24px;
+  }
+
+  .disclosure {
+    padding: 28px 24px;
+  }
+}

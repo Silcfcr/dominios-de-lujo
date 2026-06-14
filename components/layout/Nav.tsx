@@ -34,6 +34,7 @@ export default function Nav() {
     { href: '/dominios', label: t('nav.dominios') },
     { href: '/brands', label: t('nav.brands') },
     { href: '/colaborar', label: t('nav.colaborar') },
+    { href: '/lujototal', label: t('nav.lujototal') },
     {
       href: '/nosotros',
       label: t('nav.about'),

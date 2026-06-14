@@ -37,11 +37,21 @@ const CATEGORIES: InsigniaCategory[] = [
     domains: [
       'antiagingdelujo.com','aviaciondelujo.com','hotelesdelujo.com',
       'jetsdelujo.com','restaurantesdelujo.com','resortsdelujo.com',
-      'saluddelujo.com','spasdelujo.com','turismodelujo.com',
-      'viajesdelujo.com','vuelosdelujo.com','wellnessdelujo.com',
-      'yatesdelujo.com','yogadelujo.com',
+      'retirosdelujo.com','saluddelujo.com','spasdelujo.com',
+      'turismodelujo.com','viajesdelujo.com','vuelosdelujo.com',
+      'wellnessdelujo.com','yatesdelujo.com','yogadelujo.com',
       'nuevayorkdelujo.com','parisdelujo.com','londresdelujo.com',
       'espanadelujo.com','italiadelujo.com',
+      'lunademieldelujo.com','serviciosdelujo.com',
+    ],
+  },
+  {
+    id: 'eventos',
+    titleKey: 'dominiosInsignia.cat_eventos',
+    image: '/images/events.webp',
+    imageAlt: 'dominiosInsignia.alt_eventos',
+    domains: [
+      'matrimoniosdelujo.com','regalosdelujo.com',
     ],
   },
   {
@@ -74,9 +84,10 @@ const CATEGORIES: InsigniaCategory[] = [
     image: '/images/wine.webp',
     imageAlt: 'dominiosInsignia.alt_arte',
     domains: [
-      'artedelujo.com','bebidasdelujo.com','gourmetdelujo.com',
-      'licoresdelujo.com','purosdelujo.com','ronesdelujo.com',
-      'subastasdelujo.com','vinodelujo.com',
+      'artedelujo.com','bebidasdelujo.com','gastronomiadelujo.com',
+      'gourmetdelujo.com','licoresdelujo.com','purosdelujo.com',
+      'ronesdelujo.com','subastasdelujo.com','vinodelujo.com',
+      'whiskydelujo.com',
     ],
   },
   {
@@ -96,10 +107,11 @@ const CATEGORIES: InsigniaCategory[] = [
     imageAlt: 'dominiosInsignia.alt_propiedades',
     domains: [
       'casasdelujo.es','criptodelujo.com','decoraciondelujo.com',
-      'finanzasdelujo.com','fondosdeoro.com','hogaresdelujo.com',
-      'humanoidesdelujo.com','humanoidesia.com','inversionesdelujo.com',
-      'mueblesdelujo.com','propiedadesdelujo.com','robotsdelujo.com',
-      'segurosdelujo.com','viviendasdelujo.com',
+      'fincasdelujo.com','finanzasdelujo.com','fondosdeoro.com',
+      'hogaresdelujo.com','humanoidesdelujo.com','humanoidesia.com',
+      'inversionesdelujo.com','mansionesdelujo.com','mueblesdelujo.com',
+      'patrimoniosdelujo.com','propiedadesdelujo.com',
+      'robotsdelujo.com','segurosdelujo.com','viviendasdelujo.com',
     ],
   },
 ];

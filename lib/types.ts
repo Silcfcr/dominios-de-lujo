@@ -27,7 +27,3 @@ export interface CategoriesData {
   categories: Category[];
 }
 
-export interface FlagshipData {
-  total_flagships: number;
-  domains: Domain[];
-}
