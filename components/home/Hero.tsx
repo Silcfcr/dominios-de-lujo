@@ -39,7 +39,7 @@ export default function Hero() {
         <div className={styles.rule} />
         <p className={styles.kvp}>{t('hero.kvp')}</p>
         <div className={styles.ctas}>
-          <Link href="/brands" className="btn-outline">{t('partnerValue.cta')}</Link>
+          <Link href="/brands" className="btn-outline">{t('hero.cta')}</Link>
         </div>
       </div>
 

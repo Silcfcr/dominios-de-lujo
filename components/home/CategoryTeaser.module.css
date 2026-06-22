@@ -151,6 +151,17 @@
 .navLeft  { left:  0; }
 .navRight { right: 0; }
 
+/* ── Body paragraph ─────────────────────────────────────── */
+.body {
+  font-family: var(--fb);
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--ink2);
+  max-width: 640px;
+  margin: 16px auto 0;
+  text-align: center;
+}
+
 /* ── CTA ────────────────────────────────────────────────── */
 .cta {
   text-align: center;
@@ -185,5 +196,9 @@
 
   .info {
     padding: 24px 20px;
+  }
+
+  .body {
+    font-size: 15px;
   }
 }

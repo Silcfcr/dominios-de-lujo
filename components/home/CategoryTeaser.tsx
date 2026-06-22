@@ -77,8 +77,9 @@ export default function CategoryTeaser() {
       <RevealWrapper className="s-hd">
         <p className="s-eye">{t('categoryTeaser.eyebrow')}</p>
         <h2 className="s-title">
-          {t('categoryTeaser.title')} <em>{t('categoryTeaser.titleEm')}</em>
+          {t('categoryTeaser.title')}
         </h2>
+        <p className={styles.body}>{t('categoryTeaser.body')}</p>
       </RevealWrapper>
 
       <div
