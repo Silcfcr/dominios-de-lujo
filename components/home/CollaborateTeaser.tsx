@@ -48,6 +48,7 @@ export default function CollaborateTeaser() {
           <h2 className="s-title">
             {t('collaborateTeaser.title')} <em>{t('collaborateTeaser.titleEm')}</em>
           </h2>
+          <p className={styles.subtitle}>{t('collaborateTeaser.subtitle')}</p>
         </RevealWrapper>
 
         <div className={styles.grid}>
