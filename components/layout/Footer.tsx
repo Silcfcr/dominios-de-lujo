@@ -64,7 +64,7 @@ export default function Footer() {
           © {year} Dominios de Lujo. {t('footer.rights')}
         </p>
         <div className={styles.legal}>
-          <a href="#">{t('footer.privacy')}</a>
+          <Link href="/privacidad">{t('footer.privacy')}</Link>
           <span className={styles.dot}>·</span>
           <a href="#">{t('footer.terms')}</a>
         </div>
