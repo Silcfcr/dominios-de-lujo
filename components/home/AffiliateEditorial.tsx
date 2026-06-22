@@ -36,19 +36,40 @@ export default function AffiliateEditorial() {
           <p className="s-eye lft">{t('affiliateIntro.eyebrow')}</p>
           <h2 className="s-title inv">{t('affiliateIntro.heading')}</h2>
           <hr className={styles.rule} />
-          <p className={styles.para}>
-            {t('affiliateIntro.p1a')}<em>{t('affiliateIntro.p1b')}</em>{t('affiliateIntro.p1c')}
-          </p>
-          <p className={styles.para}>
-            {t('affiliateIntro.p2a')}<em>{t('affiliateIntro.p2b')}</em>{t('affiliateIntro.p2c')}
-          </p>
-          <p className={styles.para}>
-            {t('affiliateIntro.p3a')}<em>{t('affiliateIntro.p3b')}</em>{t('affiliateIntro.p3c')}
-          </p>
+          <p className={styles.body}>{t('affiliateIntro.body')}</p>
+          <ol className={styles.steps}>
+            <li className={styles.step}>
+              <span className={styles.stepNum}>01</span>
+              <div className={styles.stepContent}>
+                <strong className={styles.stepTitle}>{t('affiliateIntro.step1Title')}</strong>
+                <p className={styles.stepDesc}>{t('affiliateIntro.step1Desc')}</p>
+              </div>
+            </li>
+            <li className={styles.step}>
+              <span className={styles.stepNum}>02</span>
+              <div className={styles.stepContent}>
+                <strong className={styles.stepTitle}>{t('affiliateIntro.step2Title')}</strong>
+                <p className={styles.stepDesc}>{t('affiliateIntro.step2Desc')}</p>
+              </div>
+            </li>
+            <li className={styles.step}>
+              <span className={styles.stepNum}>03</span>
+              <div className={styles.stepContent}>
+                <strong className={styles.stepTitle}>{t('affiliateIntro.step3Title')}</strong>
+                <p className={styles.stepDesc}>{t('affiliateIntro.step3Desc')}</p>
+              </div>
+            </li>
+            <li className={styles.step}>
+              <span className={styles.stepNum}>04</span>
+              <div className={styles.stepContent}>
+                <strong className={styles.stepTitle}>{t('affiliateIntro.step4Title')}</strong>
+                <p className={styles.stepDesc}>{t('affiliateIntro.step4Desc')}</p>
+              </div>
+            </li>
+          </ol>
           <div className={styles.cta}>
-            <Link href="/brands" className="btn-gold">
-              {t('affiliateIntro.cta')}
-            </Link>
+            <Link href="/brands" className="btn-gold">{t('affiliateIntro.cta')}</Link>
+            <p className={styles.note}>{t('affiliateIntro.note')}</p>
           </div>
         </div>
       </RevealWrapper>
