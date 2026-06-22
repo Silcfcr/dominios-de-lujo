@@ -1,0 +1,24 @@
+.section {
+  background: var(--c2);
+}
+
+.inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: 28px;
+}
+
+.body {
+  font-family: var(--fb);
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--ink2);
+  margin-bottom: 16px;
+}
+
+.body:last-child {
+  margin-bottom: 0;
+}
