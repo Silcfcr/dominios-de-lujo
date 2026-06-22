@@ -16,7 +16,7 @@ export default function PorQueNosotros() {
   return (
     <section className={`sec ${styles.section}`}>
       <RevealWrapper className={styles.inner}>
-        <div className={styles.left}>
+        <div>
           <h2 className={`s-title ${styles.heading}`}>{t('porquenosotros.heading')}</h2>
           <p className={styles.body}>{t('porquenosotros.body')}</p>
         </div>
