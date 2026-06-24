@@ -61,6 +61,7 @@ export default function CategoryTeaser() {
   }, [advance]);
 
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     startTimer();
     return () => clearInterval(timerRef.current);
   }, [startTimer]);
