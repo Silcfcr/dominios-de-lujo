@@ -146,9 +146,9 @@
 
 .para {
   font-family: var(--fb);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
-  color: rgba(250, 247, 242, 0.55);
+  color: rgba(250, 247, 242, 0.72);
   white-space: pre-line;
   text-align: left;
 
@@ -166,7 +166,7 @@
 
 .paraCoda {
   font-family: var(--fd);
-  font-size: 14px;
+  font-size: 15px;
   font-style: italic;
   color: var(--glt);
   letter-spacing: 0.03em;
