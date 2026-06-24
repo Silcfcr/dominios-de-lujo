@@ -60,7 +60,7 @@
     border-bottom: 1px solid var(--rule);
   }
 
-  .metric:nth-child(odd) {
+  .metric:nth-child(4n+1) {
     border-right: 1px solid var(--rule);
   }
 
