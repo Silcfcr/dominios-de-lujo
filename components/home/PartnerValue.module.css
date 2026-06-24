@@ -71,7 +71,7 @@
 
 .num {
   font-family: var(--fd);
-  font-size: 13px;
+  font-size: var(--text-sm);
   font-style: italic;
   font-weight: 400;
   color: var(--gold);
@@ -88,16 +88,16 @@
 
 .name {
   font-family: var(--fd);
-  font-size: clamp(18px, 2vw, 28px);
+  font-size: var(--text-display-xs);
   font-weight: 300;
-  line-height: 1.2;
+  line-height: var(--lh-snug);
   color: var(--ink2);
   transition: color 0.25s;
 }
 
 .subtext {
   font-family: var(--fb);
-  font-size: 14px;
+  font-size: var(--text-base);
   color: var(--ink3);
   letter-spacing: 0.02em;
 }
@@ -119,8 +119,8 @@
 
 .desc {
   font-family: var(--fb);
-  font-size: 14px;
-  line-height: 1.9;
+  font-size: var(--text-base);
+  line-height: var(--lh-loose);
   color: var(--ink2);
   padding: 0 0 28px 68px;
   max-width: 520px;

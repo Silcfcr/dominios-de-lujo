@@ -13,7 +13,7 @@
   font-size: clamp(200px, 28vw, 380px);
   font-weight: 300;
   color: rgba(176, 138, 58, 0.04);
-  line-height: 1;
+  line-height: var(--lh-tight);
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
@@ -55,22 +55,22 @@
 
 .cardTitle {
   font-family: var(--fd);
-  font-size: 21px;
+  font-size: var(--text-xl);
   font-weight: 400;
   color: var(--ink);
 }
 
 .cardDesc {
   font-family: var(--fb);
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: var(--text-base);
+  line-height: var(--lh-relaxed);
   color: var(--ink3);
 }
 
 .subtitle {
   font-family: var(--fb);
-  font-size: 17px;
-  line-height: 1.8;
+  font-size: var(--text-lg);
+  line-height: var(--lh-relaxed);
   color: var(--ink2);
   max-width: 640px;
   margin: 16px auto 0;
@@ -88,5 +88,5 @@
 }
 
 @media (max-width: 768px) {
-  .subtitle { font-size: 15px; }
+  .subtitle { font-size: var(--text-base); }
 }

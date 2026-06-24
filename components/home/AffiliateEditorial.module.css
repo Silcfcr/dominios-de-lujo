@@ -32,10 +32,10 @@
 
 .statNum {
   font-family: var(--fd);
-  font-size: clamp(38px, 3.8vw, 56px);
+  font-size: var(--text-display-lg);
   font-weight: 300;
   color: var(--gold);
-  line-height: 1;
+  line-height: var(--lh-tight);
   display: block;
   margin-bottom: 8px;
 }
@@ -64,8 +64,8 @@
 
 .para {
   font-family: var(--fb);
-  font-size: 17px;
-  line-height: 1.9;
+  font-size: var(--text-lg);
+  line-height: var(--lh-loose);
   color: rgba(250, 250, 248, 0.72);
   margin-bottom: 20px;
 }
@@ -85,8 +85,8 @@
 }
 
 .body {
-  font-size: 17px;
-  line-height: 1.9;
+  font-size: var(--text-lg);
+  line-height: var(--lh-loose);
   color: rgba(250, 250, 248, 0.72);
   margin-bottom: 24px;
 }
@@ -108,10 +108,10 @@
 
 .stepNum {
   font-family: var(--fd);
-  font-size: 28px;
+  font-size: var(--text-2xl);
   font-weight: 300;
   color: var(--gold);
-  line-height: 1;
+  line-height: var(--lh-tight);
   min-width: 36px;
   flex-shrink: 0;
 }
@@ -124,20 +124,20 @@
 
 .stepTitle {
   font-family: var(--fb);
-  font-size: 15px;
+  font-size: var(--text-base);
   font-weight: 600;
   color: var(--w);
   letter-spacing: 0.02em;
 }
 
 .stepDesc {
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: var(--text-base);
+  line-height: var(--lh-relaxed);
   color: rgba(250, 250, 248, 0.62);
 }
 
 .note {
-  font-size: 13px;
+  font-size: var(--text-sm);
   color: rgba(250, 250, 248, 0.45);
   margin-top: 12px;
   font-style: italic;
@@ -185,7 +185,7 @@
   }
 
   .para {
-    font-size: 15px;
+    font-size: var(--text-base);
   }
 
   .statNum {

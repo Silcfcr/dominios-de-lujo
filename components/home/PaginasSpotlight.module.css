@@ -11,14 +11,14 @@
 }
 
 .title {
-  font-size: clamp(30px, 3.4vw, 48px);
+  font-size: var(--text-display-md);
   margin-bottom: 20px;
 }
 
 .body {
   font-family: var(--fb);
-  font-size: 14px;
-  line-height: 1.85;
+  font-size: var(--text-base);
+  line-height: var(--lh-relaxed);
   color: var(--ink2);
   max-width: 440px;
   margin-bottom: 28px;
@@ -33,7 +33,7 @@
 
 .exampleTag {
   font-family: var(--fb);
-  font-size: 11px;
+  font-size: var(--text-xs);
   letter-spacing: 0.08em;
   color: var(--ink3);
   background: var(--w);
@@ -67,7 +67,7 @@
 
 .mockupUrl {
   font-family: var(--fb);
-  font-size: 11px;
+  font-size: var(--text-xs);
   color: var(--ink3);
   letter-spacing: 0.04em;
   flex: 1;

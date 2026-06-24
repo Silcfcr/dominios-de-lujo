@@ -51,8 +51,8 @@
 
 .colDesc {
   font-family: var(--fb);
-  font-size: 14px;
-  line-height: 1.75;
+  font-size: var(--text-base);
+  line-height: var(--lh-relaxed);
   color: var(--ink3);
 }
 

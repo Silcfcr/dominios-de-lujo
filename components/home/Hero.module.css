@@ -14,21 +14,21 @@
 
 .eyebrow {
   font-family: var(--fb);
-  font-size: 11px;
+  font-size: var(--text-xs);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 20px;
-  line-height: 1.6;
+  line-height: var(--lh-relaxed);
 }
 
 .h1 {
   font-family: var(--fd);
-  font-size: clamp(36.4px, 3.08vw, 78.4px);
+  font-size: var(--text-hero);
   font-weight: 400;
-  line-height: 1.15;
+  line-height: var(--lh-tight);
   color: var(--ink);
   margin-bottom: 0;
 }
@@ -48,8 +48,8 @@
 
 .kvp {
   font-family: var(--fb);
-  font-size: 16px;
-  line-height: 1.85;
+  font-size: var(--text-base);
+  line-height: var(--lh-relaxed);
   color: var(--ink2);
   margin-bottom: 40px;
 }
@@ -110,15 +110,15 @@
 
 .badgeNum {
   font-family: var(--fd);
-  font-size: 28px;
+  font-size: var(--text-2xl);
   font-weight: 400;
   color: var(--glt);
-  line-height: 1;
+  line-height: var(--lh-tight);
 }
 
 .badgeTxt {
   font-family: var(--fb);
-  font-size: 12px;
+  font-size: var(--text-sm);
   font-weight: 400;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -165,7 +165,7 @@
   }
 
   .kvp {
-    font-size: 14px;
+    font-size: var(--text-base);
   }
 }
 
