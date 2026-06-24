@@ -168,3 +168,8 @@
     font-size: 14px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .slide { transition: none; }
+  .img   { transition: none; transform: none; }
+}
