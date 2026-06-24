@@ -16,7 +16,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--rule);
 }
@@ -35,25 +35,18 @@
   background: var(--c2);
 }
 
-.placeholder {
-  width: 72px;
-  height: 72px;
+.logoWrap {
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--gdim);
-  border-radius: 4px;
-  font-family: var(--fd);
-  font-size: 18px;
-  letter-spacing: 0.06em;
-  color: var(--gold);
-  background: var(--c2);
-  transition: background 0.2s, color 0.2s;
 }
 
-.card:hover .placeholder {
-  background: var(--gdim);
-  color: var(--ink);
+.logo {
+  width: auto;
+  height: 100%;
+  max-width: 160px;
+  object-fit: contain;
 }
 
 .brandName {
@@ -73,19 +66,13 @@
   text-align: center;
 }
 
-.badge {
-  font-family: var(--fb);
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--gold);
-  border: 1px solid var(--gdim);
-  padding: 3px 8px;
-  border-radius: 2px;
-}
-
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+  .card { padding: 32px 20px; }
 }

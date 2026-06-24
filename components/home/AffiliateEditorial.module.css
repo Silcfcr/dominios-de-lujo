@@ -196,3 +196,10 @@
     font-size: 10px;
   }
 }
+
+@media (max-width: 480px) {
+  .stats            { flex-direction: column; border-top: none; border-bottom: none; }
+  .stat             { padding: 16px 0; border-bottom: 1px solid rgba(226, 207, 160, 0.14); }
+  .stat:first-child { border-top: 1px solid rgba(226, 207, 160, 0.14); }
+  .stat + .stat     { border-left: none; }
+}

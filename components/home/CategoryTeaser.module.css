@@ -202,3 +202,10 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 480px) {
+  .stage  { height: 320px; }
+  .navBtn { width: 32px; height: 32px; font-size: 18px; }
+  .info   { padding: 16px; }
+  .body   { font-size: 14px; }
+}
