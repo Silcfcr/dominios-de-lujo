@@ -29,7 +29,7 @@
   },
   "hero": {
     "h1a": "The Spanish-language luxury affiliate marketing platform.",
-    "h1b": "4,000+ exact-match domains. 650 million Spanish speakers. 24 markets.",
+    "h1b": "4,000+ exact-match domains. 650 million Spanish speakers. 18+ markets.",
     "h1em": "The channel Spanish luxury was missing.",
     "eyebrow": "Where every desire has its place",
     "kvp": "We invite luxury brands to join our affiliate network across the Spanish-speaking markets.",
@@ -237,9 +237,9 @@
     "stat1Label": "exact luxury domains in Spanish",
     "stat2Num": "650M",
     "stat2Label": "Spanish-speaking consumers",
-    "stat3Num": "24",
+    "stat3Num": "18+",
     "stat3Label": "markets across Spain & Latin America",
-    "stat4Num": "50+",
+    "stat4Num": "15+",
     "stat4Label": "luxury verticals covered",
     "whyEyebrow": "What we offer",
     "whyTitle": "Why leading luxury brands choose our platform",
@@ -351,9 +351,9 @@
     "stat1Label": "exact luxury domains in Spanish",
     "stat2Num": "650M",
     "stat2Label": "Spanish-speaking consumers",
-    "stat3Num": "24",
+    "stat3Num": "18+",
     "stat3Label": "markets across Spain & Latin America",
-    "stat4Num": "50+",
+    "stat4Num": "15+",
     "stat4Label": "luxury verticals covered"
   },
   "affiliateIntro": {
@@ -622,7 +622,7 @@
     "q2": "How does the affiliate model work?",
     "a2": "Your brand is editorially integrated into the relevant domains in our network. Every conversion generated from our properties is attributed with precision. You only pay for real results.",
     "q3": "Do you only operate in Spain or also in Latin America?",
-    "a3": "Our network covers 24 Spanish-speaking markets, including Spain, Mexico, Colombia, Argentina, Chile, and more. We can activate your brand globally or focused by market according to your strategy.",
+    "a3": "Our network covers more than 18 Spanish-speaking markets, including Spain, Mexico, Colombia, Argentina, Chile, and more. We can activate your brand globally or focused by market according to your strategy.",
     "q4": "How long does it take for my brand to go live?",
     "a4": "The integration process takes between 2 and 4 weeks from approval, depending on the scope and domains assigned."
   },
@@ -631,9 +631,9 @@
     "m1Label": "exact luxury domains in Spanish",
     "m2Num": "650M",
     "m2Label": "Spanish-speaking consumers reachable",
-    "m3Num": "24",
+    "m3Num": "18+",
     "m3Label": "markets across Spain & Latin America",
-    "m4Num": "50+",
+    "m4Num": "15+",
     "m4Label": "luxury verticals covered"
   }
 }

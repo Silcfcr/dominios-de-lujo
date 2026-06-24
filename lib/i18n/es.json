@@ -29,7 +29,7 @@
   },
   "hero": {
     "h1a": "La plataforma de marketing de afiliados de lujo en español.",
-    "h1b": "Más de 4.000 dominios exactos. 650 millones de hispanohablantes. 24 mercados.",
+    "h1b": "Más de 4.000 dominios exactos. 650 millones de hispanohablantes. 18+ mercados.",
     "h1em": "El canal que el lujo en español no tenía.",
     "eyebrow": "Donde cada deseo tiene su lugar",
     "kvp": "Invitamos a marcas de lujo a unirse a nuestra red de afiliados en los mercados de habla hispana.",
@@ -237,9 +237,9 @@
     "stat1Label": "dominios exactos de lujo en español",
     "stat2Num": "650M",
     "stat2Label": "consumidores hispanohablantes",
-    "stat3Num": "24",
+    "stat3Num": "18+",
     "stat3Label": "mercados en España y Latinoamérica",
-    "stat4Num": "50+",
+    "stat4Num": "15+",
     "stat4Label": "verticales de lujo cubiertos",
     "whyEyebrow": "Lo que ofrecemos",
     "whyTitle": "Por qué las marcas de lujo eligen nuestra plataforma",
@@ -351,9 +351,9 @@
     "stat1Label": "dominios exactos de lujo en español",
     "stat2Num": "650M",
     "stat2Label": "consumidores hispanohablantes",
-    "stat3Num": "24",
+    "stat3Num": "18+",
     "stat3Label": "mercados en España y Latinoamérica",
-    "stat4Num": "50+",
+    "stat4Num": "15+",
     "stat4Label": "verticales de lujo cubiertos"
   },
   "affiliateIntro": {
@@ -622,7 +622,7 @@
     "q2": "¿Cómo funciona el modelo de afiliados?",
     "a2": "Su marca se integra editorialmente en los dominios relevantes de nuestra red. Cada conversión generada desde nuestras propiedades se atribuye con precisión. Solo paga por resultados reales.",
     "q3": "¿Operan solo en España o también en Latinoamérica?",
-    "a3": "Nuestra red cubre 24 mercados hispanohablantes, incluyendo España, México, Colombia, Argentina, Chile y más. Podemos activar su marca de forma global o focalizada por mercado según su estrategia.",
+    "a3": "Nuestra red cubre más de 18 mercados hispanohablantes, incluyendo España, México, Colombia, Argentina, Chile y más. Podemos activar su marca de forma global o focalizada por mercado según su estrategia.",
     "q4": "¿Cuánto tiempo tarda en estar activa mi marca?",
     "a4": "El proceso de integración toma entre 2 y 4 semanas desde la aprobación de la solicitud, dependiendo del alcance y los dominios asignados."
   },
@@ -631,9 +631,9 @@
     "m1Label": "dominios exactos de lujo en español",
     "m2Num": "650M",
     "m2Label": "hispanohablantes alcanzables",
-    "m3Num": "24",
+    "m3Num": "18+",
     "m3Label": "mercados en España y Latinoamérica",
-    "m4Num": "50+",
+    "m4Num": "15+",
     "m4Label": "verticales de lujo cubiertos"
   }
 }
