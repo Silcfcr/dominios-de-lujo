@@ -78,7 +78,7 @@
 
 .statNum {
   font-family: var(--fd);
-  font-size: 40px;
+  font-size: clamp(28px, 3.5vw, 40px);
   font-weight: 300;
   color: var(--gold);
   line-height: 1;
@@ -86,7 +86,7 @@
 
 .statLabel {
   font-family: var(--fd);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink3);
