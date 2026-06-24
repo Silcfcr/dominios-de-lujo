@@ -57,6 +57,12 @@ button {
   font-family: inherit;
 }
 
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
 /* ── REVEAL ANIMATIONS ──────────────────────────────────── */
 .reveal {
   opacity: 0;
@@ -84,6 +90,16 @@ button {
 .reveal3.vis {
   opacity: 1;
   transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal2,
+  .reveal3 {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 /* ── SHARED SECTION PATTERNS ────────────────────────────── */
@@ -154,6 +170,7 @@ button {
   border: none;
 }
 .btn-dark:hover { background: var(--gold); }
+.btn-dark:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
 .btn-outline {
   display: inline-block;
@@ -171,6 +188,7 @@ button {
   background: none;
 }
 .btn-outline:hover { border-color: var(--ink); }
+.btn-outline:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
 .btn-gold {
   display: inline-block;
@@ -187,9 +205,15 @@ button {
   border: none;
 }
 .btn-gold:hover { background: var(--glt); }
+.btn-gold:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
 /* ── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 768px) {
   .sec { padding: 64px 24px; }
   .sec-sm { padding: 48px 24px; }
+}
+
+@media (max-width: 480px) {
+  .sec    { padding: 48px 20px; }
+  .sec-sm { padding: 40px 20px; }
 }
