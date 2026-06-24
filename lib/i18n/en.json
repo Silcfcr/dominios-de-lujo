@@ -624,5 +624,15 @@
     "a3": "Our network covers more than 18 Spanish-speaking markets, including Spain, Mexico, Colombia, Argentina, Chile, and more. We can activate your brand globally or focused by market according to your strategy.",
     "q4": "How long does it take for my brand to go live?",
     "a4": "The integration process takes between 2 and 4 weeks from approval, depending on the scope and domains assigned."
+  },
+  "metricsStrip": {
+    "m1Num": "4,000+",
+    "m1Label": "exact luxury domains in Spanish",
+    "m2Num": "650M",
+    "m2Label": "Spanish-speaking consumers reachable",
+    "m3Num": "24",
+    "m3Label": "markets across Spain & Latin America",
+    "m4Num": "50+",
+    "m4Label": "luxury verticals covered"
   }
 }

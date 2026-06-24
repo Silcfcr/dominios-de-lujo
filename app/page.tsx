@@ -1,5 +1,6 @@
 import Hero from '@/components/home/Hero';
 import Ticker from '@/components/home/Ticker';
+import MetricsStrip from '@/components/home/MetricsStrip';
 import CategoryTeaser from '@/components/home/CategoryTeaser';
 // import HomeSectionLink from '@/components/home/HomeSectionLink';
 // import ServicesGrid from '@/components/home/ServicesGrid';
@@ -13,6 +14,7 @@ export default function HomePage() {
     <>
       <Hero />
       <Ticker />
+      <MetricsStrip />
       <CategoryTeaser />
       {/* <HomeSectionLink labelKey="home.lujototalLink" href="/lujototal" imageSrc="/images/lujo-total.webp" imageAlt="LujoTotal™" /> */}
       {/* <ServicesGrid /> */}

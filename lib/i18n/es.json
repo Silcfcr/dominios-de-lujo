@@ -624,5 +624,15 @@
     "a3": "Nuestra red cubre más de 18 mercados hispanohablantes, incluyendo España, México, Colombia, Argentina, Chile y más. Podemos activar su marca de forma global o focalizada por mercado según su estrategia.",
     "q4": "¿Cuánto tiempo tarda en estar activa mi marca?",
     "a4": "El proceso de integración toma entre 2 y 4 semanas desde la aprobación de la solicitud, dependiendo del alcance y los dominios asignados."
+  },
+  "metricsStrip": {
+    "m1Num": "4.000+",
+    "m1Label": "dominios exactos de lujo en español",
+    "m2Num": "650M",
+    "m2Label": "hispanohablantes alcanzables",
+    "m3Num": "24",
+    "m3Label": "mercados en España y Latinoamérica",
+    "m4Num": "50+",
+    "m4Label": "verticales de lujo cubiertos"
   }
 }
