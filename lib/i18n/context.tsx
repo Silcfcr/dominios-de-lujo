@@ -29,6 +29,10 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     if (stored === 'es' || stored === 'en') setLangState(stored);
   }, []);
 
+  useEffect(() => {
+    document.documentElement.setAttribute('lang', lang);
+  }, [lang]);
+
   const setLang = useCallback((l: Lang) => {
     setLangState(l);
     localStorage.setItem('ddl-lang', l);
