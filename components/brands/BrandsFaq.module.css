@@ -38,3 +38,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .question { font-size: 15px; }
+  .item     { padding: 20px 16px; }
+}

@@ -22,3 +22,7 @@
 .body:last-child {
   margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+  .body { font-size: 15px; }
+}
