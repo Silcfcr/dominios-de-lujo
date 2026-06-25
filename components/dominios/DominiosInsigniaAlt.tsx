@@ -221,13 +221,11 @@ export default function DominiosInsigniaAlt() {
               <div className={styles.domainGrid}>
                 {cat.domains.map((domain) => {
                   const { name, tld } = splitDomain(domain);
-                  const descKey = `dominiosGrid.${name}`;
                   return (
                     <Link key={domain} href={`/dominios/${encodeURIComponent(domain)}`} className={styles.domainItem}>
                       <p className={styles.domainName}>
                         {name}<span className={styles.domainTld}>{tld}</span>
                       </p>
-                      <p className={styles.domainDesc}>{t(descKey)}</p>
                     </Link>
                   );
                 })}

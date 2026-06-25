@@ -241,14 +241,6 @@
   color: var(--gold);
 }
 
-.domainDesc {
-  font-family: var(--fb);
-  font-size: 11px;
-  color: var(--ink3);
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-}
-
 /* ── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 1024px) {
   .header { padding: 56px 40px 48px; }
@@ -282,5 +274,4 @@
   }
 
   .domainName { font-size: 15px; }
-  .domainDesc { font-size: 10px; }
 }
