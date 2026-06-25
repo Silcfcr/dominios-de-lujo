@@ -172,7 +172,7 @@ a:focus-visible {
   font-family: var(--fb);
   font-size: var(--text-sm);
   font-weight: 400;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--ls-normal);
   text-transform: uppercase;
   color: var(--ink3);
   margin-top: 12px;
@@ -187,7 +187,7 @@ a:focus-visible {
   font-family: var(--fb);
   font-size: var(--text-sm);
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: var(--ls-label);
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -206,7 +206,7 @@ a:focus-visible {
   font-family: var(--fb);
   font-size: var(--text-sm);
   font-weight: 400;
-  letter-spacing: 0.12em;
+  letter-spacing: var(--ls-label);
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -225,7 +225,7 @@ a:focus-visible {
   font-family: var(--fb);
   font-size: var(--text-sm);
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: var(--ls-label);
   text-transform: uppercase;
   text-align: center;
   color: var(--w);
