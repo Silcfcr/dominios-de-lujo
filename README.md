@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dominios de Lujo
+
+Premium Spanish-language domain marketplace for luxury brands, built as a Next.js 16 static site deployed on GitHub Pages.
 
 ## Getting Started
 
-First, run the development server:
+**Prerequisites:** Node 20+
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # localhost:3000
+npm run build      # static export to out/
+npm run lint       # ESLint
+node scripts/optimize-images.mjs  # convert PNG/JPG to WebP
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+app/              Pages and layouts (Next.js App Router)
+components/       UI components grouped by section (home/, brands/, dominios/, etc.)
+lib/              Shared utilities: data fetching, types, i18n, asset path helper
+public/data/      Content as JSON (domains, categories, search index)
+public/images/    WebP assets (run optimize-images.mjs after adding new rasters)
+scripts/          Build-time utilities
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Architecture
 
-## Learn More
+- **Static export** — `output: 'export'` in `next.config.ts`. No server; everything pre-rendered at build time and served as flat files from `out/`.
+- **Data layer** — all content lives in `public/data/*.json`. `lib/data.ts` exposes async helpers for Server Components. Inside `generateStaticParams`, use `fs.readFileSync` directly instead of `lib/data.ts`.
+- **i18n** — client-side only via `lib/i18n/context.tsx`. Two flat JSON files (`es.json` / `en.json`). Every visible string needs a key in both files. Default language is Spanish. Components that call `useI18n()` must be Client Components (`'use client'`).
+- **Asset paths** — use `assetPath()` from `lib/assetPath.ts` for all `public/` assets. `<Link>` and `next/image` handle `basePath` automatically.
 
-To learn more about Next.js, take a look at the following resources:
+## Styling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **CSS Modules** — each component has a co-located `.module.css` file. No inline styles, no Tailwind.
+- **Design tokens** — CSS custom properties in `app/globals.css`. Key tokens: `--gold` (#B08A3A), `--ink` (#1A1714), `--c` (#FAFAF8), `--fd` (Cormorant serif, headings), `--fb` (Lora serif, body).
+- **Global utility classes** — defined in `globals.css`, used directly via `className` (not through CSS Modules): `sec` / `sec-sm` (section padding), `s-eye` (eyebrow label), `s-title` (display heading), `btn-dark` / `btn-outline` / `btn-gold` (CTAs), `reveal` / `reveal2` / `reveal3` (scroll animations via `RevealWrapper`).
