@@ -166,13 +166,12 @@
 
 .paraCoda {
   font-family: var(--fd);
-  font-size: var(--text-xl);
+  font-size: var(--text-base);
   font-style: italic;
   color: var(--glt);
   letter-spacing: var(--ls-tight);
   line-height: var(--lh-relaxed);
   text-align: left;
-  white-space: pre-line;
 }
 
 /* ── Player ──────────────────────────────────────────────── */

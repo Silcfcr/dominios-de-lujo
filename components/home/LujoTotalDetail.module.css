@@ -30,11 +30,6 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  transition: border-top-color 0.25s ease;
-}
-
-.principle:hover {
-  border-top-color: var(--gold);
 }
 
 .principle:nth-child(even) {
@@ -43,20 +38,21 @@
   border-left: 1px solid var(--rule);
 }
 
+.principle:nth-last-child(1):nth-child(odd) {
+  grid-column: 1 / -1;
+  border-right: none;
+  padding-right: 0;
+  max-width: 50%;
+}
+
 .principleNum {
   font-family: var(--fd);
   font-size: var(--text-display-md);
   font-weight: 300;
   letter-spacing: var(--ls-tight);
-  color: var(--gdim);
+  color: var(--gold);
   display: block;
-  margin-bottom: 2px;
-  line-height: 1;
-  transition: color 0.25s ease;
-}
-
-.principle:hover .principleNum {
-  color: var(--glt);
+  margin-bottom: 4px;
 }
 
 .principleTitle {
@@ -188,10 +184,6 @@
   color: var(--ink3);
   max-width: 700px;
   margin: 0 auto;
-}
-
-.disclosureText + .disclosureText {
-  margin-top: 12px;
 }
 
 /* ── Responsive ── */
