@@ -109,7 +109,7 @@ const CATEGORIES: InsigniaCategory[] = [
   {
     id: 'emociones',
     titleKey: 'dominiosInsignia.cat_emociones',
-    image: '/images/emocionales.webp',
+    image: '/images/emotional.webp',
     imageAlt: 'dominiosInsignia.alt_emociones',
     domains: [
       'eresmivida.com','siempreteamo.com','teamohastalaluna.com',
