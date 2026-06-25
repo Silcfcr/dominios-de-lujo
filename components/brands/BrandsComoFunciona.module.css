@@ -1,62 +1,134 @@
+/* ── Section ─────────────────────────────────────── */
 .section {
   background: var(--c);
   border-top: 1px solid var(--rule);
 }
 
-.steps {
+.outer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px 64px;
-  max-width: 1100px;
-  margin: 48px auto 0;
+  grid-template-columns: 1fr 1fr;
+  min-height: 560px;
+}
+
+/* ── Image column ────────────────────────────────── */
+.imgCol {
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
+  transition: transform 8s ease;
+}
+
+.imgCol:hover .img {
+  transform: scale(1.04);
+}
+
+/* ── Content column ──────────────────────────────── */
+.content {
+  background: var(--c);
+  padding: 80px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rule {
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+  border: none;
+  margin: 24px 0 0;
+  display: block;
+}
+
+/* ── Accordion steps ─────────────────────────────── */
+.steps {
+  margin-top: 8px;
 }
 
 .step {
+  border-bottom: 1px solid var(--rule);
+  padding: 18px 0;
+  cursor: pointer;
+}
+
+.step:first-child {
+  border-top: 1px solid var(--rule);
+}
+
+.stepTop {
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
 }
 
 .stepNum {
   font-family: var(--fd);
-  font-size: 36px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
   color: var(--gold);
-  line-height: 1;
-  min-width: 44px;
+  width: 24px;
   flex-shrink: 0;
 }
 
-.stepContent {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.stepTitle {
-  font-family: var(--fb);
-  font-size: 15px;
-  font-weight: 600;
+.stepLabel {
+  font-family: var(--fd);
+  font-size: 17px;
+  font-weight: 400;
   color: var(--ink);
-  letter-spacing: 0.02em;
+  flex: 1;
+  transition: color 0.2s;
 }
 
-.stepDesc {
+.stepLabelOpen {
+  color: var(--gold);
+}
+
+.stepChev {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--ink3);
+  transition: transform 0.3s, color 0.2s;
+}
+
+.stepChevOpen {
+  transform: rotate(180deg);
+  color: var(--gold);
+}
+
+.stepBody {
+  max-height: 0;
+  overflow: hidden;
   font-family: var(--fb);
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.75;
-  color: var(--ink2);
+  color: var(--ink3);
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding-left: 38px;
 }
 
+.stepBodyOpen {
+  max-height: 200px;
+  padding-top: 10px;
+}
+
+/* ── Mobile ──────────────────────────────────────── */
 @media (max-width: 768px) {
-  .steps {
+  .outer {
     grid-template-columns: 1fr;
-    gap: 32px;
   }
-  .stepNum { font-size: 28px; }
-}
 
-@media (max-width: 480px) {
-  .step  { gap: 16px; }
-  .steps { gap: 24px; }
+  .imgCol {
+    height: 60vw;
+    max-height: 400px;
+  }
+
+  .content {
+    padding: 48px 24px;
+  }
 }
