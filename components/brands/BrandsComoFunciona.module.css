@@ -1,6 +1,6 @@
 /* ── Section ─────────────────────────────────────── */
 .section {
-  background: var(--w);
+  background: var(--c);
   border-top: 1px solid var(--rule);
 }
 
@@ -27,7 +27,7 @@
 
 /* ── Content column ──────────────────────────────── */
 .content {
-  background: var(--w);
+  background: var(--c);
   padding: 80px 64px;
   display: flex;
   flex-direction: column;
