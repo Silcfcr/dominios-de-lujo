@@ -95,7 +95,7 @@
   line-height: var(--lh-tight);
   color: rgba(250, 247, 242, 0.95);
   margin-bottom: 40px;
-  letter-spacing: 0.01em;
+  letter-spacing: var(--ls-tight);
 
   opacity: 0;
   transform: translateY(12px);
@@ -166,12 +166,13 @@
 
 .paraCoda {
   font-family: var(--fd);
-  font-size: var(--text-base);
+  font-size: var(--text-xl);
   font-style: italic;
   color: var(--glt);
-  letter-spacing: 0.03em;
+  letter-spacing: var(--ls-tight);
   line-height: var(--lh-relaxed);
   text-align: left;
+  white-space: pre-line;
 }
 
 /* ── Player ──────────────────────────────────────────────── */
@@ -296,9 +297,9 @@
 
 .playerLabel {
   font-family: var(--fb);
-  font-size: 10px;
+  font-size: var(--text-xs);
   font-weight: 400;
-  letter-spacing: 0.22em;
+  letter-spacing: var(--ls-loose);
   text-transform: uppercase;
   color: rgba(250, 247, 242, 0.35);
   white-space: nowrap;
@@ -349,9 +350,9 @@
 
 .time {
   font-family: var(--fb);
-  font-size: 11px;
+  font-size: var(--text-xs);
   color: rgba(250, 247, 242, 0.25);
-  letter-spacing: 0.1em;
+  letter-spacing: var(--ls-wide);
 }
 
 /* ── Responsive ──────────────────────────────────────────── */
@@ -371,7 +372,7 @@
   }
 
   .title {
-    font-size: clamp(36px, 10vw, 52px);
+    font-size: var(--text-display-lg);
     text-align: center;
   }
 
