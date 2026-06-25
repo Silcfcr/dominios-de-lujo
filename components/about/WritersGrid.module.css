@@ -11,14 +11,14 @@
 }
 
 .heading {
-  font-size: clamp(26px, 3vw, 40px);
+  font-size: var(--text-display-md);
   margin-top: 12px;
   margin-bottom: 10px;
 }
 
 .sub {
   font-family: var(--fb);
-  font-size: 15px;
+  font-size: var(--text-base);
   color: var(--ink3);
   font-style: italic;
   margin: 0;
@@ -85,9 +85,9 @@
 
 .vertical {
   font-family: var(--fb);
-  font-size: 10px;
+  font-size: var(--text-xs);
   font-weight: 400;
-  letter-spacing: 0.28em;
+  letter-spacing: var(--ls-loose);
   text-transform: uppercase;
   color: var(--gold);
   margin: 0;
@@ -95,7 +95,7 @@
 
 .quote {
   font-family: var(--fd);
-  font-size: clamp(19px, 1.6vw, 23px);
+  font-size: var(--text-display-xs);
   font-style: italic;
   color: var(--ink);
   line-height: 1.5;
@@ -119,8 +119,8 @@
 
 .name {
   font-family: var(--fb);
-  font-size: 11px;
-  letter-spacing: 0.12em;
+  font-size: var(--text-xs);
+  letter-spacing: var(--ls-label);
   color: var(--ink3);
   margin: 0;
 }
@@ -148,6 +148,6 @@
   }
 
   .quote {
-    font-size: 17px;
+    font-size: var(--text-lg);
   }
 }

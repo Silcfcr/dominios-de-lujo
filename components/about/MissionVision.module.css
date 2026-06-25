@@ -38,8 +38,8 @@
 
 .cardTitle {
   font-family: var(--fd);
-  font-size: clamp(22px, 2.2vw, 32px);
-  font-weight: 600;
+  font-size: var(--text-display-sm);
+  font-weight: 500;
   color: var(--ink);
   margin-bottom: 20px;
   line-height: 1.2;
@@ -47,7 +47,7 @@
 
 .cardBody {
   font-family: var(--fb);
-  font-size: clamp(14px, 1.1vw, 16px);
+  font-size: var(--text-base);
   color: var(--ink2);
   line-height: 1.75;
 }
