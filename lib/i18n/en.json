@@ -130,7 +130,8 @@
     "ctaTitleEm": "",
     "ctaBody": "LujoTotal™ works with a curated selection of brands, merchants, and service providers committed to authenticity, transparency, and integrity. Each application is reviewed individually to ensure compliance with our published standards and to preserve the consistency and trust that define the ecosystem.",
     "ctaContact": "Get in touch",
-    "disclosure": "LujoTotal™ is an independent evaluation based on publicly available information, documentation provided by the business, and our internal review and verification process. Certification reflects compliance with LujoTotal™'s published standards at the time of evaluation. LujoTotal™ reserves the right to suspend or withdraw certification where evidence of non-compliance with its published standards exists."
+    "disclosure": "LujoTotal™ is an independent evaluation based on publicly available information, documentation provided by the business, and our internal review and verification process.",
+    "disclosure2": "Certification reflects compliance with LujoTotal™'s published standards at the time of evaluation. LujoTotal™ reserves the right to suspend or withdraw certification where evidence of non-compliance with its published standards exists."
   },
   "paginasSpotlight": {
     "eyebrow": "Featured product",
@@ -395,7 +396,7 @@
     "cat_joyeria": "Jewellery, Fashion & Beauty",
     "cat_arte": "Art, Collectibles & Gastronomy",
     "cat_eventos": "Weddings, Events & Special Moments",
-    "cat_deportes": "Sport, Entertainment & Events",
+    "cat_deportes": "Sport Entertainment & Events",
     "cat_propiedades": "Properties, Finance & Innovation",
     "alt_viajes": "Luxury travel and experiences",
     "alt_autos": "Luxury cars and mobility",

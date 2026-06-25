@@ -46,15 +46,6 @@ const CATEGORIES: InsigniaCategory[] = [
     ],
   },
   {
-    id: 'eventos',
-    titleKey: 'dominiosInsignia.cat_eventos',
-    image: '/images/events.webp',
-    imageAlt: 'dominiosInsignia.alt_eventos',
-    domains: [
-      'matrimoniosdelujo.com','regalosdelujo.com',
-    ],
-  },
-  {
     id: 'autos',
     titleKey: 'dominiosInsignia.cat_autos',
     image: '/images/cars.webp',
@@ -98,6 +89,7 @@ const CATEGORIES: InsigniaCategory[] = [
     domains: [
       'baresdelujo.com','casinosdelujo.com','clubesdelujo.com',
       'deportesdelujo.com','golfdelujo.com','polodelujo.com','skidelujo.com',
+      'matrimoniosdelujo.com','regalosdelujo.com',
     ],
   },
   {
