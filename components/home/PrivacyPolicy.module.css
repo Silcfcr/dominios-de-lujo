@@ -12,7 +12,7 @@
 
 .content h1 {
   font-family: var(--fd);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: var(--text-display-md);
   font-weight: 400;
   color: var(--ink);
   margin-bottom: 0.5rem;
@@ -25,7 +25,7 @@
 .metaLine {
   font-family: var(--fb);
   color: var(--ink3);
-  font-size: 0.875rem;
+  font-size: var(--text-base);
   margin-bottom: 0.25rem;
 }
 
@@ -37,7 +37,7 @@
 
 .content h2 {
   font-family: var(--fd);
-  font-size: 1.25rem;
+  font-size: var(--text-lg);
   font-weight: 500;
   color: var(--gold);
   margin-top: 2.5rem;

@@ -42,8 +42,8 @@
 
 .statLabel {
   font-family: var(--fb);
-  font-size: 12px;
-  letter-spacing: 0.15em;
+  font-size: var(--text-xs);
+  letter-spacing: var(--ls-label);
   text-transform: uppercase;
   color: var(--ink3);
 }
@@ -93,9 +93,9 @@
 
 .stepNum {
   font-family: var(--fd);
-  font-size: 12px;
+  font-size: var(--text-xs);
   font-weight: 400;
-  letter-spacing: 0.15em;
+  letter-spacing: var(--ls-label);
   color: var(--gold);
   width: 24px;
   flex-shrink: 0;
@@ -103,7 +103,7 @@
 
 .stepLabel {
   font-family: var(--fd);
-  font-size: 17px;
+  font-size: var(--text-lg);
   font-weight: 400;
   color: var(--ink);
   flex: 1;
@@ -131,7 +131,7 @@
   max-height: 0;
   overflow: hidden;
   font-family: var(--fb);
-  font-size: 13px;
+  font-size: var(--text-sm);
   line-height: 1.75;
   color: var(--ink3);
   transition: max-height 0.35s ease, padding 0.35s ease;
@@ -198,11 +198,11 @@
   }
 
   .statNum {
-    font-size: 32px;
+    font-size: var(--text-2xl);
   }
 
   .statLabel {
-    font-size: 11px;
+    font-size: var(--text-xs);
   }
 }
 

@@ -34,7 +34,7 @@
 .exampleTag {
   font-family: var(--fb);
   font-size: var(--text-xs);
-  letter-spacing: 0.08em;
+  letter-spacing: var(--ls-wide);
   color: var(--ink3);
   background: var(--w);
   border: 1px solid var(--rule);
@@ -69,7 +69,7 @@
   font-family: var(--fb);
   font-size: var(--text-xs);
   color: var(--ink3);
-  letter-spacing: 0.04em;
+  letter-spacing: var(--ls-normal);
   flex: 1;
   text-align: center;
 }
