@@ -31,15 +31,14 @@ export default function BrandsComoFunciona() {
             src={assetPath('/images/hotel.webp')}
             alt=""
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className={styles.img}
           />
         </div>
 
         <RevealWrapper className={styles.content}>
-          <div className="s-hd">
-            <p className="s-eye lft">{t('brandsComoFunciona.eyebrow')}</p>
-            <h2 className="s-title">{t('brandsComoFunciona.title')}</h2>
-          </div>
+          <p className="s-eye lft">{t('brandsComoFunciona.eyebrow')}</p>
+          <h2 className="s-title">{t('brandsComoFunciona.title')}</h2>
           <hr className={styles.rule} />
           <div className={styles.steps}>
             {STEPS.map((s, i) => (
