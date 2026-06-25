@@ -3,25 +3,30 @@ import { useI18n } from '@/lib/i18n/context';
 import RevealWrapper from '@/components/ui/RevealWrapper';
 import styles from './ConfianzaCredibilidad.module.css';
 
-const EditorialIcon = () => (
+const ReviewIcon = () => (
   <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="#B08A3A" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M8 36 L8 14 Q8 8 14 8 L34 8 Q40 8 40 14 L40 28 Q40 34 34 34 L20 34 Z"/>
-    <line x1="16" y1="18" x2="32" y2="18"/>
-    <line x1="16" y1="24" x2="26" y2="24"/>
+    <rect x="10" y="6" width="28" height="36" rx="2"/>
+    <line x1="16" y1="20" x2="32" y2="20"/>
+    <line x1="16" y1="27" x2="32" y2="27"/>
+    <polyline points="16,35 20,39 30,31"/>
   </svg>
 );
 
-const KeyIcon = () => (
+const ShieldIcon = () => (
   <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="#B08A3A" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="20" cy="20" r="10"/>
-    <line x1="27" y1="27" x2="42" y2="42"/>
-    <line x1="36" y1="36" x2="42" y2="30"/>
+    <path d="M24 6 L40 14 L40 26 Q40 36 24 44 Q8 36 8 26 L8 14 Z"/>
+    <path d="M24 18 L30 24 L24 30 L18 24 Z"/>
   </svg>
 );
 
-const StarIcon = () => (
+const BadgeIcon = () => (
   <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="#B08A3A" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-    <polygon points="24,6 28.9,17.6 42,18.9 32.5,27.9 35.3,41 24,34.4 12.7,41 15.5,27.9 6,18.9 19.1,17.6"/>
+    <circle cx="24" cy="20" r="14"/>
+    <circle cx="24" cy="20" r="8"/>
+    <line x1="18" y1="32" x2="14" y2="44"/>
+    <line x1="30" y1="32" x2="34" y2="44"/>
+    <line x1="14" y1="44" x2="24" y2="38"/>
+    <line x1="34" y1="44" x2="24" y2="38"/>
   </svg>
 );
 
@@ -29,9 +34,9 @@ export default function ConfianzaCredibilidad() {
   const { t } = useI18n();
 
   const pillars = [
-    { titleKey: 'confianza.pill1Title', descKey: 'confianza.pill1Desc', icon: <EditorialIcon /> },
-    { titleKey: 'confianza.pill2Title', descKey: 'confianza.pill2Desc', icon: <KeyIcon /> },
-    { titleKey: 'confianza.pill3Title', descKey: 'confianza.pill3Desc', icon: <StarIcon /> },
+    { titleKey: 'confianza.pill1Title', descKey: 'confianza.pill1Desc', icon: <ReviewIcon /> },
+    { titleKey: 'confianza.pill2Title', descKey: 'confianza.pill2Desc', icon: <ShieldIcon /> },
+    { titleKey: 'confianza.pill3Title', descKey: 'confianza.pill3Desc', icon: <BadgeIcon /> },
   ];
 
   return (
