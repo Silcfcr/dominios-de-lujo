@@ -52,10 +52,10 @@
 .brandName {
   font-family: var(--fd);
   font-size: var(--text-base);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--ink);
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--ls-tight);
 }
 
 .desc {
