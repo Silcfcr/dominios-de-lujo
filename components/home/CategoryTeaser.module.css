@@ -109,7 +109,7 @@
   font-size: var(--text-display-xs);
   font-weight: 300;
   color: var(--w);
-  letter-spacing: 0.06em;
+  letter-spacing: var(--ls-normal);
   line-height: var(--lh-snug);
   margin-bottom: 10px;
 }
@@ -119,7 +119,7 @@
   font-size: var(--text-base);
   font-style: italic;
   color: var(--glt);
-  letter-spacing: 0.04em;
+  letter-spacing: var(--ls-normal);
   line-height: var(--lh-relaxed);
 }
 
@@ -134,7 +134,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: var(--text-2xl);
   line-height: var(--lh-tight);
   color: var(--ink2);
   background: var(--w);
@@ -191,7 +191,7 @@
   .navBtn {
     width: 36px;
     height: 36px;
-    font-size: 20px;
+    font-size: var(--text-xl);
   }
 
   .info {
@@ -205,7 +205,7 @@
 
 @media (max-width: 480px) {
   .stage  { height: 320px; }
-  .navBtn { width: 32px; height: 32px; font-size: 18px; }
+  .navBtn { width: 32px; height: 32px; font-size: var(--text-lg); }
   .info   { padding: 16px; }
   .body   { font-size: var(--text-base); }
 }

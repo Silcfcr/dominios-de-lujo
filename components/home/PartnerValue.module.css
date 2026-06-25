@@ -75,7 +75,7 @@
   font-style: italic;
   font-weight: 400;
   color: var(--gold);
-  letter-spacing: 0.08em;
+  letter-spacing: var(--ls-wide);
   align-self: start;
   padding-top: 5px;
 }
@@ -99,7 +99,7 @@
   font-family: var(--fb);
   font-size: var(--text-base);
   color: var(--ink3);
-  letter-spacing: 0.02em;
+  letter-spacing: var(--ls-tight);
 }
 
 /* ── Body (grid-template-rows trick) ──────────────────── */
