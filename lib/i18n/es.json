@@ -29,8 +29,8 @@
   },
   "hero": {
     "h1a": "La plataforma de marketing de afiliados de lujo en español.",
-    "h1b": "Más de 4.000 dominios exactos. 650 millones de hispanohablantes. 18+ mercados.",
-    "h1em": "El canal que el lujo en español no tenía.",
+    "h1b": "impulsada por más de 4.000 dominios exactos premium",
+    "h1em": "unificada bajo LujoTotal™.",
     "eyebrow": "Donde cada deseo tiene su lugar",
     "kvp": "Invitamos a las marcas de lujo a formar parte del ecosistema que define el lujo en español.",
     "cta1": "Explorar dominios",
@@ -51,7 +51,7 @@
   },
   "categoryTeaser": {
     "eyebrow": "Nuestro portafolio",
-    "title": "Un ecosistema completo para el lujo en español.",
+    "title": "Un ecosistema completo para el lujo en español",
     "titleEm": "",
     "body": "Cada dominio en nuestra red es una propiedad editorial de autoridad — construida en torno a las búsquedas exactas que realizan los compradores de lujo hispanohablantes. Su marca no solo aparece: pertenece.",
     "cta": "Ver todos los dominios",
@@ -141,7 +141,7 @@
     "cta": "Descubrir PaginasDeLujo"
   },
   "collaborateTeaser": {
-    "eyebrow": "Únete a la plataforma editorial de lujo líder en español.",
+    "eyebrow": "Únete a la plataforma editorial de lujo líder en español",
     "title": "Colabora con",
     "titleEm": "Dominios de Lujo.",
     "subtitle": "¿Escribe sobre lujo? Buscamos editores, periodistas y creadores especializados que quieran formar parte del ecosistema de referencia.",
@@ -263,7 +263,7 @@
   },
   "colaborar": {
     "eyebrow": "Únete a la plataforma editorial de lujo líder en español",
-    "title": "Colabora con nosotros.",
+    "title": "Colabora con nosotros",
     "sub": "Buscamos talento para construir la mayor plataforma editorial premium de lujo en español.",
     "wiHeading": "¿Por qué unirte como escritor?",
     "wiP1": "Lo que estamos construyendo es excepcional. No nos limitamos a producir contenido — estamos dando forma a publicaciones digitales completas, cada una construida sobre experiencia real, pasión y visión a largo plazo. Algunos escritores lideran verticales completas como editores y estrategas, guiando el crecimiento sostenido de las marcas que gestionan. Otros contribuyen como escritores especializados, aportando profundidad, claridad y autoridad a los temas que mejor conocen. Ambos roles importan — y ambos determinan la calidad de nuestro ecosistema.",
@@ -342,7 +342,7 @@
   },
   "affiliateIntro": {
     "eyebrow": "Marketing de Afiliados",
-    "heading": "¿Tu marca pertenece al lujo en español? Únete a la red.",
+    "heading": "¿Tu marca pertenece al lujo en español? Únete a la red",
     "body": "Nuestra plataforma de marketing de afiliados conecta marcas premium con audiencias de alto poder adquisitivo — de forma estructurada, medible y dentro de un entorno editorial de lujo.",
     "step1Title": "Solicite su ingreso",
     "step1Desc": "Póngase en contacto con nuestro equipo para conversar sobre su marca. Evaluamos posibles colaboraciones para garantizar la alineación con nuestros estándares editoriales y las expectativas de nuestra audiencia.",
@@ -540,7 +540,7 @@
     "contactBody": "Para consultas o solicitudes relacionadas con la privacidad, contáctanos en: info@dominiosdelujo.com"
   },
   "porquenosotros": {
-    "heading": "El lujo en español tenía una brecha digital. Nosotros la cerramos.",
+    "heading": "El lujo en español tenía una brecha digital. Nosotros la cerramos",
     "body": "Los grandes canales digitales de lujo operan en inglés. El 90% de los hispanohablantes consume contenido exclusivamente en su idioma. Nosotros construimos la infraestructura que conecta ambos mundos. El mercado de lujo hispanohablante mueve más de $150,000 millones al año. España, México, Colombia y Argentina representan algunos de los segmentos de consumo premium de mayor crecimiento en el mundo. Y aún no había una plataforma editorial a su altura.",
     "feat1Title": "Autoridad orgánica",
     "feat1Desc": "Dominios exactos que posicionan naturalmente para las búsquedas de lujo más valiosas en español.",
@@ -551,8 +551,21 @@
     "feat4Title": "Estándares editoriales",
     "feat4Desc": "Contenido que respeta la imagen de su marca mientras genera conversión."
   },
+  "ourBrands": {
+    "eyebrow": "Red de marcas",
+    "title": "Nuestras",
+    "titleEm": "marcas",
+    "sub": "Explora nuestras marcas exclusivas",
+    "brand1Desc": "Un destino refinado para anillos de lujo atemporales.",
+    "brand2Desc": "Destinos, hoteles y experiencias de viaje premium en español.",
+    "brand3Desc": "Contenido editorial de belleza y bienestar premium.",
+    "brand4Desc": "Una puerta de entrada curada al mundo del lujo.",
+    "brand5Desc": "Moda de lujo en español para el consumidor premium.",
+    "brand6Desc": "El medio de referencia para el lujo hispanohablante.",
+    "soon": "Próximamente"
+  },
   "confianza": {
-    "heading": "Construido con los mismos estándares que exige el lujo.",
+    "heading": "Construido con los mismos estándares que exige el lujo",
     "body": "No somos un directorio de links. Somos una red editorial con criterio — donde cada dominio, cada pieza de contenido y cada asociación de marca pasa por un proceso de revisión. La selectividad es parte del valor que ofrecemos.",
     "pill1Title": "Revisión editorial",
     "pill1Desc": "Cada marca asociada es revisada antes de integrarse a la plataforma.",
@@ -601,7 +614,7 @@
     "note": "Nuestro equipo responde a todas las consultas en un plazo máximo de 14 días hábiles."
   },
   "brandsFaq": {
-    "heading": "Lo que las marcas suelen preguntar.",
+    "heading": "Lo que las marcas suelen preguntar",
     "q1": "¿Qué tipo de marcas pueden unirse a la plataforma?",
     "a1": "Trabajamos con marcas establecidas en el segmento premium y de lujo en cualquier vertical — viajes, moda, joyería, hospitalidad, automotriz, bienes raíces, wellness y más. El requisito principal es alineación con los estándares editoriales y de audiencia de la plataforma.",
     "q2": "¿Cómo funciona el modelo de afiliados?",
