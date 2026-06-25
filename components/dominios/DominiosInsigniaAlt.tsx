@@ -114,6 +114,18 @@ const CATEGORIES: InsigniaCategory[] = [
       'robotsdelujo.com','segurosdelujo.com','viviendasdelujo.com',
     ],
   },
+  {
+    id: 'emociones',
+    titleKey: 'dominiosInsignia.cat_emociones',
+    image: '/images/partner.webp',
+    imageAlt: 'dominiosInsignia.alt_emociones',
+    domains: [
+      'eresmivida.com','siempreteamo.com','teamohastalaluna.com',
+      'mehacesfeliz.com','siempreati.com','mividaentera.com',
+      'eresmicorazon.com','porsiempreunidos.com','eresmialma.com',
+      'contigotodoesmejor.com','eternamentejuntos.com','teamoporsiempre.com',
+    ],
+  },
 ];
 
 export default function DominiosInsigniaAlt() {
