@@ -33,9 +33,9 @@
 
 .cardEyebrow {
   font-family: var(--fb);
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   font-weight: 400;
-  letter-spacing: var(--ls-eye);
+  letter-spacing: var(--ls-label);
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 8px;

@@ -12,6 +12,19 @@
 .item {
   padding: 32px 0;
   border-bottom: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 0 24px;
+  align-items: start;
+}
+
+.num {
+  font-family: var(--fd);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  letter-spacing: var(--ls-label);
+  color: var(--gold);
+  padding-top: 3px;
 }
 
 .question {

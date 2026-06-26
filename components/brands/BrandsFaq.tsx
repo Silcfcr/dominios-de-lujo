@@ -18,10 +18,13 @@ export default function BrandsFaq() {
         <h2 className="s-title">{t('brandsFaq.heading')}</h2>
       </RevealWrapper>
       <RevealWrapper className={styles.list}>
-        {FAQ_ITEMS.map((item) => (
+        {FAQ_ITEMS.map((item, i) => (
           <div key={item.q} className={styles.item}>
-            <h3 className={styles.question}>{t(item.q)}</h3>
-            <p className={styles.answer}>{t(item.a)}</p>
+            <span className={styles.num}>{String(i + 1).padStart(2, '0')}</span>
+            <div>
+              <h3 className={styles.question}>{t(item.q)}</h3>
+              <p className={styles.answer}>{t(item.a)}</p>
+            </div>
           </div>
         ))}
       </RevealWrapper>
