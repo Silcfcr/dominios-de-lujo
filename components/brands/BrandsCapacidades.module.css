@@ -46,7 +46,7 @@
 .cardTitle {
   font-family: var(--fd);
   font-size: var(--text-xl);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--ink);
   margin-bottom: 12px;
   line-height: var(--lh-snug);

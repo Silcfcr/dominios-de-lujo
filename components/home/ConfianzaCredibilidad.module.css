@@ -1,5 +1,5 @@
 .section {
-  background: var(--c);
+  background: var(--w);
   border-top: 1px solid var(--rule);
 }
 
@@ -47,7 +47,7 @@
 .pillarTitle {
   font-family: var(--fd);
   font-size: var(--text-xl);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--ink);
   margin-bottom: 12px;
   line-height: var(--lh-snug);

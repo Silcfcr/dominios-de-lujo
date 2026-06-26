@@ -38,7 +38,7 @@
 
 .cardTitle {
   font-family: var(--fd);
-  font-size: var(--text-display-sm);
+  font-size: var(--text-xl);
   font-weight: 500;
   color: var(--ink);
   margin-bottom: 20px;

@@ -37,8 +37,8 @@
 
 .featTitle {
   font-family: var(--fd);
-  font-size: var(--text-lg);
-  font-weight: 400;
+  font-size: var(--text-xl);
+  font-weight: 500;
   color: var(--ink);
   line-height: var(--lh-snug);
   margin-bottom: 10px;

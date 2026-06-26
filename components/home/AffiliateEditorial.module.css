@@ -76,7 +76,7 @@
 
 .step {
   border-bottom: 1px solid var(--rule);
-  padding: 18px 0;
+  padding: 24px 0;
   cursor: pointer;
 }
 
@@ -103,8 +103,8 @@
 
 .stepLabel {
   font-family: var(--fd);
-  font-size: var(--text-lg);
-  font-weight: 400;
+  font-size: var(--text-xl);
+  font-weight: 500;
   color: var(--ink);
   flex: 1;
   transition: color 0.2s;
