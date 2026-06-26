@@ -10,7 +10,7 @@ export default function CollaborateTeaser() {
 
   return (
     <section className={`sec ${styles.section}`}>
-      <div className={styles.wm} aria-hidden="true">LUJO</div>
+      <div className={styles.wm} aria-hidden="true">DL</div>
 
       <div className={styles.inner}>
         <RevealWrapper className="s-hd">

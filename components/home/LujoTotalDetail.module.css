@@ -47,9 +47,9 @@
 
 .principleNum {
   font-family: var(--fd);
-  font-size: var(--text-display-md);
-  font-weight: 300;
-  letter-spacing: var(--ls-tight);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  letter-spacing: var(--ls-label);
   color: var(--gold);
   display: block;
   margin-bottom: 4px;

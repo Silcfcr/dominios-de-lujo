@@ -71,9 +71,9 @@
   border: 1px solid var(--rule);
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  padding: 32px 36px;
-  width: 460px;
+  gap: 12px;
+  padding: 24px 28px;
+  width: 400px;
   flex-shrink: 0;
   cursor: default;
   transition: box-shadow 0.25s;
@@ -95,7 +95,7 @@
 
 .quote {
   font-family: var(--fd);
-  font-size: var(--text-display-xs);
+  font-size: clamp(15px, 1.4vw, 21px);
   font-style: italic;
   color: var(--ink);
   line-height: 1.5;
@@ -143,11 +143,11 @@
   }
 
   .card {
-    width: 300px;
-    padding: 24px 24px;
+    width: 260px;
+    padding: 20px 20px;
   }
 
   .quote {
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
   }
 }

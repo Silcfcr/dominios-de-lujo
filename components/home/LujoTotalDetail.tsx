@@ -42,36 +42,13 @@ export default function LujoTotalDetail() {
         </RevealWrapper>
       </section>
 
-      {/* Certification Levels */}
-      <section className={styles.levels}>
-        <RevealWrapper className={styles.inner}>
-          <div className={styles.sectionHead}>
-            <p className="s-eye">{t('lujototalPage.levelsEyebrow')}</p>
-            <h2 className={`s-title ${styles.sectionTitle}`}>
-              {t('lujototalPage.levelsTitle')} <em>{t('lujototalPage.levelsTitleEm')}</em>
-            </h2>
-          </div>
-          <div className={styles.levelsGrid}>
-            <div className={styles.levelCard}>
-              <span className={styles.levelLabel}>{t('lujototalPage.verifiedLabel')}</span>
-              <h3 className={styles.levelTitle}>{t('lujototalPage.verifiedTitle')}</h3>
-              <p className={styles.levelDesc}>{t('lujototalPage.verifiedDesc')}</p>
-            </div>
-            <div className={`${styles.levelCard} ${styles.levelFeatured}`}>
-              <span className={styles.levelLabel}>{t('lujototalPage.certifiedLabel')}</span>
-              <h3 className={styles.levelTitle}>{t('lujototalPage.certifiedTitle')}</h3>
-              <p className={styles.levelDesc}>{t('lujototalPage.certifiedDesc')}</p>
-            </div>
-          </div>
-        </RevealWrapper>
-      </section>
-
       {/* CTA */}
       <section className={styles.cta}>
         <RevealWrapper className={styles.ctaInner}>
           <p className={styles.ctaEyebrow}>{t('lujototalPage.ctaEyebrow')}</p>
           <h2 className={styles.ctaTitle}>
-            {t('lujototalPage.ctaTitle')} <em>{t('lujototalPage.ctaTitleEm')}</em>
+            {t('lujototalPage.ctaTitle')}
+            {t('lujototalPage.ctaTitleEm') && <> <em>{t('lujototalPage.ctaTitleEm')}</em></>}
           </h2>
           <p className={styles.ctaBody}>{t('lujototalPage.ctaBody')}</p>
           <a href={CONTACT_EMAIL} className="btn-gold">
@@ -83,6 +60,7 @@ export default function LujoTotalDetail() {
       {/* Disclosure */}
       <div className={styles.disclosure}>
         <p className={styles.disclosureText}>{t('lujototalPage.disclosure')}</p>
+        <p className={styles.disclosureText}>{t('lujototalPage.disclosure2')}</p>
       </div>
     </>
   );

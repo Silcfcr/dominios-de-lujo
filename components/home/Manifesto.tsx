@@ -19,7 +19,7 @@ export default function Manifesto() {
   const [visible, setVisible]         = useState(false);
 
   const audioSrc = assetPath(
-    `/audio/${encodeURIComponent(lang === 'en' ? 'AI voice.m4a' : 'Manifiesto Español.m4a')}`
+    lang === 'en' ? '/audio/english.m4a' : '/audio/spanish.mp3'
   );
 
   useEffect(() => {

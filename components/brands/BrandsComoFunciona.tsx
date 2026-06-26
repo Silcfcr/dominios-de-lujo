@@ -28,7 +28,7 @@ export default function BrandsComoFunciona() {
       <div className={styles.outer}>
         <div className={styles.imgCol}>
           <Image
-            src={assetPath('/images/hotel.webp')}
+            src={assetPath('/images/luxury.webp')}
             alt=""
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
