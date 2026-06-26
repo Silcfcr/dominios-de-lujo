@@ -49,7 +49,7 @@ export default function AffiliateEditorial() {
 
         <div className={styles.rightCol}>
           <p className="s-eye lft">{t('affiliateIntro.eyebrow')}</p>
-          <h2 className="s-title">{t('affiliateIntro.heading')}</h2>
+          <h2 className="s-title">{t('affiliateIntro.heading')} <em>{t('affiliateIntro.headingEm')}</em></h2>
           <hr className={styles.rule} />
           <p className={styles.body}>{t('affiliateIntro.body')}</p>
 

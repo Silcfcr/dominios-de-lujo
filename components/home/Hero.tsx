@@ -66,7 +66,7 @@ export default function Hero() {
         })}
         <div className={styles.overlay} />
         <div className={styles.badge}>
-          <span className={styles.badgeNum}>4.000+</span>
+          <span className={styles.badgeNum}>3.000+</span>
           <span className={styles.badgeTxt}>{t('hero.badgeTxt')}</span>
         </div>
       </div>

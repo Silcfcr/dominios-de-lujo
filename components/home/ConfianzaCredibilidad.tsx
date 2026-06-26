@@ -43,7 +43,7 @@ export default function ConfianzaCredibilidad() {
     <section className={`sec ${styles.section}`}>
       <RevealWrapper className={styles.inner}>
         <div className="s-hd">
-          <h2 className="s-title">{t('confianza.heading')}</h2>
+          <h2 className="s-title">{t('confianza.heading')} <em>{t('confianza.headingEm')}</em></h2>
           <p className={styles.body}>{t('confianza.body')}</p>
         </div>
         <div className={styles.pillars}>

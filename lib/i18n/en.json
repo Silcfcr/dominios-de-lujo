@@ -29,7 +29,7 @@
   },
   "hero": {
     "h1a": "The Spanish-language luxury affiliate marketing platform.",
-    "h1b": "powered by 4,000+ premium exact-match domains",
+    "h1b": "powered by 3,000+ premium exact-match domains",
     "h1em": "unified under LujoTotal™.",
     "eyebrow": "Where every desire has its place",
     "kvp": "We invite luxury brands to establish their presence within the Spanish-speaking luxury market.",
@@ -43,7 +43,7 @@
     "title": "One platform,",
     "titleEm": "three pillars.",
     "col1Title": "Editorial Reach",
-    "col1Desc": "A premium editorial platform of 4,000+ exact-match luxury domains generating high-value organic traffic across the entire premium industry.",
+    "col1Desc": "A premium editorial platform of 3,000+ exact-match luxury domains generating high-value organic traffic across the entire premium industry.",
     "col2Title": "Exact-Match Domains",
     "col2Desc": "The world's best Spanish luxury domains: real estate, jewellery, fashion, gastronomy, travel, yachts and much more.",
     "col3Title": "LujoTotal™ Standard",
@@ -89,7 +89,7 @@
     "titleEm": "three audiences.",
     "s1Eyebrow": "For brands and affiliate networks",
     "s1Title": "Editorial Affiliate Platform",
-    "s1Desc": "Publish luxury editorial content across our premium editorial platform of 4,000+ exact-match domains. Reach high-net-worth Spanish-speaking consumers at the precise moment of purchase intent.",
+    "s1Desc": "Publish luxury editorial content across our premium editorial platform of 3,000+ exact-match domains. Reach high-net-worth Spanish-speaking consumers at the precise moment of purchase intent.",
     "s1Cta": "Learn more",
     "s2Eyebrow": "For luxury professionals and businesses",
     "s2Title": "PaginasDeLujo.com",
@@ -183,7 +183,7 @@
   },
   "dominios": {
     "title": "Domain Portfolio",
-    "sub": "4,000+ exact-match Spanish luxury domains",
+    "sub": "3,000+ exact-match Spanish luxury domains",
     "searchPlaceholder": "Search domain...",
     "allCategories": "All categories",
     "flagship": "Flagship",
@@ -212,12 +212,12 @@
     "affiliateValueEyebrow": "The market",
     "affiliateValueTitle": "The Spanish-language luxury consumer.",
     "affiliateBody1": "The high-net-worth Spanish-speaking consumer chooses Spanish by identity, not necessity. They search for luxury in their language, in environments that understand their culture and way of life. This consumer is the centre of everything we build at Dominios de Lujo.",
-    "affiliateBody2": "With over 4,000 exact-match luxury domains and presence across more than 50 verticals, Dominios de Lujo is the only editorial ecosystem built specifically for this audience — at the moments of highest intent, and to the quality standard that serious luxury consumers expect.",
+    "affiliateBody2": "With over 3,000 exact-match luxury domains and presence across more than 50 verticals, Dominios de Lujo is the only editorial ecosystem built specifically for this audience — at the moments of highest intent, and to the quality standard that serious luxury consumers expect.",
     "affiliateHeroTitle": "Your brand, placed where luxury lives online.",
-    "affiliateHeroSub1": "Dominios de Lujo is the largest portfolio of exact-match luxury domains in Spanish — over 4,000 premium properties reaching 650 million Spanish speakers across 18+ markets. We connect world-class brands with high-net-worth audiences through a curated editorial affiliate platform built exclusively for the luxury segment.",
+    "affiliateHeroSub1": "Dominios de Lujo is the largest portfolio of exact-match luxury domains in Spanish — over 3,000 premium properties reaching 650 million Spanish speakers across 18+ markets. We connect world-class brands with high-net-worth audiences through a curated editorial affiliate platform built exclusively for the luxury segment.",
     "affiliateHeroSub2": "",
     "affiliateHeroClosing": "If your brand belongs in the luxury conversation, this is where it should be.",
-    "stat1Num": "4,000+",
+    "stat1Num": "3,000+",
     "stat1Label": "exact luxury domains in Spanish",
     "stat2Num": "650M",
     "stat2Label": "Spanish-speaking consumers",
@@ -331,7 +331,7 @@
     "b6Desc": "The premium content channel for those who live and communicate luxury."
   },
   "stats": {
-    "stat1Num": "4,000+",
+    "stat1Num": "3,000+",
     "stat1Label": "exact luxury domains in Spanish",
     "stat2Num": "650M",
     "stat2Label": "Spanish-speaking consumers",
@@ -342,7 +342,8 @@
   },
   "affiliateIntro": {
     "eyebrow": "Affiliate Programme",
-    "heading": "Does your brand belong in the Spanish-language luxury market? Join the network",
+    "heading": "Does your brand belong in the Spanish-language luxury market?",
+    "headingEm": "Join the network.",
     "body": "Our affiliate marketing platform connects premium brands with high-net-worth audiences — in a structured, measurable way, within a luxury editorial environment.",
     "step1Title": "Get in touch",
     "step1Desc": "Contact our team to discuss your brand. We assess potential collaborations to ensure alignment with our editorial standards and audience expectations.",
@@ -363,7 +364,7 @@
     "item1Desc": "Our audience is the high-net-worth Spanish-speaking consumer — in Spain, Mexico, Argentina, Colombia, and across Latin America. They read in Spanish by choice, not necessity. They are not an afterthought in your existing campaigns. They are the entire point of ours.",
     "item2Title": "Editorial placement, not advertising",
     "item2Desc": "Your brand appears within genuine editorial content produced by specialist writers who live and understand luxury in their market. Not banner ads. Not paid listings. Contextual placement that earns trust from a reader who is already interested in what you sell.",
-    "item3Title": "4,000+ exact-match domains — one partnership.",
+    "item3Title": "3,000+ exact-match domains — one partnership.",
     "item3Desc": "A single partnership with Dominios de Lujo gives your brand placement potential across the largest exact-match Spanish luxury domain portfolio in existence — across travel, jewelry, fashion, real estate, gastronomy, wellness, and more.",
     "item4Title": "Brand safety guaranteed by editorial standard",
     "item4Desc": "Every site in our premium editorial platform publishes under the LujoTotal™ editorial standard — a quality framework that governs tone, accuracy, and presentation. Your brand will not appear next to thin content, misleading claims, or anything that puts your reputation at risk.",
@@ -540,7 +541,8 @@
     "contactBody": "For privacy questions or requests, contact: info@dominiosdelujo.com"
   },
   "porquenosotros": {
-    "heading": "Spanish-language luxury had a digital gap. We closed it",
+    "heading": "Spanish-language luxury had a digital gap.",
+    "headingEm": "We closed it.",
     "body": "The major digital luxury channels operate in English. 90% of Spanish speakers consume content exclusively in their own language. We built the infrastructure that connects both worlds. The Spanish-speaking luxury market moves over $150 billion a year. Spain, Mexico, Colombia, and Argentina represent some of the fastest-growing premium consumer segments in the world. And there was no editorial platform worthy of it.",
     "feat1Title": "Organic authority",
     "feat1Desc": "Exact-match domains that rank naturally for the most valuable luxury searches in Spanish.",
@@ -565,7 +567,8 @@
     "soon": "Coming soon"
   },
   "confianza": {
-    "heading": "Built to the same standards that luxury demands",
+    "heading": "Built to the same standards",
+    "headingEm": "that luxury demands.",
     "body": "We are not a link directory. We are an editorial network with discernment — where every domain, every piece of content, and every brand partnership goes through a review process. Selectivity is part of the value we offer.",
     "pill1Title": "Editorial review",
     "pill1Desc": "Every partner brand is reviewed before joining the platform.",
@@ -625,7 +628,7 @@
     "a4": "The integration process takes between 2 and 4 weeks from approval, depending on the scope and domains assigned."
   },
   "metricsStrip": {
-    "m1Num": "4,000+",
+    "m1Num": "3,000+",
     "m1Label": "exact luxury domains in Spanish",
     "m2Num": "650M",
     "m2Label": "Spanish-speaking consumers reachable",

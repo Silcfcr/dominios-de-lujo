@@ -53,7 +53,7 @@ export default function PorQueNosotros() {
     <section className={`sec ${styles.section}`}>
       <RevealWrapper className={styles.inner}>
         <div className="s-hd">
-          <h2 className="s-title">{t('porquenosotros.heading')}</h2>
+          <h2 className="s-title">{t('porquenosotros.heading')} <em>{t('porquenosotros.headingEm')}</em></h2>
           <p className={styles.body}>{t('porquenosotros.body')}</p>
         </div>
         <div className={styles.featGrid}>

@@ -58,6 +58,7 @@
   display: flex;
   gap: 14px;
   align-items: center;
+  justify-content: center;
 }
 
 /* Right: image panel */

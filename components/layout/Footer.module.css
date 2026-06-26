@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 48px;
-  padding: 72px 64px 56px;
+  padding: 48px 64px 40px;
   border-bottom: 1px solid rgba(250, 247, 242, 0.07);
 }
 
@@ -128,7 +128,7 @@
   .top {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    padding: 56px 40px 48px;
+    padding: 40px 40px 32px;
   }
 
   .brand {
@@ -139,7 +139,7 @@
 @media (max-width: 768px) {
   .top {
     grid-template-columns: 1fr;
-    padding: 48px 24px 40px;
+    padding: 36px 24px 28px;
     gap: 36px;
   }
 

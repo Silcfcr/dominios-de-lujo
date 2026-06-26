@@ -15,7 +15,7 @@ export default function BrandsCta() {
         <p className={styles.subtitle}>{t('brandsCta.subtitle')}</p>
         <p className={styles.body}>{t('brandsCta.body')}</p>
         <div className={styles.cta}>
-          <a href={CONTACT} className="btn-dark">{t('brandsCta.cta')}</a>
+          <a href={CONTACT} className="btn-gold">{t('brandsCta.cta')}</a>
           <p className={styles.note}>{t('brandsCta.note')}</p>
         </div>
       </RevealWrapper>
