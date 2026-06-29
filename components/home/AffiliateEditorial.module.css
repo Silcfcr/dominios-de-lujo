@@ -165,29 +165,17 @@
   .leftCol {
     padding-top: 0;
     margin-bottom: 48px;
-    text-align: center;
   }
 
   .stats {
-    flex-direction: row;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
+    flex-direction: column;
+    max-width: 360px;
+    margin: 0 auto;
   }
 
   .stat {
-    flex: 1;
     padding: 24px 0;
-    border-bottom: none;
-    border-top: none;
     text-align: center;
-  }
-
-  .stat:first-child {
-    border-top: none;
-  }
-
-  .stat + .stat {
-    border-left: 1px solid var(--rule);
   }
 
   .rightCol {
@@ -205,11 +193,4 @@
   .statLabel {
     font-size: var(--text-xs);
   }
-}
-
-@media (max-width: 480px) {
-  .stats            { flex-direction: column; border-top: none; border-bottom: none; }
-  .stat             { padding: 16px 0; border-bottom: 1px solid var(--rule); text-align: center; align-items: center; }
-  .stat:first-child { border-top: 1px solid var(--rule); }
-  .stat + .stat     { border-left: none; }
 }
