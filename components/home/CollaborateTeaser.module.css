@@ -41,4 +41,10 @@
 
 @media (max-width: 768px) {
   .subtitle { font-size: var(--text-base); }
+
+  .cta :global(.btn-dark) {
+    white-space: normal;
+    padding: 14px 24px;
+    max-width: 260px;
+  }
 }
