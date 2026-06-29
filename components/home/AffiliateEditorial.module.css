@@ -162,15 +162,19 @@
     gap: 0;
   }
 
+  .leftCol,
+  .rightCol {
+    min-width: 0;
+  }
+
   .leftCol {
     padding-top: 0;
     margin-bottom: 48px;
+    text-align: center;
   }
 
   .stats {
     flex-direction: column;
-    max-width: 360px;
-    margin: 0 auto;
   }
 
   .stat {
@@ -192,5 +196,6 @@
 
   .statLabel {
     font-size: var(--text-xs);
+    word-break: break-word;
   }
 }
