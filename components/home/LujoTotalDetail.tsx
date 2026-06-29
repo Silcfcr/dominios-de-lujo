@@ -45,7 +45,6 @@ export default function LujoTotalDetail() {
       {/* CTA */}
       <section className={styles.cta}>
         <RevealWrapper className={styles.ctaInner}>
-          <p className={styles.ctaEyebrow}>{t('lujototalPage.ctaEyebrow')}</p>
           <h2 className={styles.ctaTitle}>
             {t('lujototalPage.ctaTitle')}
             {t('lujototalPage.ctaTitleEm') && <> <em>{t('lujototalPage.ctaTitleEm')}</em></>}

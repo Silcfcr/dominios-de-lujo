@@ -165,6 +165,7 @@
   .leftCol {
     padding-top: 0;
     margin-bottom: 48px;
+    text-align: center;
   }
 
   .stats {
@@ -208,7 +209,7 @@
 
 @media (max-width: 480px) {
   .stats            { flex-direction: column; border-top: none; border-bottom: none; }
-  .stat             { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  .stat             { padding: 16px 0; border-bottom: 1px solid var(--rule); text-align: center; align-items: center; }
   .stat:first-child { border-top: 1px solid var(--rule); }
   .stat + .stat     { border-left: none; }
 }
