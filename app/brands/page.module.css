@@ -116,7 +116,7 @@
 
 .valueBody {
   font-family: var(--fb);
-  font-size: 14px;
+  font-size: var(--text-base);
   line-height: 1.85;
   color: var(--ink2);
   margin-bottom: 16px;
@@ -136,9 +136,9 @@
 
 .editorialEye {
   font-family: var(--fb);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
+  font-size: var(--text-sm);
+  font-weight: 400;
+  letter-spacing: var(--ls-label);
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 24px;
@@ -196,7 +196,7 @@
 
 .whyCardDesc {
   font-family: var(--fb);
-  font-size: 14px;
+  font-size: var(--text-base);
   line-height: 1.85;
   color: var(--ink2);
   margin: 0;

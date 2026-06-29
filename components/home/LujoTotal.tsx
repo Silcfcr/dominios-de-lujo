@@ -22,7 +22,6 @@ export default function LujoTotal() {
           />
         </div>
         <div>
-          <p className={styles.eyebrow}>{t('lujototal.eyebrow')}</p>
           <h2 className={styles.title}>
             {t('lujototal.title')} <em>{t('lujototal.titleEm')}</em>
           </h2>
