@@ -1,5 +1,5 @@
 {
-  "total_domains": 2512,
+  "total_domains": 2467,
   "translation_status": "complete",
   "domains": [
     {
@@ -2044,17 +2044,6 @@
       "include_in_categories": "no",
       "affiliate_marketing": "No",
       "one_pager": "yes"
-    },
-    {
-      "category": "Gastronomy, Beverages & Cigars",
-      "domain": "alcohol.do",
-      "country": "Dominican Republic",
-      "description": "Alcohol.do is a domain aimed at users comparing alcoholic beverages in the Dominican Republic before an important purchase, evaluating categories, brands, processes, distributors, and price ranges. It presents structured information on categories and basic selection criteria.",
-      "targeted_audience": "Beverage companies, distributors, importers, specialty stores, corporate platforms.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "No",
-      "include_in_categories": "no",
-      "affiliate_marketing": "yes"
     },
     {
       "category": "Gastronomy, Beverages & Cigars",
@@ -8577,17 +8566,6 @@
     },
     {
       "category": "Travel, Tourism, Destinations & Accommodations",
-      "domain": "stluciadelujo.es",
-      "country": "Spain",
-      "description": "StLuciaDeLujo.es is a domain aimed at the Spanish market seeking hotels, resorts, and exclusive experiences in Saint Lucia, one of the most luxurious destinations in the Caribbean.",
-      "targeted_audience": "Resorts, villas, tour operators, marketplaces, travel agencies, and companies focused on international luxury tourism.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "No",
-      "include_in_categories": "no",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Travel, Tourism, Destinations & Accommodations",
       "domain": "stmoritzdelujo.com",
       "country": "Global",
       "description": "StMoritzDeLujo.com is a premium domain aimed at travelers seeking hotels, chalets, and exclusive experiences in St. Moritz, one of the most luxurious alpine destinations in the world.",
@@ -8599,45 +8577,12 @@
     },
     {
       "category": "Travel, Tourism, Destinations & Accommodations",
-      "domain": "stmoritzdelujo.com",
-      "country": "Global",
-      "description": "StMoritzDeLujo.com is a premium domain aimed at travelers seeking hotels, chalets, and exclusive experiences in St. Moritz, one of the most prestigious alpine destinations in the world.",
-      "targeted_audience": "Hotels, chalets, snow operators, marketplaces, travel agencies, and premium hospitality companies.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "No",
-      "include_in_categories": "Yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Travel, Tourism, Destinations & Accommodations",
       "domain": "suizadelujo.com",
       "country": "Global",
       "description": "SuizaDeLujo.com is a premium domain aimed at travelers seeking hotels, alpine experiences, and exclusive stays in Switzerland, one of the most prestigious destinations in the world.",
       "targeted_audience": "Hotels, resorts, chalets, tour operators, marketplaces, travel agencies, and premium hospitality companies.",
       "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
       "flagship": "No",
-      "include_in_categories": "Yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Travel, Tourism, Destinations & Accommodations",
-      "domain": "suizadelujo.com",
-      "country": "Global",
-      "description": "SuizaDeLujo.com is a premium domain aimed at travelers seeking hotels, alpine experiences, and exclusive stays in Switzerland, one of the most recognized destinations in global luxury tourism.",
-      "targeted_audience": "Hotels, resorts, chalets, tour operators, marketplaces, travel agencies, and premium hospitality companies.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "No",
-      "include_in_categories": "Yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Travel, Tourism, Destinations & Accommodations",
-      "domain": "suizadelujo.com",
-      "country": "Global",
-      "description": "SuizaDeLujo.com is a premium domain aimed at travelers seeking hotels, alpine experiences, exclusive resorts, and high-level stays in Switzerland, one of the most prestigious destinations in global luxury tourism.",
-      "targeted_audience": "Hotels, resorts, chalets, tour operators, marketplaces, travel agencies, and premium hospitality companies seeking visibility within the luxury segment in Switzerland.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "Yes",
       "include_in_categories": "Yes",
       "affiliate_marketing": "yes"
     },
@@ -8750,17 +8695,6 @@
       "flagship": "No",
       "include_in_categories": "Yes",
       "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Travel, Tourism, Destinations & Accommodations",
-      "domain": "toursexclusivos.com",
-      "country": "Global",
-      "description": "ToursExclusivos.com is a domain aimed at tour operators and specialized guides offering private tours, personalized experiences, and premium activities at select destinations. It presents structured information on tour types, routes, indicative prices, specialties, and contact details.",
-      "targeted_audience": "Tour operators, private guides, travel agencies, luxury hotels, local experience providers.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
     },
     {
       "category": "Travel, Tourism, Destinations & Accommodations",
@@ -11543,28 +11477,6 @@
     },
     {
       "category": "Nautical, Yachts & The Sea",
-      "domain": "mejoresyates.com",
-      "country": "Global",
-      "description": "MejoresYates.com is a premium domain dedicated to rankings, comparisons, and analyses of the world's best yachts, ideal for editorial authority and affiliate projects.",
-      "targeted_audience": "Yacht manufacturers, distributors, brokers, nautical marketplaces, comparison platforms, marketing agencies, and analytics platforms.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "No",
-      "include_in_categories": "no",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Nautical, Yachts & The Sea",
-      "domain": "mejoresyates.es",
-      "country": "Spain",
-      "description": "MejoresYates.es is a premium domain focused on yacht comparisons and rankings for the Spanish-speaking market.",
-      "targeted_audience": "Yacht manufacturers, distributors, brokers, nautical marketplaces, comparison platforms, marketing agencies, and analytics platforms.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "No",
-      "include_in_categories": "no",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Nautical, Yachts & The Sea",
       "domain": "nauticadelujo.com",
       "country": "Global",
       "description": "NauticaDelujo.com is a domain targeting users who compare luxury nautical services, evaluating vessels, marinas, maintenance, and experiences. It presents structured information by category and basic selection criteria.",
@@ -11661,50 +11573,6 @@
       "flagship": "No",
       "include_in_categories": "Yes",
       "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Nautical, Yachts & The Sea",
-      "domain": "yatesdelujo.com",
-      "country": "Global",
-      "description": "YatesDeLujo.com is a flagship domain dedicated to the world of luxury yachts, highlighting brands, models, experiences, routes, and premium editorial content.",
-      "targeted_audience": "Yacht manufacturers, brokers, charter companies, marinas, nautical marketplaces, insurers, luxury travel agencies, and maritime lifestyle platforms.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "Yes",
-      "include_in_categories": "Yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Nautical, Yachts & The Sea",
-      "domain": "yatesdelujo.es",
-      "country": "Spain",
-      "description": "YatesDeLujo.es is a flagship domain targeting the Spanish-speaking market for editorial and commercial content about luxury yachts.",
-      "targeted_audience": "Yacht manufacturers, brokers, charter companies, marinas, nautical marketplaces, insurers, luxury travel agencies, and maritime lifestyle platforms.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "Yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Nautical, Yachts & The Sea",
-      "domain": "yatesexclusivas.com",
-      "country": "Global",
-      "description": "YatesExclusivas.com is a domain targeting premium yacht rental, sales, and management services, focused on clients seeking select vessels, private routes, and high-end nautical experiences. It presents structured information on fleet, services, destinations, indicative prices, and contact details.",
-      "targeted_audience": "Yacht rental companies, nautical brokers, premium marinas, private captains, nautical providers.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Nautical, Yachts & The Sea",
-      "domain": "yatesexclusivas.es",
-      "country": "Spain",
-      "description": "YatesExclusivas.es is a domain targeting the Spanish market for exclusive yacht rental, sales, and management, aimed at clients seeking select vessels, private routes, and premium nautical experiences. It presents structured information on fleet, services, destinations, indicative prices, and contact details.",
-      "targeted_audience": "Spanish yacht rental companies, local brokers, premium marinas, private captains, nautical providers.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
     },
     {
       "category": "Jets & Aviation",
@@ -11855,17 +11723,6 @@
     },
     {
       "category": "Jets & Aviation",
-      "domain": "hangardelujo.com",
-      "country": "Global",
-      "description": "HangarDeLujo.com is a domain targeting premium hangar services, aircraft maintenance, aircraft management, and executive operations. It presents structured information on capabilities, services, indicative rates, and contact details.",
-      "targeted_audience": "Executive airports, FBOs, maintenance services, aircraft operators, aeronautical providers.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Jets & Aviation",
       "domain": "hangardelujo.es",
       "country": "Spain",
       "description": "HangarDeLujo.es is a domain targeting Spanish premium hangar services, aeronautical maintenance, and private aircraft management. It presents structured information on capabilities, services, indicative rates, and contact details.",
@@ -11874,14 +11731,6 @@
       "flagship": "no",
       "include_in_categories": "no",
       "one_pager": "yes"
-    },
-    {
-      "category": "Jets & Aviation",
-      "domain": "hangardelujo.es",
-      "country": "Spain",
-      "description": "HangarDeLujo.es is a domain targeting Spanish premium hangar services, aeronautical maintenance, and private aircraft management. It presents structured information on capabilities, services, indicative rates, and contact details.",
-      "targeted_audience": "Spanish FBOs, executive airports, maintenance services, aircraft operators, aeronautical providers.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads."
     },
     {
       "category": "Jets & Aviation",
@@ -13736,17 +13585,6 @@
       "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
       "flagship": "no",
       "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Fashion, Accessories & Haute Couture",
-      "domain": "vestidosdelujo.es",
-      "country": "Spain",
-      "description": "VestidosDelujo.es is a domain targeting users in Spain who compare luxury dresses, evaluating design, materials, exclusivity, and brands. It presents structured information by category and basic selection criteria.",
-      "targeted_audience": "Premium dress brands, luxury boutiques, fashion marketplaces, independent designers.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "No",
-      "include_in_categories": "Yes",
       "affiliate_marketing": "yes"
     },
     {
@@ -16138,17 +15976,6 @@
     },
     {
       "category": "Entertainment, Events, Sports & Experiences",
-      "domain": "pescadelujo.es",
-      "country": "Spain",
-      "description": "PescaDeLujo.es is a domain targeting premium sport and recreational fishing experiences in Spain, highlighting exclusive destinations, specialized vessels, professional guides, advanced techniques, and editorial content for enthusiasts and premium outdoor brands.",
-      "targeted_audience": "Sport fishing operators, marinas, charter companies, professional guides, experience marketplaces, premium equipment brands, travel agencies, and adventure tourism platforms.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "No",
-      "include_in_categories": "no",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Entertainment, Events, Sports & Experiences",
       "domain": "polodelujo.com",
       "country": "Global",
       "description": "PoloDelujo.com is a domain targeting users who compare luxury polo experiences, clubs, and equipment, evaluating facilities, services, and brands. It presents structured information by category and basic selection criteria.",
@@ -16485,16 +16312,6 @@
       "targeted_audience": "Premium brands; luthiers; specialist shops; music marketplaces.",
       "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
       "flagship": "no",
-      "include_in_categories": "no",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Art, Culture & Luxury Collectibles",
-      "domain": "mejoresinstrumentos.es",
-      "country": "Spain",
-      "description": "MejoresInstrumentos.es is a domain targeting users in Spain who compare the best musical instruments, evaluating sound, materials, craftsmanship, and brands. It presents structured information by category and basic selection criteria.",
-      "targeted_audience": "Premium brands; luthiers; specialist shops; music marketplaces.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
       "include_in_categories": "no",
       "affiliate_marketing": "yes"
     },
@@ -16896,28 +16713,6 @@
     },
     {
       "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "datingdelujo.com",
-      "country": "Global",
-      "description": "DatingDeLujo.com is a domain targeting premium dating services, exclusive encounters, curated profiles, and high-level experiences. It presents structured information on services, processes, categories, and contact.",
-      "targeted_audience": "Dating agencies, relationship consultants, experience services, premium venues.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "datingdelujo.es",
-      "country": "Spain",
-      "description": "DatingDeLujo.es is a domain targeting the Spanish market for premium dating, exclusive encounters, and personalised experiences. It presents structured information on services, processes, categories, and contact.",
-      "targeted_audience": "Spanish dating agencies, relationship consultants, experience services, premium venues.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
       "domain": "datingdelujo.es",
       "country": "Spain",
       "description": "DatingDeLujo.es is a domain targeting the Spanish market for premium dating, exclusive encounters, and personalised experiences. It presents structured information on services, processes, categories, and contact.",
@@ -16937,44 +16732,11 @@
     },
     {
       "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "datingexclusivo.com",
-      "country": "Global",
-      "description": "DatingExclusivo.com is a domain targeting exclusive dating services, curated profiles, and premium experiences. It presents structured information on services, processes, categories, and contact.",
-      "targeted_audience": "Dating agencies, relationship consultants, premium venues, experience services.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
       "domain": "datingexclusivo.es",
       "country": "Spain",
       "description": "DatingExclusivo.es is a domain targeting the Spanish market for exclusive dating, curated profiles, and premium experiences. It presents structured information on services, processes, categories, and contact.",
       "targeted_audience": "Spanish dating agencies, relationship consultants, premium venues, experience services.",
       "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads."
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "datingexclusivo.es",
-      "country": "Spain",
-      "description": "DatingExclusivo.es is a domain targeting the Spanish market for exclusive dating, curated profiles, and premium experiences. It presents structured information on services, processes, categories, and contact.",
-      "targeted_audience": "Spanish dating agencies, relationship consultants, premium venues, experience services.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "graduaciondelujo.es",
-      "country": "Spain",
-      "description": "GraduacionDeLujo.es is a domain targeting the Spanish market for premium graduation celebrations, exclusive events, and private parties. It presents structured information on services, providers, themes, and contact.",
-      "targeted_audience": "Spanish event organizers, premium venues, photographers, catering companies, DJs, decorators.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
     },
     {
       "category": "Special Moments, Romance, Couples & Gifts",
@@ -17000,39 +16762,6 @@
     },
     {
       "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "momentosdelujo.com",
-      "country": "Global",
-      "description": "MomentosDeLujo.com is a domain targeting premium experiences for special moments, intimate celebrations, and exclusive activities. It presents structured information on services, providers, categories, and contact.",
-      "targeted_audience": "Experience organizers, premium venues, photographers, florists, catering companies.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "momentosdelujo.es",
-      "country": "Spain",
-      "description": "MomentosDeLujo.es is a domain targeting the Spanish market for premium experiences for special moments, intimate celebrations, and exclusive activities. It presents structured information on services, providers, categories, and contact.",
-      "targeted_audience": "Spanish experience organizers, premium venues, photographers, florists, catering companies.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "momentosdelujo.es",
-      "country": "Spain",
-      "description": "MomentosDeLujo.es is a domain targeting the Spanish market for premium experiences for special moments, intimate celebrations, and exclusive activities. It presents structured information on services, providers, categories, and contact.",
-      "targeted_audience": "Spanish experience organizers, premium venues, photographers, florists, catering companies.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
       "domain": "momentosdelujo.es",
       "country": "Spain",
       "description": "MomentosDeLujo.es is a domain targeting the Spanish market for premium experiences for special moments, intimate celebrations, and exclusive activities. It presents structured information on services, providers, categories, and contact.",
@@ -17048,28 +16777,6 @@
       "country": "Global",
       "description": "NacimientoDeLujo.com is a domain targeting premium birth celebrations, exclusive gifts, personalised services, and high-level family experiences. It presents structured information on services, providers, and contact.",
       "targeted_audience": "Photographers, event organizers, florists, premium gift brands, family venues.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "nacimientodelujo.com",
-      "country": "Global",
-      "description": "NacimientoDeLujo.com is a domain targeting premium birth celebrations, exclusive gifts, personalised services, and high-level family experiences. It presents structured information on services, providers, and contact.",
-      "targeted_audience": "Photographers, event organizers, florists, premium gift brands, family venues.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "navidaddelujo.com",
-      "country": "Global",
-      "description": "NavidadDeLujo.com is a domain targeting premium Christmas experiences, exclusive events, high-level decoration, and personalised services. It presents structured information on activities, providers, themes, and contact.",
-      "targeted_audience": "Event organizers, decorators, premium venues, gift brands, catering companies.",
       "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
       "flagship": "no",
       "include_in_categories": "no",
@@ -17095,28 +16802,6 @@
       "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
       "flagship": "no",
       "include_in_categories": "yes",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "navidaddelujo.es",
-      "country": "Spain",
-      "description": "NavidadDeLujo.es is a domain targeting the Spanish market for premium Christmas experiences, exclusive events, and high-level decoration. It presents structured information on activities, providers, themes, and contact.",
-      "targeted_audience": "Spanish event organizers, decorators, premium venues, gift brands, catering companies.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Special Moments, Romance, Couples & Gifts",
-      "domain": "nochesdelujo.com",
-      "country": "Global",
-      "description": "NochesDeLujo.com is a domain targeting premium nightlife experiences, exclusive dinners, VIP activities, and high-level entertainment. It presents structured information on services, providers, activities, and contact.",
-      "targeted_audience": "Premium restaurants, lounges, luxury hotels, event organizers, experience providers.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "no",
       "one_pager": "yes"
     },
     {
@@ -25048,28 +24733,6 @@
     },
     {
       "category": "Brands of",
-      "domain": "marcasdeperfumes.com",
-      "country": "Global",
-      "description": "Marcasdeperfumes.com is a domain targeting consumers who compare perfume brands before a relevant purchase, evaluating notes, longevity, intensity, style and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
-      "domain": "marcasdeperfumes.es",
-      "country": "Spain",
-      "description": "Marcasdeperfumes.es is a domain targeting consumers in Spain who compare perfume brands before a relevant purchase, evaluating notes, longevity, intensity, style and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
       "domain": "marcasdeplomeria.com",
       "country": "Global",
       "description": "Marcasdeplomería.com is a domain targeting consumers who compare plumbing brands before a relevant purchase, evaluating materials, durability, compatibility, design and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
@@ -25169,39 +24832,6 @@
     },
     {
       "category": "Brands of",
-      "domain": "marcasderon.com",
-      "country": "Global",
-      "description": "Marcasderon.com is a domain targeting consumers who compare rum brands before a relevant purchase, evaluating origin, ageing, flavour, body and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
-      "domain": "marcasderon.es",
-      "country": "Spain",
-      "description": "Marcasderon.es is a domain targeting consumers in Spain who compare rum brands before a relevant purchase, evaluating origin, ageing, flavour, body and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
-      "domain": "marcasderones.com",
-      "country": "Global",
-      "description": "Marcasderones.com is a domain targeting consumers who compare rum brands before a relevant purchase, evaluating origin, ageing, flavour, body and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
       "domain": "marcasderones.es",
       "country": "Spain",
       "description": "Marcasderones.es is a domain targeting consumers in Spain who compare rum brands before a relevant purchase, evaluating origin, ageing, flavour, body and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
@@ -25271,28 +24901,6 @@
       "domain": "marcasdescooters.es",
       "country": "Spain",
       "description": "Marcasdescooters.es is a domain targeting consumers in Spain who compare scooter brands before a relevant purchase, evaluating power, range, design, safety and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
-      "domain": "marcasdeseguros.com",
-      "country": "Global",
-      "description": "Marcasdeseguros.com is a domain targeting consumers who compare insurance brands before a relevant purchase, evaluating coverage, prices, reputation, service and benefits. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
-      "domain": "marcasdeseguros.es",
-      "country": "Spain",
-      "description": "Marcasdeseguros.es is a domain targeting consumers in Spain who compare insurance brands before a relevant purchase, evaluating coverage, prices, reputation, service and benefits. It presents clear and structured information on categories, specifications and essential selection criteria.",
       "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
       "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
       "flagship": "no",
@@ -25455,28 +25063,6 @@
     },
     {
       "category": "Brands of",
-      "domain": "marcasdeyates.com",
-      "country": "Global",
-      "description": "Marcasdeyates.com is a domain targeting consumers who compare yacht brands before a relevant purchase, evaluating design, size, engines, finishes and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
-      "domain": "marcasdeyates.es",
-      "country": "Spain",
-      "description": "Marcasdeyates.es is a domain targeting consumers in Spain who compare yacht brands before a relevant purchase, evaluating design, size, engines, finishes and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
       "domain": "marcasdezapatillas.com",
       "country": "Global",
       "description": "Marcasdezapatillas.com is a domain targeting consumers who compare trainer brands before a relevant purchase, evaluating comfort, materials, design, performance and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
@@ -25502,28 +25088,6 @@
       "domain": "marcasdezapatos.es",
       "country": "Spain",
       "description": "Marcasdezapatos.es is a domain targeting consumers in Spain who compare shoe brands before a relevant purchase, evaluating design, materials, comfort, durability and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
-      "domain": "mejoresmarcasdeautos.com",
-      "country": "Global",
-      "description": "Mejoresmarcasdeautos.com is a domain targeting consumers who compare the best car brands before a relevant purchase, evaluating performance, safety, design, technology and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
-      "domain": "mejoresmarcasdeautos.es",
-      "country": "Spain",
-      "description": "Mejoresmarcasdeautos.es is a domain targeting consumers in Spain who compare the best car brands before a relevant purchase, evaluating performance, safety, design, technology and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
       "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
       "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
       "flagship": "no",
@@ -25685,28 +25249,6 @@
       "affiliate_marketing": "yes"
     },
     {
-      "category": "Brands of",
-      "domain": "mejoresmarcasdemotos.com",
-      "country": "Global",
-      "description": "Mejoresmarcasdemotos.com is a domain targeting consumers who compare the best motorcycle brands before a relevant purchase, evaluating power, design, safety, technology and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Brands of",
-      "domain": "mejoresmarcasdemotos.es",
-      "country": "Spain",
-      "description": "Mejoresmarcasdemotos.es is a domain targeting consumers in Spain who compare the best motorcycle brands before a relevant purchase, evaluating power, design, safety, technology and price. It presents clear and structured information on categories, specifications and essential selection criteria.",
-      "targeted_audience": "Consumers; high-intent buyers; brand comparison users; pre-purchase researchers; leading sector brands; manufacturers; distributors; specialized stores.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
       "category": "Luxury Services, Professionals & Experts",
       "domain": "abogadoexclusivo.co",
       "country": "Colombia",
@@ -25755,17 +25297,6 @@
       "domain": "abogadosdelujo.es",
       "country": "Spain",
       "description": "AbogadosDelujo.es is a domain targeting users in Spain comparing luxury law firms, evaluating specialisation, reputation and services. It presents structured information by category and basic selection criteria.",
-      "targeted_audience": "Premium law firms; specialised lawyers; legal consultancies; legal platforms.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Luxury Services, Professionals & Experts",
-      "domain": "abogadoselite.es",
-      "country": "Spain",
-      "description": "AbogadosEélite.es is a domain targeting users in Spain comparing éélite lawyers, evaluating specialisation, reputation and services. It presents structured information by category and basic selection criteria.",
       "targeted_audience": "Premium law firms; specialised lawyers; legal consultancies; legal platforms.",
       "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
       "flagship": "no",
@@ -26272,17 +25803,6 @@
       "country": "Global",
       "description": "GuiaDelujo.com is a domain targeting users seeking premium guides on services, providers and high-end experiences. It presents structured information by category and basic selection criteria.",
       "targeted_audience": "Publishers; content platforms; consultancies; premium services.",
-      "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
-      "flagship": "no",
-      "include_in_categories": "yes",
-      "one_pager": "yes"
-    },
-    {
-      "category": "Luxury Services, Professionals & Experts",
-      "domain": "interiorexclusivo.com",
-      "country": "Global",
-      "description": "InteriorExclusivo.com is a domain targeting users seeking exclusive interior design services, evaluating style, materials and specialised studios. It presents structured information by category and basic selection criteria.",
-      "targeted_audience": "Interior designers; design studios; premium brands; decoration platforms.",
       "use_cases": "Mini websites on permanent slugs; one-pagers on permanent slugs; rankings by category; comparisons; exhibitions; collaborations; product listings; brief guides; ads.",
       "flagship": "no",
       "include_in_categories": "yes",
@@ -27130,17 +26650,6 @@
       "country": "Global",
       "description": "Guide to luxury bars and cocktail culture in Spain and Latin America. The best speakeasies, rooftops and signature cocktail bars.",
       "targeted_audience": "Luxury hospitality sector professionals, premium tourists and consumers of exclusive nighttime experiences.",
-      "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
-      "flagship": "yes",
-      "include_in_categories": "yes",
-      "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Entertainment, Events, Sports & Experiences",
-      "domain": "clubesdelujo.com",
-      "country": "Global",
-      "description": "Directory of private and luxury membership clubs in Spain and Latin America. Exclusive access, private events and premium lifestyle.",
-      "targeted_audience": "Private club members, high-level executives and high-net-worth families.",
       "use_cases": "Rankings; comparisons; buying guides; reviews; best-of lists; brief analyses; content optimized for affiliate links and ad placement.",
       "flagship": "yes",
       "include_in_categories": "yes",
