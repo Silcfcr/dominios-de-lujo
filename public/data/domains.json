@@ -1,5 +1,5 @@
 {
-  "total_domains": 2510,
+  "total_domains": 2512,
   "domains": [
     {
       "category": "Animales y Mascotas de Lujo",
@@ -17326,17 +17326,6 @@
       "flagship": "No",
       "include_in_categories": "Yes",
       "affiliate_marketing": "yes"
-    },
-    {
-      "category": "Momentos Especiales, Romance, Parejas y Regalos",
-      "domain": "graduaciondelujo.com",
-      "country": "Global",
-      "description": "GraduacionDeLujo.com es un dominio orientado a celebraciones premium de graduación, eventos exclusivos, fiestas privadas y servicios personalizados. Presenta información estructurada sobre servicios, proveedores, temáticas y contacto.",
-      "targeted_audience": "Organizadores de eventos, venues premium, fotógrafos, empresas de catering, DJs, decoradores.",
-      "use_cases": "Mini websites en slugs permanentes; one pagers en slugs permanentes; rankings por categoría; comparativas; exhibiciones; colaboraciones; fichas de producto; guías breves; anuncios.",
-      "flagship": "no",
-      "include_in_categories": "no",
-      "one_pager": "yes"
     },
     {
       "category": "Momentos Especiales, Romance, Parejas y Regalos",
