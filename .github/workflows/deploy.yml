@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, client-feedback/v1, client-feedback/v2]
+    branches: [client-feedback/v1, client-feedback/v2]
   workflow_dispatch:
 
 permissions:
