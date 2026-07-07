@@ -106,7 +106,30 @@
       "Bash(/Users/silviacastro/.claude/plugins/cache/claude-plugins-official/superpowers/6.0.3/skills/subagent-driven-development/scripts/review-package b732042 *)",
       "Bash(/Users/silviacastro/.claude/plugins/cache/claude-plugins-official/superpowers/6.0.3/skills/subagent-driven-development/scripts/task-brief docs/superpowers/plans/2026-06-25-typography-standardization.md 5)",
       "Bash(/Users/silviacastro/.claude/plugins/cache/claude-plugins-official/superpowers/6.0.3/skills/subagent-driven-development/scripts/review-package 8c7ffe6 b5cadf6)",
-      "Bash(/Users/silviacastro/.claude/plugins/cache/claude-plugins-official/superpowers/6.0.3/skills/subagent-driven-development/scripts/task-brief docs/superpowers/plans/2026-06-25-typography-standardization.md 6)"
+      "Bash(/Users/silviacastro/.claude/plugins/cache/claude-plugins-official/superpowers/6.0.3/skills/subagent-driven-development/scripts/task-brief docs/superpowers/plans/2026-06-25-typography-standardization.md 6)",
+      "Bash(nslookup -type=NS dominiosdelujo.com 1.1.1.1)",
+      "Bash(dig dominiosdelujo.com NS @8.8.8.8 +time=10)",
+      "Bash(dig dominiosdelujo.com ANY @8.8.8.8 +time=10)",
+      "Bash(dig dominiosdelujo.com NS @ns1.vercel-dns.com +time=10)",
+      "Bash(dig dominiosdelujo.com A @ns1.vercel-dns.com +time=10)",
+      "Bash(dig dominiosdelujo.com DS @8.8.8.8 +time=10)",
+      "Bash(dig dominiosdelujo.com DNSKEY @8.8.8.8 +time=10)",
+      "Bash(dig dominiosdelujo.com NS @a.gtld-servers.net +time=10)",
+      "Bash(dig dominiosdelujo.com NS @205.251.196.1 +time=10)",
+      "Bash(npx vercel *)",
+      "Bash(dig dominiosdelujo.com NS @8.8.8.8 +short)",
+      "Bash(dig dominiosdelujo.com A @ns1.vercel-dns.com +short)",
+      "Bash(dig www.dominiosdelujo.com A @ns1.vercel-dns.com +short)",
+      "Bash(dig dominiosdelujo.com A @8.8.8.8 +short)",
+      "Bash(dig www.dominiosdelujo.com CNAME @8.8.8.8 +short)",
+      "Bash(dig dominiosdelujo.com MX @8.8.8.8 +short)",
+      "Bash(ffprobe -v error -show_entries stream=codec_name,bit_rate,sample_rate,channels -of default=noprint_wrappers=1 spanish.mp3)",
+      "Bash(ffprobe -v error -show_entries stream=codec_name,bit_rate,sample_rate,channels -of default=noprint_wrappers=1 English.wav)",
+      "Bash(ffmpeg -y -i English.wav -codec:a libmp3lame -b:a 128k english.mp3)",
+      "Bash(node -e \"require\\('sharp'\\); console.log\\('sharp ok'\\)\")",
+      "Bash(mv \"logo white.png\" \"logo-white.png\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000)"
     ]
   }
 }
