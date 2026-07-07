@@ -30,6 +30,7 @@ export default function WritersGrid() {
     { name: t('writersGrid.w4Name'), vertical: t('writersGrid.w4Vertical'), quote: t('writersGrid.w4Quote') },
     { name: t('writersGrid.w5Name'), vertical: t('writersGrid.w5Vertical'), quote: t('writersGrid.w5Quote') },
     { name: t('writersGrid.w6Name'), vertical: t('writersGrid.w6Vertical'), quote: t('writersGrid.w6Quote') },
+    { name: t('writersGrid.w7Name'), vertical: t('writersGrid.w7Vertical'), quote: t('writersGrid.w7Quote') },
   ];
 
   const reversed = [...writers].reverse();

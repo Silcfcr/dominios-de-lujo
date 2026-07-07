@@ -19,7 +19,7 @@ export default function Footer() {
         <div className={styles.brand}>
           <Image
             src={assetPath('/images/logo.webp')}
-            alt="Dominios de Lujo"
+            alt="DominiosDeLujo"
             width={140}
             height={48}
             className={styles.logo}
@@ -97,7 +97,7 @@ export default function Footer() {
 
       <div className={styles.bot}>
         <p className={styles.copy}>
-          © {year} Dominios de Lujo. {t('footer.rights')}
+          © {year} DominiosDeLujo. {t('footer.rights')}
         </p>
         <div className={styles.legal}>
           <Link href="/privacidad">{t('footer.legal')}</Link>

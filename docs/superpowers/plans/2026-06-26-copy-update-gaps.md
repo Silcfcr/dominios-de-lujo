@@ -50,8 +50,8 @@ The surrounding context should look like this after the edit:
 ```json
 "hero": {
   "h1a": "La plataforma de marketing de afiliados de lujo en español.",
-  "h1b": "impulsada por más de 4.000 dominios exactos premium",
-  "h1em": "unificada bajo LujoTotal™.",
+  "h1b": "Impulsada por más de 4.000 dominios exactos premium",
+  "h1em": "unificada bajo LujoTotal™",
   "eyebrow": "Donde cada deseo tiene su lugar",
   "kvp": "Invitamos a las marcas de lujo a formar parte del ecosistema que define el lujo en español.",
   ...

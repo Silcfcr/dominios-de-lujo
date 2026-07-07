@@ -34,7 +34,7 @@ export default function ColaborarClient() {
       title: t('colaborar.writersTitle'),
       body: t('colaborar.writersBody'),
       cta: t('colaborar.writersCta'),
-      mailto: mailtoFor('writer', 'Aplicación Redactor — Dominios de Lujo'),
+      mailto: mailtoFor('writer', 'Aplicación Redactor — DominiosDeLujo'),
     },
     {
       icon: influencerIcon,
@@ -43,7 +43,7 @@ export default function ColaborarClient() {
       title: t('colaborar.influencersTitle'),
       body: t('colaborar.influencersBody'),
       cta: t('colaborar.influencersCta'),
-      mailto: mailtoFor('influencer', 'Colaboración Influencer — Dominios de Lujo'),
+      mailto: mailtoFor('influencer', 'Colaboración Influencer — DominiosDeLujo'),
     },
   ];
 

@@ -50,8 +50,8 @@ export default function Nav() {
       <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
         {/* Row 1 */}
         <div className={styles.r1}>
-          <Link href="/" className={styles.logoMark} aria-label="Dominios de Lujo — inicio">
-            <Image src={assetPath('/images/logo.webp')} alt="Dominios de Lujo" width={120} height={44} priority style={{ height: '36px', width: 'auto' }} />
+          <Link href="/" className={styles.logoMark} aria-label="DominiosDeLujo — inicio">
+            <Image src={assetPath('/images/logo.webp')} alt="DominiosDeLujo" width={120} height={44} priority style={{ height: '36px', width: 'auto' }} />
           </Link>
           <Link href="/" className={styles.wordmark}>
             DOMINIOS DE LUJO
@@ -124,7 +124,7 @@ export default function Nav() {
           {t('nav.drawerClose')}
         </button>
         <div className={styles.drwLogo}>
-          <Image src={assetPath('/images/logo.webp')} alt="Dominios de Lujo" width={120} height={40} style={{ objectFit: 'contain', height: '32px', width: 'auto' }} />
+          <Image src={assetPath('/images/logo.webp')} alt="DominiosDeLujo" width={120} height={40} style={{ objectFit: 'contain', height: '32px', width: 'auto' }} />
         </div>
         <nav>
           {links.map((l) =>

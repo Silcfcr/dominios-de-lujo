@@ -35,7 +35,7 @@ export default function PartnerValue() {
         <div className={styles.imgPanel}>
           <Image
             src={assetPath('/images/partner.webp')}
-            alt="Partner with Dominios de Lujo"
+            alt="Partner with DominiosDeLujo"
             fill
             sizes="50vw"
             className={styles.img}

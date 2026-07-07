@@ -19,7 +19,7 @@ export default function Manifesto() {
   const [visible, setVisible]         = useState(false);
 
   const audioSrc = assetPath(
-    lang === 'en' ? '/audio/english.m4a' : '/audio/spanish.mp3'
+    lang === 'en' ? '/audio/english.mp3' : '/audio/spanish.mp3'
   );
 
   useEffect(() => {
