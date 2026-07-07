@@ -17,12 +17,12 @@ const BRANDS = [
     descKey: 'ourBrands.brand2Desc',
   },
   {
-    src: '/images/logos/belleza_de_lujo_black_gold.webp',
+    src: '/images/logos/belleza_de_lujo_cream_gold.webp',
     alt: 'Belleza de Lujo',
     descKey: 'ourBrands.brand3Desc',
   },
   {
-    src: '/images/logos/paginas.webp',
+    src: '/images/logos/logo-white.webp',
     alt: 'Páginas de Lujo',
     descKey: 'ourBrands.brand4Desc',
   },
