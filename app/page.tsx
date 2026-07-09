@@ -8,7 +8,7 @@ import PorQueNosotros from '@/components/home/PorQueNosotros';
 import AffiliateEditorial from '@/components/home/AffiliateEditorial';
 import ConfianzaCredibilidad from '@/components/home/ConfianzaCredibilidad';
 import CollaborateTeaser from '@/components/home/CollaborateTeaser';
-import OurBrands from '@/components/home/OurBrands';
+// import OurBrands from '@/components/home/OurBrands';
 export default function HomePage() {
   return (
     <>
@@ -21,7 +21,7 @@ export default function HomePage() {
       <PorQueNosotros />
       <AffiliateEditorial />
       <ConfianzaCredibilidad />
-      <OurBrands />
+      {/* <OurBrands /> */}
       <CollaborateTeaser />
       {/* <HomeSectionLink labelKey="home.manifestoLink" href="/nosotros#manifiesto" /> */}
     </>
