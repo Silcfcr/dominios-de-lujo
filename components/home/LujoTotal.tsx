@@ -16,8 +16,8 @@ export default function LujoTotal() {
           <Image
             src={assetPath('/images/lujo-total.webp')}
             alt="LujoTotal™ certification"
-            width={340}
-            height={274}
+            width={300}
+            height={300}
             style={{ objectFit: 'contain' }}
           />
         </div>
