@@ -42,7 +42,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/lujototal.oficial"
+                href="https://www.instagram.com/lujototal_oficial/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t('footer.ariaInstagram')}
